@@ -446,6 +446,11 @@
     "name": "Elastic Man"
   },
   {
+    "url": "/game/?electricman",
+    "imageSrc": "/game/img/electricman.png",
+    "name": "Electric Man 2 HS"
+  },
+  {
     "url": "pvz/",
     "imageSrc": "https://static.wikia.nocookie.net/plantsvszombies/images/2/29/IPodTouchicon4.png",
     "name": "Plants vs. Zombies"
@@ -454,6 +459,11 @@
     "url": "pvz-html/",
     "imageSrc": "https://static.wikia.nocookie.net/plantsvszombies/images/f/ff/Plantsvs.ZombiesFREEicon.png",
     "name": "Plants vs. Zombies [HTML]"
+  },
+  {
+    "url": "/game/?pvz-ds",
+    "imageSrc": "/game/img/pvz-ds.webp",
+    "name": "Plants vs. Zombies [Nintendo DS]"
   },
   {
     "url": "./BloonsTD/",
@@ -534,6 +544,11 @@
     "url": "/0/g/smb/",
     "imageSrc": "./smb/game/z7rn5clz.bmp",
     "name": "Super Mario Bros"
+  },
+  {
+    "url": "/game/?jelly-mario",
+    "imageSrc": "https://jellymar.io/jelly-mario.gif",
+    "name": "Jelly Mario Bros"
   },
   {
     "url": "/0/e/SNES/Super Mario World/",
@@ -654,6 +669,11 @@
     "url": "./backrooms/",
     "imageSrc": "./backrooms/game/img/splash.jpg",
     "name": "BACKROOMS"
+  },
+  {
+    "url": "/game/?tooncup",
+    "imageSrc": "/game/img/tooncup.webp",
+    "name": "Toon Cup"
   },
   {
     "url": "./omnomrun/",
@@ -819,6 +839,11 @@
     "name": "Basketball Stars",
     "imageSrc": "basketball-stars/unnamed.png",
     "url": "./basketball-stars/"
+  },
+  {
+    "name": "Basketball Random",
+    "imageSrc": "https://play-lh.googleusercontent.com/gP8T5Z1O-ngxIloiwcBZzrzyLPYDp0R_1BDNKUDZboIRPVImeyWI8-7aExvB9gAGNKc",
+    "url": "/game/?basketball-random"
   },
   {
     "name": "Getaway Shootout",
