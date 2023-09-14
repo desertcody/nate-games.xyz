@@ -37,7 +37,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.04s;
 }
 
 .menu-item:hover {

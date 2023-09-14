@@ -211,7 +211,7 @@
     "name": "Moto X3M"
   },
   {
-    "url": "papas-doggeria/",
+    "url": "/game/?papas-doggeria",
     "imageSrc": "papas-doggeria/image.png",
     "name": "Papa's Hot Doggeria"
   },
@@ -219,6 +219,11 @@
     "url": "/game/?papas-burgeria",
     "imageSrc": "https://play-lh.googleusercontent.com/rHJuY78XSJrhbaW39aYNhViggnzCgR5Zu-xfIx7Sga0Y3Tv3iIuGIIgvEMqfI5Kn",
     "name": "Papa's Burgeria"
+  },
+  {
+    "url": "/game/?papas-scooperia",
+    "imageSrc": "https://m.media-amazon.com/images/I/81BoBmWngJL.png",
+    "name": "Papa's Scooperia"
   },
   {
     "url": "/game/?papas-pancakeria",

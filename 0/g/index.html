@@ -3,6 +3,9 @@
 
 <head>
     <title>Games | nate-games</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098145720803384" crossorigin="anonymous"></script>
+    <meta name="description"
+    content="🎮 Get ready!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link rel="stylesheet" href="../assets/css/games.css" />
@@ -10,11 +13,33 @@
     <script src="search.js"></script>
     <script src="/0/assets/js/tos.js"></script>
     <script src="/0/assets/js/nodrag.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
     <link rel="stylesheet" href="/0/assets/css/tos.css">
     <style> 
     .adblocker {text-align: center; padding-left: 100% 0 0; margin: 0; justify-content: center; display: flex; overflow: hidden;background-color: #222; height: 180px; width: 640px; border-radius: 10px; margin: 4em 0 4em; border: 1px solid #000;}
     .adblocker .adblock-text {width: 350px; margin: 20px;}
     .adblocker img {margin: 20px;}</style>
+        <style>
+        
+          .flash-opener {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              margin: 1rem 0 1rem;
+          }
+          
+          .button-container {
+              display: flex;
+              margin-top: 6px;
+          }
+          
+          #file-name {
+              margin-top: 10px;
+              font-weight: bold;
+              display: none;
+          }
+      </style>
 </head>
 
 <body onload="checkTOS()">
@@ -40,24 +65,24 @@
         </div>
       </div>
       <div id="content">
-    <header class="header">
-        <div class="logo">
-            <button class="menu-item" onclick="window.location.href='../../'">
-                <strong>nate-games</strong>
+        <header class="header">
+          <div class="logo">
+            <button class="menu-item" onclick="window.location.href='/'" class="title">
+              <strong>nate-games</strong>
             </button>
-        </div>
-        <nav class="menu">
-            <button class="menu-item" onclick="window.location.href='./'">
-                Games
+          </div>
+          <nav class="menu">
+            <button class="menu-item" onclick="window.location.href='/0/g/'">
+              Games
             </button>
-            <button class="menu-item" onclick="window.location.href='../a/'">
-                Apps
+            <button class="menu-item" onclick="window.location.href='/0/a/'">
+              Apps
             </button>
-            <button class="menu-item" onclick="window.location.href='../ruffle/'">
-                Flash Opener
+            <button class="menu-item" onclick="window.location.href='https://nate-games.github.io/docs/'">
+              Documentation
             </button>
-        </nav>
-    </header>
+          </nav>
+        </header>
     <script>
 fetch('games.json')
   .then(response => response.json())
@@ -108,6 +133,15 @@ fetch('games.json')
     </script>
     <center>
       <div class="adblocker"><img src="./adblocker.png" height="140"><span class="adblock-text"><h2>Hello user!</h2><p>We appreciate your visit! To help keep our content free, please consider disabling your adblocker. Our ads are non-intrusive and support our site. Thank you for your support!</p><br><span style="text-decoration: none; color: #2863c2; cursor: pointer;">Do not sell my personal information</span></span><br></div>
+      <div class="flash-opener">
+        <div id="flash-container"></div>
+        <div class="button-container">
+            <button for="file-input" class="file-input-button"><label for="file-input" class="file-input-button">Select File</label></button>
+            <input type="file" id="file-input" style="display: none;" onchange="handleFileChange(event)" accept=".swf, .spl">
+            <button onclick="loadFlash()" class="file-input-button">Load Flash</button>
+        </div>
+        <div id="file-name"></div>
+    </div>
         <input type="text" id="search-bar" placeholder="Search..." oninput="search()" class="search-input" />
         <p>Need to take down your game? <a href="javascript:Open DMCA in new window;" onclick="window.open('https://github.com/nate-games/nate-games.github.io/issues/new?assignees=nate-games&labels=DMCA&projects=&template=dmca.yaml&title=[DMCA]:<title>', '_blank', 'width=800,height=600'); return false;">DMCA</a> (Opens in a new window)</p>
     </center>
@@ -123,5 +157,42 @@ fetch('games.json')
 <footer style="margin-bottom: 4em; margin-top: 9em;">
     <center>&copy; 2023 nate-games<br><br><a href="https://github.com/nate-games/nate-games.github.io/blob/main/SECURITY.md">Security Policy</a> &bull; <a href="/0/privacy-policy.html">Privacy Policy</a> &bull; <a href="/0/terms-of-service.html">Terms of Service</a> &bull; <a href="https://github.com/nate-games/nate-games.github.io/wiki">Wikipedia/Docs</a></center>
 </footer>
+<script>
+  function handleFileChange(event) {
+      var fileInput
+      var fileInput = event.target;
+      var file = fileInput.files[0];
+
+      if (file) {
+          var fileNameElement = document.getElementById('file-name');
+          fileNameElement.textContent = 'Selected File: ' + file.name;
+          fileNameElement.style.display = 'block';
+      }
+  }
+
+  function loadFlash() {
+      var fileInput = document.getElementById('file-input');
+      var file = fileInput.files[0];
+
+      if (file) {
+          var reader = new FileReader();
+          reader.onload = function(event) {
+              var flashContent = event.target.result;
+
+              var container = document.getElementById('flash-container');
+              container.innerHTML = '';
+
+              var embed = document.createElement('embed');
+              embed.src = flashContent;
+              embed.type = 'application/x-shockwave-flash';
+              embed.width = '1200px';
+              embed.height = '625px';
+
+              container.appendChild(embed);
+          };
+          reader.readAsDataURL(file);
+      }
+  }
+</script>
 </body>
 </html>
