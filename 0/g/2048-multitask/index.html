@@ -1,102 +1,135 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>2048 Multitask | nate-games</title>
-  <link rel="icon" type="image/png" href="./game/splash.png" />
-  <link rel="stylesheet" href="/0/assets/css/games.css" />
-  <style>
-    .center-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-    }
+  <meta charset="utf-8">
+  <title>2048 Multitasking | nate-games</title>
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="splash.png">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    #embed-container {
-      position: relative;
-      width: 1200px;
-      height: 675px;
-    }
-
-    #embed-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    #fullscreen-button {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      z-index: 9999;
-      border: none;
-      background-color: #000;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 15px;
-    }
-
-    #fullscreen-icon {
-      fill: #fff;
-      stroke: none;
-      width: 15px;
-      height: 15px;
-    }
-
-    .fullscreen-text {
-      text-align: center;
-      margin-top: 10px;
-    }
-  </style>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
-
 <body>
-  <header class="header">
-    <div class="logo">
-      <button class="menu-item" onclick="window.location.href='/'"><strong>nate-games</strong></button>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048 Multitasking</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
     </div>
-    <nav class="menu">
-      <button class="menu-item" onclick="window.location.href='/0/g/'">Games</button>
-      <button class="menu-item" onclick="window.location.href='/0/a/'">
-        Apps
-      </button>
-      
-    </nav>
-  </header>
-  <button class="back" onclick="window.location.href='/0/g/'">
-    <-- Back to Games
-  </button>
-  <div class="center-container">
-    <div id="embed-container">
-      <iframe src="./game/index.html" frameborder="0" allowfullscreen></iframe>
-      <button id="fullscreen-button" onclick="toggleFullscreen()">
-        <svg id="fullscreen-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.00002 3.99998H4.00004L4 9M20 8.99999V4L15 3.99997M15 20H20L20 15M4 15L4 20L9.00002 20" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-    </div>
-    <div class="fullscreen-text">
-      Fullscreen Glitched? Play <a href="./game/" target="_self" style="color: blue;">Here</a>
-    </div>
-  </div>
-  <script>
-    function toggleFullscreen() {
-      const iframe = document.querySelector('iframe');
-      if (iframe.requestFullscreen) {
-        iframe.requestFullscreen();
-      } else if (iframe.mozRequestFullScreen) {
-        iframe.mozRequestFullScreen();
-      } else if (iframe.webkitRequestFullscreen) {
-        iframe.webkitRequestFullscreen();
-      } else if (iframe.msRequestFullscreen) {
-        iframe.msRequestFullscreen();
-      }
-    }
-  </script>
-</body>
 
+    <div class="above-game">
+      <p class="game-intro">Join the numbers and get to the <strong>2048 and/or 3072 tile!</strong></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    <strong>Note:</strong> This is not the official 2048. The original was creatd by <a href="http://gabrielecirulli.com" target="_blank"><strong>Gabriele Cirulli</strong></a>. The game also may or may not completly break when playing on mobile.
+    </p>
+    <hr>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script src="/js/main.js"></script>
+</body>
 </html>

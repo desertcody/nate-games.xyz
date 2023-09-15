@@ -24,7 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
         "tooncup": "https://emea.iframed.cn.dmti.cloud/content/691/toon-cup/game/uk/en.e0732106/index.html", // Very likely to be blocked
         "pvz-ds": "https://www.greenfoot.org/scenarios/31337?embed=true",
         "basketball-random": "https://tylerpalko.github.io/gamehub/basketrandom/", // IF BLOCKED: https://github.com/TylerPalko/gamehub/tree/main/basketrandom
-        "jelly-mario":"/0/g/jellymario/",
+        "jelly-mario": "/0/g/jellymario/",
+        "2048-multitask": "/0/g/2048-multitask/",
+        "game-inside-a-game": "/0/g/giag/",
+        "tanuki-sunset": "/0/g/tanuki-sunset/",
+        "bottle-flip-3d": "/0/g/bf3d/",
+        "tiny-fishing": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/tf.xml",
+        "worlds-hardest-game": "/0/g/whg/1/",
+        "worlds-hardest-game-2": "/0/g/whg/2/",
+        "worlds-hardest-game-3": "/0/g/whg/3/",
     };
 
     const filePath = pageMappings[queryString];

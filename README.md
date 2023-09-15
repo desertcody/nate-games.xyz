@@ -6,7 +6,7 @@
 </p>
 
 <h1 align="center">nate-games</h1>
-<p align="center">Preparing for a new UI! 197 games & apps 3 more to get 200!</p>
+<p align="center">Preparing for a new UI!</p>
 
 > **Note**
 > **NEED to submit DMCA? Please don't immediately report us, send an issue!**

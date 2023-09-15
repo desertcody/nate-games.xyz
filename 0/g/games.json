@@ -6,7 +6,7 @@
   },
   {
     "url": "/game/?1v1.lol-method-2",
-    "imageSrc": "./1v1lol-2/2e29xb8j.bmp",
+    "imageSrc": "/game/img/1v1lol2.bmp",
     "name": "1v1.LOL [Method 2]"
   },
   {
@@ -51,38 +51,38 @@
     "name": "Subway Surfers"
   },
   {
-    "url": "/0/g/giag/",
+    "url": "/game/?game-inside-a-game",
     "imageSrc": "https://img.itch.zone/aW1nLzQ1OTUwODcucG5n/original/Xdhfjt.png",
     "name": "Game inside a Game"
   },
   {
-    "url": "tanuki-sunset/",
+    "url": "/game/?tanuki-sunset",
     "imageSrc": "tanuki-sunset/tanuki-sunset.png",
     "name": "Tanuki Sunset"
   },
   {
-    "url": "/0/g/bf3d/",
+    "url": "/game/?bottle-flip-3d",
     "imageSrc": "https://play-lh.googleusercontent.com/sMpJpTPMtTMr9tfusBtbWIz_h2UdX3iwx8Ea4w6vJ-0vyFILvpIMj_JvwVSeS6Xq0bg",
     "name": "Bottle Flip 3D"
   },
   {
-    "url": "tiny-fishing/",
-    "imageSrc": "tiny-fishing/splash.png",
+    "url": "/game/?tiny-fishing",
+    "imageSrc": "/game/img/tiny-fishing.png",
     "name": "Tiny Fishing"
   },
   {
-    "url": "/0/g/whg/",
-    "imageSrc": "./whg/game/whg.png",
+    "url": "/game/?worlds-hardest-game",
+    "imageSrc": "/game/img/whg.png",
     "name": "World's Hardest Game"
   },
   {
-    "url": "/0/g/whg2/",
-    "imageSrc": "./whg2/game/whg2.jpg",
+    "url": "/game/?worlds-hardest-game-2",
+    "imageSrc": "/game/img/whg2.jpg",
     "name": "World's Hardest Game 2"
   },
   {
-    "url": "/0/g/whg3/",
-    "imageSrc": "./whg3/game/whg3.jpg",
+    "url": "/game/?worlds-hardest-game-3",
+    "imageSrc": "/game/img/whg3.jpg",
     "name": "World's Hardest Game 3"
   },
   {
@@ -241,8 +241,8 @@
     "name": "2048"
   },
   {
-    "url": "/0/g/2048-multitask/",
-    "imageSrc": "./2048-multitask/game/splash.png",
+    "url": "/game/?2048-multitask",
+    "imageSrc": "/game/img/2048-multitask.png",
     "name": "2048 Multitask"
   },
   {
