@@ -12,15 +12,11 @@ What versions does nate-games currently require accepting the cookie consent, pr
 | 1.51 or lower | :x: |
 ## Reporting a Vulnerability
 
-Open a issue,
+Opening an issue
 
-How often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Your Github account must be
+- Atleast 2 months old
+- A minimum of 3 stars on one of your repositories.
+- A minimum of 1 follower
 
-## Violated users
-Users that have SEEN the TOS and chose to ignore it.
-
-- @k9rma, k9rma.github.io
-
-Started to replace licensed logos and text with 'k9rma'
+Please stop telling me to put desktop games on my site you get the point! Some games you tell me to put I wish I could, but my repo is limited with space. #68, #64 and #60, these are desktop games not BROWSER games!

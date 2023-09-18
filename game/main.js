@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "worlds-hardest-game": "/0/g/whg/1/",
         "worlds-hardest-game-2": "/0/g/whg/2/",
         "worlds-hardest-game-3": "/0/g/whg/3/",
+        "dumb-ways-to-die": "https://html5.iclouds.io/dumb-ways-die/?ref", // /0/g/dumb-ways/?ref, https://cdn6.aptoide.com/imgs/8/5/d/85d7dca13a04c6d4cb56fb9f2657fcb8_icon.png
+        "geometry-dash": "https://cdn.nate-games.workers.dev/?geometry-dash"
     };
 
     const filePath = pageMappings[queryString];

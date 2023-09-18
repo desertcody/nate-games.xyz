@@ -26,3 +26,5 @@ Website blocked? View [links](https://github.com/nate-games/nate-games.github.io
 - [waflash](https://github.com/nate-games/waflash) flash emulator
 - [ruffle-rs](https://ruffle.rs/) flash emulator
 - [EmulatorJS](https://github.com/EmulatorJS/EmulatorJS)
+
+<a href="https://discord.gg/9mJcqwZ2a5"><img src="https://invidget.switchblade.xyz/9mJcqwZ2a5?theme=dark" alt="Join the Discord"/></a>

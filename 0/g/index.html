@@ -7,13 +7,9 @@
     crossorigin="anonymous"></script>
   <meta name="description" content="🎮 Get ready!" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-  <link rel="stylesheet" href="../assets/css/games.css" />
+  <link rel="icon" type="image/png" href="/0/assets/img/favicon.png" />
+  <link rel="stylesheet" href="/0/assets/css/games.css" />
   <link rel="stylesheet" href="search.css">
-  <script src="search.js"></script>
-  <script src="/0/assets/js/tos.js"></script>
-  <script src="/0/assets/js/nodrag.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
   <link rel="stylesheet" href="/0/assets/css/tos.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -43,11 +39,33 @@
   <div id="content">
     <header class="header">
       <div class="logo">
-        <button class="menu-item" onclick="window.location.href='/'" class="title">
+        <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
+          <img src="/favicon.ico" class="nav-icon">
           <strong>nate-games</strong>
         </button>
       </div>
       <nav class="menu">
+        <div class="dropdown">
+          <button class="menu-item dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <a href="/0/g/#all">ALL | 💯+</a>
+            <a href="/0/g/?clicker">Clicker | <img src="/0/assets/img/tags/pc-mice.svg"
+                style="vertical-align: middle; height: 20px;"></a>
+            <a href="/0/g/?shooting">Shooting | <img src="/0/assets/img/tags/crosshair.svg"
+                style="vertical-align: middle;"></a>
+                <a href="/0/g/?point-and-click">Point & Click | 🖱️</a>
+            <a href="/0/g/?action">Action | 💥</a>
+            <a href="/0/g/?kids">Kids | 🧒</a>
+            <span>Game engines</span>
+            <a href="/0/g/?html5">HTML5 | <img src="/0/assets/img/misc/html5.svg"
+                style="vertical-align: middle; height: 14px;"></a>
+            <a href="/0/g/?unity">Unity | <img src="/0/assets/img/misc/unity.svg"
+                style="vertical-align: middle; height: 14px;"></a>
+            <a href="/0/g/?flash">Flash | <img src="/0/assets/img/misc/adobe-flash.svg"
+                style="vertical-align: middle; height: 14px;"></a>
+          </div>
+        </div>
+
         <button class="menu-item" onclick="window.location.href='/0/g/'">
           Games
         </button>
@@ -57,6 +75,17 @@
         <button class="menu-item" onclick="window.location.href='https://nate-games.github.io/docs/'">
           Documentation
         </button>
+        <div class="dropdown">
+          <button class="menu-item dropbtn">More</button>
+          <div class="dropdown-content" style="right: 0; min-width: 180px;">
+            <a href="https://discord.gg/9mJcqwZ2a5" target="_blank">Join the Discord | 💬</a>
+            <a href="https://contact-us.nate-games.workers.dev" target="_blank">Contact | 📝</a>
+            <a href="https://github.com/nate-games/nate-games.github.io" target="_blank">GitHub | <img
+                src="/0/assets/img/misc/github.svg" style="vertical-align: middle; height: 25px;"></a>
+            <a href="https://github.com/nate-games/nate-games.github.io" target="_blank">Sponsor | <img
+                src="/0/assets/img/misc/sponsor.svg" class="sponsor"></a>
+          </div>
+        </div>
       </nav>
     </header>
     <script>
@@ -64,46 +93,61 @@
         .then(response => response.json())
         .then(data => {
           const gameContainer = document.getElementById('game-container');
+          const urlParams = new URLSearchParams(window.location.search);
 
           data.forEach(game => {
-            const gameCard = document.createElement('div');
-            gameCard.classList.add('game-card');
+            if (urlParams.toString() === '' || window.location.pathname === '/') {
+              createGameCard(game, gameContainer);
+            } else {
+              const tags = game.tags.split(', ');
 
-            gameCard.addEventListener('click', function () {
-              if (game.requiresProxy) {
-                const userResponse = prompt('A Proxy or VPN is required to play this game. Do you have a proxy or VPN enabled? (yes/no)');
+              const matchingTags = tags.filter(tag => urlParams.has(tag.toLowerCase()));
 
-                if (userResponse && userResponse.toLowerCase() === 'yes') {
-                  window.location.href = game.url;
-                } else {
-                  alert('You need a proxy or VPN to play this game. Please enable one and come back.');
-                }
-              } else {
-                window.location.href = game.url;
+              if (matchingTags.length > 0) {
+                createGameCard(game, gameContainer);
               }
-            });
-
-            const imageContainer = document.createElement('div');
-            imageContainer.classList.add('image-container');
-
-            const img = document.createElement('img');
-            img.src = game.imageSrc;
-            img.onerror = function () {
-              this.src = '/static/image-placeholder.svg';
-            };
-
-            const h3 = document.createElement('h3');
-            h3.textContent = game.name;
-
-            imageContainer.appendChild(img);
-            gameCard.appendChild(imageContainer);
-            gameCard.appendChild(h3);
-            gameContainer.appendChild(gameCard);
+            }
           });
         })
         .catch(error => {
           console.error('Error loading JSON data:', error);
         });
+
+      function createGameCard(game, container) {
+        const gameCard = document.createElement('div');
+        gameCard.classList.add('game-card');
+
+        gameCard.addEventListener('click', function () {
+          if (game.requiresProxy) {
+            const userResponse = prompt('A Proxy or VPN is required to play this game. Do you have a proxy or VPN enabled? (yes/no)');
+
+            if (userResponse && userResponse.toLowerCase() === 'yes') {
+              window.location.href = game.url;
+            } else {
+              alert('You need a proxy or VPN to play this game. Please enable one and come back.');
+            }
+          } else {
+            window.location.href = game.url;
+          }
+        });
+
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('image-container');
+
+        const img = document.createElement('img');
+        img.src = game.imageSrc;
+        img.onerror = function () {
+          this.src = '/static/image-placeholder.svg';
+        };
+
+        const h3 = document.createElement('h3');
+        h3.textContent = game.name;
+
+        imageContainer.appendChild(img);
+        gameCard.appendChild(imageContainer);
+        gameCard.appendChild(h3);
+        container.appendChild(gameCard);
+      }
 
 
     </script>
@@ -148,43 +192,11 @@
           Service</a> &bull; <a href="https://github.com/nate-games/nate-games.github.io/wiki">Wikipedia/Docs</a>
       </center>
     </footer>
-    <script>
-      function handleFileChange(event) {
-        var fileInput
-        var fileInput = event.target;
-        var file = fileInput.files[0];
-
-        if (file) {
-          var fileNameElement = document.getElementById('file-name');
-          fileNameElement.textContent = 'Selected File: ' + file.name;
-          fileNameElement.style.display = 'block';
-        }
-      }
-
-      function loadFlash() {
-        var fileInput = document.getElementById('file-input');
-        var file = fileInput.files[0];
-
-        if (file) {
-          var reader = new FileReader();
-          reader.onload = function (event) {
-            var flashContent = event.target.result;
-
-            var container = document.getElementById('flash-container');
-            container.innerHTML = '';
-
-            var embed = document.createElement('embed');
-            embed.src = flashContent;
-            embed.type = 'application/x-shockwave-flash';
-            embed.width = '1200px';
-            embed.height = '625px';
-
-            container.appendChild(embed);
-          };
-          reader.readAsDataURL(file);
-        }
-      }
-    </script>
+    <script src="flash-loader.min.js"></script>
+    <script src="search.js"></script>
+    <script src="/0/assets/js/tos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
 
 </html>

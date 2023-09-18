@@ -1,10 +1,10 @@
 {
-  "name": "static",
-  "version": "unknown",
+  "name": "nate-games",
+  "version": "v1",
   "description": "Your Ultimate Hub for Unblocked HTML5, Flash, WebGL, and More! Immerse yourself in a world of gaming experiences - perfect for students & dedicated gamers!",
   "main": "index.html",
   "scripts": {
-    "start": "serve",
+    "start": "serve -p 8080",
     "build": "echo This is a static webiste"
   },
   "repository": {
@@ -12,9 +12,9 @@
     "url": "git+https://github.com/nate-games/nate-games.github.io.git"
   },
   "keywords": [
-    "static",
-    "template",
-    "codesandbox"
+    "games",
+    "nate-games",
+    "v1"
   ],
   "author": "nate-games",
   "license": "GPL-3.0",

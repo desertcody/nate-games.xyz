@@ -2,358 +2,429 @@
   {
     "url": "/game/?1v1.lol",
     "imageSrc": "./1v1lol/1v1lol.jpg",
-    "name": "1v1.LOL"
+    "name": "1v1.LOL",
+    "tags": "action, shooting, building, unity, multiplayer"
   },
   {
     "url": "/game/?1v1.lol-method-2",
     "imageSrc": "/game/img/1v1lol2.bmp",
-    "name": "1v1.LOL [Method 2]"
+    "name": "1v1.LOL [Method 2]",
+    "tags": "action, shooting, building, unity, multiplayer"
   },
   {
     "url": "/game/?justfall.lol",
     "imageSrc": "./just-fall/unnamed.png",
-    "name": "JustFall.LOL"
+    "name": "JustFall.LOL",
+    "tags": "kids, fun, unity, action, multiplayer"
   },
   {
     "url": "/game/?roblox",
     "imageSrc": "./Roblox/splash.png",
-    "name": "Roblox"
+    "name": "Roblox",
+    "tags": "kids, fun, adventure, multiplayer"
   },
   {
     "url": "/0/g/Roblox-Offline/",
     "imageSrc": "./Roblox-Offline/splash.svg",
-    "name": "Roblox (WebGL)"
+    "name": "Roblox (WebGL)",
+    "tags": "kids, fun, adventure, singleplayer, unity"
   },
   {
     "url": "/game/?cluster-rush",
     "imageSrc": "https://raw.githubusercontent.com/OutRed/outred-assets-cdn.outred.org/main/cluster-rush/splash.png",
-    "name": "Cluster Rush"
+    "name": "Cluster Rush",
+    "tags": "kids, fun, adventure, action, unity, singleplayer"
   },
   {
     "url": "/game/?flash-sonic",
     "imageSrc": "https://e.snmc.io/lk/lv/x/1c866fe5a411e74065b43c3cec795696/10319151",
-    "name": "Flash Sonic"
+    "name": "Flash Sonic",
+    "tags": "kids, fun, flash"
   },
   {
     "url": "/game/?sonic-revert",
     "imageSrc": "https://static.wikia.nocookie.net/fcoc-vs-battles/images/a/aa/Sonic_transparent.png",
-    "name": "Sonic Revert"
+    "name": "Sonic Revert",
+    "tags": "kids, fun, unity"
   },
   {
     "url": "https://play.geforcenow.com/",
     "imageSrc": "./Fortnite/splash.png",
     "name": "Fortnite",
+    "tags": "action, shooting, building, multiplayer",
     "requiresProxy": true
   },
   {
     "url": "/game/?subway-surfers",
     "imageSrc": "./subway-surfers/unnamed.jpg",
-    "name": "Subway Surfers"
+    "name": "Subway Surfers",
+    "tags": "kids, fun, action, singleplayer, unity"
   },
   {
     "url": "/game/?game-inside-a-game",
     "imageSrc": "https://img.itch.zone/aW1nLzQ1OTUwODcucG5n/original/Xdhfjt.png",
-    "name": "Game inside a Game"
+    "name": "Game inside a Game",
+    "tags": "kids, fun, unity, action, singleplayer"
   },
   {
     "url": "/game/?tanuki-sunset",
     "imageSrc": "tanuki-sunset/tanuki-sunset.png",
-    "name": "Tanuki Sunset"
+    "name": "Tanuki Sunset",
+    "tags": "kids, fun, action, singleplayer, unity, adventure"
   },
   {
     "url": "/game/?bottle-flip-3d",
     "imageSrc": "https://play-lh.googleusercontent.com/sMpJpTPMtTMr9tfusBtbWIz_h2UdX3iwx8Ea4w6vJ-0vyFILvpIMj_JvwVSeS6Xq0bg",
-    "name": "Bottle Flip 3D"
+    "name": "Bottle Flip 3D",
+    "tags": "unity, fun, kids, adventure, action"
   },
   {
     "url": "/game/?tiny-fishing",
     "imageSrc": "/game/img/tiny-fishing.png",
-    "name": "Tiny Fishing"
+    "name": "Tiny Fishing",
+    "tags": "html5, kids, fun, adventure, fishing"
   },
   {
     "url": "/game/?worlds-hardest-game",
     "imageSrc": "/game/img/whg.png",
-    "name": "World's Hardest Game"
+    "name": "World's Hardest Game",
+    "tags": "fun, kids, flash, adventure"
   },
   {
     "url": "/game/?worlds-hardest-game-2",
     "imageSrc": "/game/img/whg2.jpg",
-    "name": "World's Hardest Game 2"
+    "name": "World's Hardest Game 2",
+    "tags": "fun, kids, flash, adventure"
   },
   {
     "url": "/game/?worlds-hardest-game-3",
     "imageSrc": "/game/img/whg3.jpg",
-    "name": "World's Hardest Game 3"
+    "name": "World's Hardest Game 3",
+    "tags": "fun, kids, flash, adventure"
   },
   {
     "url": "/0/g/slope/",
     "imageSrc": "./slope/game/splash.jpg",
-    "name": "Slope"
+    "name": "Slope",
+    "tags": "unity, fun, kids, adventure, action"
   },
   {
     "url": "/0/g/slope-2/",
     "imageSrc": "./slope-2/game/splash.png",
-    "name": "Slope 2"
+    "name": "Slope 2",
+    "tags": "unity, fun, kids, adventure, action"
   },
   {
     "url": "/0/g/slope-3/",
     "imageSrc": "./slope-3/game/wmnjoql2.bmp",
-    "name": "Slope 3"
+    "name": "Slope 3",
+    "tags": "unity, fun, kids, adventure, action"
   },
   {
     "url": "/0/g/tunnel-rush/",
     "imageSrc": "./tunnel-rush/game/splash.jpg",
-    "name": "Tunnel Rush"
+    "name": "Tunnel Rush",
+    "tags": "null"
   },
   {
     "url": "tunnel-rush2/",
     "imageSrc": "tunnel-rush2/splash.webp",
-    "name": "Tunnel Rush 2"
+    "name": "Tunnel Rush 2",
+    "tags": "null"
   },
   {
     "url": "/0/g/HexGL/",
     "imageSrc": "./HexGL/game/icon_256.png",
-    "name": "HexGL"
+    "name": "HexGL",
+    "tags": "null"
   },
   {
     "url": "/0/g/Hextris/",
     "imageSrc": "./Hextris/game/images/icons/transparent-192.png",
-    "name": "Hextris"
+    "name": "Hextris",
+    "tags": "null"
   },
   {
     "url": "/0/g/tetris/",
     "imageSrc": "https://play-lh.googleusercontent.com/za2Nu_qjMw5GzWfbzet4zeiZT1xvJlTRi4NJzGpJWX9grxFAAko5dGBwe7qeqK01THw",
-    "name": "Tetris"
+    "name": "Tetris",
+    "tags": "null"
   },
   {
     "url": "/0/g/paperio2/",
     "imageSrc": "./paperio2/game/splash.avif",
-    "name": "Paper.io 2"
+    "name": "Paper.io 2",
+    "tags": "null"
   },
   {
     "url": "/0/g/paperio3d/",
     "imageSrc": "./paperio3d/game/splash.jpg",
-    "name": "Paper.io 3d"
+    "name": "Paper.io 3d",
+    "tags": "null"
   },
   {
     "url": "/0/g/flappybird/",
     "imageSrc": "./flappybird/game/splash.png",
-    "name": "Flappy Bird"
+    "name": "Flappy Bird",
+    "tags": "null"
   },
   {
     "url": "/0/g/AngryBirds/",
     "imageSrc": "./AngryBirds/game/AngryBirdsFavIcon_512x512.png",
-    "name": "Angry Birds"
+    "name": "Angry Birds",
+    "tags": "null"
   },
   {
     "url": "/0/g/AngryBirdsRadox/",
     "imageSrc": "./AngryBirdsRadox/game/splash.png",
-    "name": "Angry Birds Radox"
+    "name": "Angry Birds Radox",
+    "tags": "null"
   },
   {
     "url": "./AngryBirdsWebGL/",
     "imageSrc": "https://static.wikia.nocookie.net/angrybirds/images/b/bd/AB_Reloaded_Icon.png",
-    "name": "Angry Birds (WebGL)"
+    "name": "Angry Birds (WebGL)",
+    "tags": "null"
   },
   {
     "url": "./CrossyRoad/",
     "imageSrc": "https://play-lh.googleusercontent.com/2yH_JCxn7D9FttXZViPhmvIEDfRhio5qdLdWJLxcIfh8PjIkVeBgt_Gj7q21dIRp97g",
-    "name": "Crossy Road"
+    "name": "Crossy Road",
+    "tags": "null"
   },
   {
     "url": "./CrossyRoad-space/",
     "imageSrc": "CrossyRoad-space/splash.jpg",
-    "name": "Crossy Road Space"
+    "name": "Crossy Road Space",
+    "tags": "null"
   },
   {
     "url": "CrossyRoad-remake/",
     "imageSrc": "CrossyRoad-remake/splash.jpg",
-    "name": "Crossy Road (Remake)"
+    "name": "Crossy Road (Remake)",
+    "tags": "null"
   },
   {
     "url": "/0/g/minecraft-webgl/",
     "imageSrc": "./minecraft-webgl/game/splash.png",
-    "name": "Minecraft (WebGL)"
+    "name": "Minecraft (WebGL)",
+    "tags": "null"
   },
   {
     "url": "/0/g/minecraft/",
     "imageSrc": "https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP",
-    "name": "Minecraft"
+    "name": "Minecraft",
+    "tags": "null"
   },
   {
     "url": "/0/g/PrecisionClient/",
     "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/e73fb5c62b95d5fd90e4d21c4e90b805f5037ed6/PrecisionClient/game/splash.jpg",
-    "name": "Precision Client (MC)"
+    "name": "Precision Client (MC)",
+    "tags": "null"
   },
   {
     "url": "eaglercraft/",
     "imageSrc": "eaglercraft/splash.jpg",
-    "name": "Eaglercraft (MC)"
+    "name": "Eaglercraft (MC)",
+    "tags": "null"
   },
   {
     "url": "./Paper Minecraft/",
     "imageSrc": "./Paper Minecraft/game/y9m3lgup.bmp",
-    "name": "Paper Minecraft"
+    "name": "Paper Minecraft",
+    "tags": "null"
   },
   {
     "url": "/0/g/minecraft-classic/",
     "imageSrc": "./minecraft-classic/game/splash.jpg",
-    "name": "Minecraft Classic"
+    "name": "Minecraft Classic",
+    "tags": "null"
   },
   {
     "url": "/0/g/mchacks/",
     "imageSrc": "./mchacks/game/bg_main.png",
-    "name": "MC Classic (HACKS)"
+    "name": "MC Classic (HACKS)",
+    "tags": "null"
   },
   {
     "url": "motox3m/",
     "imageSrc": "motox3m/splash.jpg",
-    "name": "Moto X3M"
+    "name": "Moto X3M",
+    "tags": "null"
   },
   {
     "url": "/game/?papas-doggeria",
     "imageSrc": "papas-doggeria/image.png",
-    "name": "Papa's Hot Doggeria"
+    "name": "Papa's Hot Doggeria",
+    "tags": "null"
   },
   {
     "url": "/game/?papas-burgeria",
     "imageSrc": "https://play-lh.googleusercontent.com/rHJuY78XSJrhbaW39aYNhViggnzCgR5Zu-xfIx7Sga0Y3Tv3iIuGIIgvEMqfI5Kn",
-    "name": "Papa's Burgeria"
+    "name": "Papa's Burgeria",
+    "tags": "null"
   },
   {
     "url": "/game/?papas-scooperia",
     "imageSrc": "https://m.media-amazon.com/images/I/81BoBmWngJL.png",
-    "name": "Papa's Scooperia"
+    "name": "Papa's Scooperia",
+    "tags": "null"
   },
   {
     "url": "/game/?papas-pancakeria",
     "imageSrc": "papas-pancakeria/unnamed.png",
-    "name": "Papa's Pancakeria"
+    "name": "Papa's Pancakeria",
+    "tags": "null"
   },
   {
     "url": "/0/g/couch2048/",
     "imageSrc": "./couch2048/game/splash.jpg",
-    "name": "Couch 2048 (Physics)"
+    "name": "Couch 2048 (Physics)",
+    "tags": "null"
   },
   {
     "url": "/game/?2048",
     "imageSrc": "./2048/2048.png",
-    "name": "2048"
+    "name": "2048",
+    "tags": "null"
   },
   {
     "url": "/game/?2048-multitask",
     "imageSrc": "/game/img/2048-multitask.png",
-    "name": "2048 Multitask"
+    "name": "2048 Multitask",
+    "tags": "null"
   },
   {
     "url": "/game/?1",
     "imageSrc": "./1/meta/apple-touch-icon.png",
-    "name": "1"
+    "name": "1",
+    "tags": "null"
   },
   {
     "url": "lazyjump3d/",
     "imageSrc": "lazyjump3d/g8qyfh6l.bmp",
-    "name": "Lazy Jump 3D"
+    "name": "Lazy Jump 3D",
+    "tags": "null"
   },
   {
     "url": "adcap/",
     "imageSrc": "adcap/upscaled.jpg",
-    "name": "AdVenture Capitalist"
+    "name": "AdVenture Capitalist",
+    "tags": "null"
   },
   {
     "url": "./fnf/",
     "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnf/game/fnf.avif",
-    "name": "Friday Night Funkin'"
+    "name": "Friday Night Funkin'",
+    "tags": "null"
   },
   {
     "url": "./fnfmobile/",
     "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnfmobile/game/splash.jpg",
-    "name": "FNF Mobile 📲"
+    "name": "FNF Mobile 📲",
+    "tags": "null"
   },
   {
     "url": "./fnfneo/",
     "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnfneo/game/splash.png",
-    "name": "FNF Neo"
+    "name": "FNF Neo",
+    "tags": "null"
   },
   {
     "url": "fnfvsimposter/",
     "imageSrc": "fnfvsimposter/unnamed.jpg",
-    "name": "FNF vs Imposter"
+    "name": "FNF vs Imposter",
+    "tags": "null"
   },
   {
     "url": "./fnfmidfight/",
     "imageSrc": "fnfmidfight/splash.jpg",
-    "name": "FNF Mid-Fight Masses"
+    "name": "FNF Mid-Fight Masses",
+    "tags": "null"
   },
   {
     "url": "./fnaf/",
     "imageSrc": "./fnaf/game/splash.jpg",
-    "name": "FNAF"
+    "name": "FNAF",
+    "tags": "null"
   },
   {
     "url": "./fnaf-webgl/",
     "imageSrc": "./fnaf-webgl/game/splash.jpg",
-    "name": "FNAF (WebGL)"
+    "name": "FNAF (WebGL)",
+    "tags": "null"
   },
   {
     "url": "./fnaf-2/",
     "imageSrc": "./fnaf-2/game/splash.webp",
-    "name": "FNAF 2"
+    "name": "FNAF 2",
+    "tags": "null"
   },
   {
     "url": "./fnaf-2hacks/",
     "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnaf-2hacks/game/splash.png",
-    "name": "FNAF 2 (HACKS)"
+    "name": "FNAF 2 (HACKS)",
+    "tags": "null"
   },
   {
     "url": "./fnaf-3/",
     "imageSrc": "./fnaf-3/game/splash.webp",
-    "name": "FNAF 3"
+    "name": "FNAF 3",
+    "tags": "null"
   },
   {
     "url": "./fnaf-3scratch/",
     "imageSrc": "./fnaf-3scratch/game/splash.jpg",
-    "name": "FNAF 3 (Scratch)"
+    "name": "FNAF 3 (Scratch)",
+    "tags": "null"
   },
   {
     "url": "./fnaf-4/",
     "imageSrc": "./fnaf-4/game/splash.webp",
-    "name": "FNAF 4"
+    "name": "FNAF 4",
+    "tags": "null"
   },
   {
     "url": "https://drive.google.com/file/d/1fe7lRYUed41rEim3aB_ml528_IwG11Pc/view",
     "imageSrc": "https://play-lh.googleusercontent.com/u9wx5aNNV6Yn4sJpi7uPBiElRnfAp1zUrn8Xqb4Dx_WBoOPHlB6G6gaYLI-mEXyABPnz",
-    "name": "FNAF: Sister Location"
+    "name": "FNAF: Sister Location",
+    "tags": "null"
   },
   {
     "url": "./fnaf-5/",
     "imageSrc": "fnaf-5/splash.jpeg",
-    "name": "FNAF 5 Scratch"
+    "name": "FNAF 5 Scratch",
+    "tags": "null"
   },
   {
     "url": "./fnaf-fp/",
     "imageSrc": "fnaf-fp/splash.jpg",
-    "name": "FNAF Final Purgatory"
+    "name": "FNAF Final Purgatory",
+    "tags": "null"
   },
   {
     "url": "./fnafweb/",
     "imageSrc": "./fnafweb/game/pj0cyls4.bmp",
-    "name": "FNAF Web"
+    "name": "FNAF Web",
+    "tags": "null"
   },
   {
     "url": "./cookieclicker/",
     "imageSrc": "./cookieclicker/game/splash.png",
-    "name": "Cookie Clicker"
+    "name": "Cookie Clicker",
+    "tags": "kids, fun, clicker"
   },
   {
     "url": "./particleclicker/",
     "imageSrc": "./particleclicker/game/splash.png",
-    "name": "Particle Clicker"
+    "name": "Particle Clicker",
+    "tags": "kids, fun, clicker"
   },
   {
     "url": "/game/?doge-miner",
     "imageSrc": "./doge-miner/ymzwlane.bmp",
-    "name": "Doge Miner"
+    "name": "Doge Miner",
+    "tags": "kids, fun, clicker"
   },
   {
     "url": "./fruitninja/",
@@ -391,6 +462,11 @@
     "name": "Poor Eddie"
   },
   {
+    "url": "/game/?dumb-ways-to-die",
+    "imageSrc": "https://play-lh.googleusercontent.com/jrRzz98Tb0JK1XuO0Yw01Ep1zVQDM14IDl4fq21nMpmt7yAXfXwSF0xlc60Hv_FUAx79",
+    "name": "Dumb ways to Die"
+  },
+  {
     "url": "./uno/",
     "imageSrc": "uno/splash.jpg",
     "name": "UNO! Online"
@@ -423,72 +499,86 @@
   {
     "url": "/game/?repuls.io",
     "imageSrc": "./repuls/repuls-io.jpg",
-    "name": "Repuls.io"
+    "name": "Repuls.io",
+    "tags": "action, shooting, multiplayer, unity"
   },
   {
     "url": "./madgunz/",
     "imageSrc": "https://webglmath.github.io/mad-gunz/logo.png",
-    "name": "Mad Gunz"
+    "name": "Mad Gunz",
+    "tags": "battle-royale, adventure, pixel, minecraft, shooting, action, intense"
   },
   {
     "url": "./valorant/",
     "imageSrc": "./valorant/splash.webp",
-    "name": "Valorant"
+    "name": "Valorant",
+    "tags": "br, fun, intense, action, shooting, powers, intense"
   },
   {
     "url": "./doodle-jump/",
     "imageSrc": "./doodle-jump/game/doodle.png",
-    "name": "Doodle Jump"
+    "name": "Doodle Jump",
+    "tags": "fun, kids, doodle, scribble, drawing, action, adventure, intense"
   },
   {
     "url": "./elasticman/",
     "imageSrc": "./elasticman/game/elastic-face.jpg",
-    "name": "Elastic Man"
+    "name": "Elastic Man",
+    "tags": "fun, kids, rick-and-morty, funny, point-and-click, html5"
   },
   {
     "url": "/game/?electricman",
     "imageSrc": "/game/img/electricman.png",
-    "name": "Electric Man 2 HS"
+    "name": "Electric Man 2 HS",
+    "tags": "flash, electricman, electric-man, intense, singleplayer"
   },
   {
     "url": "pvz/",
     "imageSrc": "https://static.wikia.nocookie.net/plantsvszombies/images/2/29/IPodTouchicon4.png",
-    "name": "Plants vs. Zombies"
+    "name": "Plants vs. Zombies",
+    "tags": "flash, original, fun, intense, tower-defense"
   },
   {
     "url": "pvz-html/",
     "imageSrc": "https://static.wikia.nocookie.net/plantsvszombies/images/f/ff/Plantsvs.ZombiesFREEicon.png",
-    "name": "Plants vs. Zombies [HTML]"
+    "name": "Plants vs. Zombies [HTML]",
+    "tags": "html5, fun, intense, tower-defense, remake"
   },
   {
     "url": "/game/?pvz-ds",
     "imageSrc": "/game/img/pvz-ds.webp",
-    "name": "Plants vs. Zombies [Nintendo DS]"
+    "name": "Plants vs. Zombies [Nintendo DS]",
+    "tags": "nintendo-ds, intense, fun, tower-defense, original"
   },
   {
     "url": "./BloonsTD/",
     "imageSrc": "./BloonsTD/game/splash.webp",
-    "name": "BTD"
+    "name": "BTD",
+    "tags": "flash, tower-defense, ninjakiwi"
   },
   {
     "url": "./BloonsTD2/",
     "imageSrc": "./BloonsTD2/game/splash.webp",
-    "name": "BTD 2"
+    "name": "BTD 2",
+    "tags": "flash, tower-defense, ninjakiwi"
   },
   {
     "url": "./BloonsTD3/",
     "imageSrc": "./BloonsTD3/game/splash.webp",
-    "name": "BTD 3"
+    "name": "BTD 3",
+    "tags":"flash, tower-defense, ninjakiwi, btd, bloons"
   },
   {
     "url": "./BloonsTD4/",
     "imageSrc": "./BloonsTD4/game/splash.jpg",
-    "name": "BTD 4"
+    "name": "BTD 4",
+    "tags": "flash, tower-defense, ninjakiwi, btd, bloons"
   },
   {
     "url": "./BloonsTD5/",
     "imageSrc": "./BloonsTD5/game/splash.webp",
-    "name": "BTD 5"
+    "name": "BTD 5",
+    "tags": "flash, tower-defense, ninjakiwi, btd, bloons"
   },
   {
     "url": "./thumb-fighter/",
@@ -586,8 +676,8 @@
     "name": "Undertale"
   },
   {
-    "url": "/0/g/geodash/",
-    "imageSrc": "./geodash/game/splash.png",
+    "url": "/game/?geometry-dash",
+    "imageSrc": "/game/img/geometrydash.svg",
     "name": "Geometry Dash"
   },
   {
@@ -903,41 +993,49 @@
   {
     "name": "Henry Stickmin",
     "imageSrc": "/0/g/hs/splash.bmp",
-    "url": "/0/g/hs/"
+    "url": "/0/g/hs/",
+    "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin 2",
     "imageSrc": "/0/g/hs2/splash.bmp",
-    "url": "/0/g/hs2/"
+    "url": "/0/g/hs2/",
+    "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin 3",
     "imageSrc": "/0/g/hs3/splash.bmp",
-    "url": "/0/g/hs3/"
+    "url": "/0/g/hs3/",
+    "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin 4",
     "imageSrc": "/0/g/hs4/splash.bmp",
-    "url": "/0/g/hs4/"
+    "url": "/0/g/hs4/",
+    "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin 5",
     "imageSrc": "/0/g/hs5/splash.bmp",
-    "url": "/0/g/hs5/"
+    "url": "/0/g/hs5/",
+    "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Awesome Tanks",
     "imageSrc": "/0/g/awesometanks/game/game.png",
-    "url": "/0/g/awesometanks/"
+    "url": "/0/g/awesometanks/",
+    "tags": "kids, fun, adventure, action, shooting, tanks"
   },
   {
     "name": "Awesome Tanks 2",
     "imageSrc": "/0/g/awesometanks-2/game/game.png",
-    "url": "/0/g/awesometanks-2/"
+    "url": "/0/g/awesometanks-2/",
+    "tags": "kids, fun, adventure, action, shooting, tanks"
   },
   {
     "name": "Wings.io",
     "imageSrc": "/0/g/wings.io/wings-io.png",
-    "url": "/game/?wings.io"
+    "url": "/game/?wings.io",
+    "tags": "kids, fun, adventure, action, html5, multiplayer"
   }
 ]
