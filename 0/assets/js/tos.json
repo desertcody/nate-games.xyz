@@ -1,0 +1,14 @@
+{
+  "title": "Terms of Service",
+  "sections": [
+    {
+      "title": "Cookie Consent",
+      "content": "We rely on cookies to save game data. Disabling cookies will prevent our site from saving your game progress, passwords, high scores, etc. Cookies do not contain any of your personal information.<br><br>"
+    },
+    {
+      "title": "Copyright Procedure",
+      "content": "Don't copy our games; this can violate the Digital Millennium Copyright Act (DMCA), which is a copyright law. It's illegal; don't risk it. <a href='https://www.copyright.gov/dmca/' target='_blank' style='text-decoration: none; color: rgba(255, 255, 255, 0.5);'>Read more...</a>"
+    }
+  ],
+  "acceptanceQuestion": "Do you accept?"
+}

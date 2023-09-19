@@ -17,22 +17,15 @@
 <body onload="checkTOS()">
   <div id="tos-overlay">
     <div id="tos-box">
-      <h2>Terms of Service</h2>
+      <h2 id="tos-title">Terms of Service</h2>
       <br>
-      <p>Cookie consent: <br><br> We rely on cookies to save
-        game data. Disabling cookies will prevent our site from saving your game progress, passwords, high
-        scores, etc, cookies do not contain any of your personal information.
-        <br><br><br> Copyright Procedure: <br><br> Don't copy our games this can prevent Digital Millennium Copyright
-        Act (DMCA) it's a copyright law. If you don't know what that means:
-        it's illegal, don't risk it. <a href="https://www.copyright.gov/dmca/" target="_blank"
-          style="text-decoration: none; color: rgba(255, 255, 255, 0.5);">Read more...</a> <br><br> <a
-          style="color: red;">*</a> Do you accept?
-      </p>
+      <div id="tos-content">
+      </div>
       <p><a style="text-decoration: none;" href="javascript:void(0);"
           onclick="window.location.href='/0/privacy-policy.html'">Privacy Policy</a> &bull; <a
           href="javascript:void(0);"
-          onclick="window.open('https://github.com/nate-games/nate-games.github.io/releases/tag/v1.52', '_blank'); return false;"
-          style="text-decoration: none;" target="_blank"></a></p>
+          onclick="window.open('https://github.com/nate-games/nate-games.github.io/releases/latest', '_blank'); return false;"
+          style="text-decoration: none;" target="_blank">Latest</a></p>
       <button onclick="acceptTOS()" class="bn5" style="margin-top: 25px;">I Accept</button>
     </div>
   </div>
@@ -53,16 +46,20 @@
                 style="vertical-align: middle; height: 20px;"></a>
             <a href="/0/g/?shooting">Shooting | <img src="/0/assets/img/tags/crosshair.svg"
                 style="vertical-align: middle;"></a>
-                <a href="/0/g/?point-and-click">Point & Click | 🖱️</a>
+            <a href="/0/g/?point-and-click">Point & Click | 🖱️</a>
             <a href="/0/g/?action">Action | 💥</a>
-            <a href="/0/g/?kids">Kids | 🧒</a>
-            <span>Game engines</span>
+            <a href="/0/g/?kids">Kids | 👨🏿‍🌾</a>
+            <span style="border-top: 2px solid #222; border-bottom: 2px solid #222; border-radius: 0;"><b>Game
+                engines</b></span>
             <a href="/0/g/?html5">HTML5 | <img src="/0/assets/img/misc/html5.svg"
                 style="vertical-align: middle; height: 14px;"></a>
             <a href="/0/g/?unity">Unity | <img src="/0/assets/img/misc/unity.svg"
                 style="vertical-align: middle; height: 14px;"></a>
             <a href="/0/g/?flash">Flash | <img src="/0/assets/img/misc/adobe-flash.svg"
                 style="vertical-align: middle; height: 14px;"></a>
+            <a href="/0/g/?scratch">Scratch | <img src="/0/assets/img/misc/scratch.svg"
+                style="vertical-align: middle; height: 14px;"></a>
+            <!-- https://upload.wikimedia.org/wikipedia/commons/b/b1/Scratch_S.svg !-->
           </div>
         </div>
 
