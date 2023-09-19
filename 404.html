@@ -53,10 +53,19 @@
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 8px;
     }
+
+    iframe {
+        border: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9999;
+        position: absolute;
+      }
   </style>
 </head>
 
 <body>
+  <iframe src="" frameborder="0" id="game-id"></iframe>
   <header class="header">
     <div class="logo">
       <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
@@ -131,6 +140,7 @@
       document.getElementById('path').textContent = path;
     });
   </script>
+  <script src="/game/404.js"></script>
 </body>
 
 </html>

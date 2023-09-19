@@ -206,7 +206,7 @@ h1 {
 
 .dropdown:hover .dropdown-content {
     visibility: visible;
-    animation: dropdown-menu 0.2s ease-in-out forwards; /* fowards value needed to stop if from disapearing instantly */
+    animation: dropdown-menu 0.4s forwards; /* fowards value needed to stop if from disapearing instantly */
 }
 
 @keyframes dropdown-menu {
@@ -214,7 +214,7 @@ h1 {
         max-height: 0;
     }
     to {
-        max-height: 500px;
+        max-height: 100vh;
     }
 }
 
