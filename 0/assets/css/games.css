@@ -179,14 +179,17 @@ h1 {
 }
 
 .dropdown-content {
-    display: none;
+    visibility: hidden;
     position: absolute;
+    max-height: 0;
+    overflow: hidden;
     background-color: #111;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
     z-index: 1;
     border-radius: 8px;
     user-select: none;
+    transition: max-height 0.9s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .dropdown-content a {
@@ -202,7 +205,17 @@ h1 {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    visibility: visible;
+    animation: dropdown-menu 0.2s ease-in-out forwards; /* fowards value needed to stop if from disapearing instantly */
+}
+
+@keyframes dropdown-menu {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 500px;
+    }
 }
 
 .dropdown-content span {

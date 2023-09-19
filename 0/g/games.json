@@ -103,32 +103,32 @@
     "tags": "kids, flash"
   },
   {
-    "url": "/0/g/slope/",
-    "imageSrc": "./slope/game/splash.jpg",
+    "url": "/game/?slope-game",
+    "imageSrc": "/game/img/slope.jpg",
     "name": "Slope",
     "tags": "unity, kids, action"
   },
   {
-    "url": "/0/g/slope-2/",
-    "imageSrc": "./slope-2/game/splash.png",
+    "url": "/game/?slope-2",
+    "imageSrc": "/game/img/slope2.png",
     "name": "Slope 2",
     "tags": "unity, kids, action"
   },
   {
-    "url": "/0/g/slope-3/",
-    "imageSrc": "./slope-3/game/wmnjoql2.bmp",
+    "url": "/game/?slope-3",
+    "imageSrc": "/game/img/slope3.bmp",
     "name": "Slope 3",
     "tags": "unity, kids, action"
   },
   {
-    "url": "/0/g/tunnel-rush/",
-    "imageSrc": "./tunnel-rush/game/splash.jpg",
+    "url": "/game/?tunnelrush",
+    "imageSrc": "/game/img/tunnelrush.jpg",
     "name": "Tunnel Rush",
     "tags": "unity, kids, action"
   },
   {
-    "url": "tunnel-rush2/",
-    "imageSrc": "tunnel-rush2/splash.webp",
+    "url": "/game/?tunnelrush-2",
+    "imageSrc": "/game/img/tunnelrush2.webp",
     "name": "Tunnel Rush 2",
     "tags": "html5, kids, action"
   },

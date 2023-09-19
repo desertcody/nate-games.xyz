@@ -34,7 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "worlds-hardest-game-2": "/0/g/whg/2/",
         "worlds-hardest-game-3": "/0/g/whg/3/",
         "dumb-ways-to-die": "https://html5.iclouds.io/dumb-ways-die/?ref", // /0/g/dumb-ways/?ref, https://cdn6.aptoide.com/imgs/8/5/d/85d7dca13a04c6d4cb56fb9f2657fcb8_icon.png
-        "geometry-dash": "https://cdn.nate-games.workers.dev/?geometry-dash"
+        "geometry-dash": "https://cdn.nate-games.workers.dev/?geometry-dash",
+        "slope-game": "/0/g/slope/",
+        "slope-2": "/0/g/slope-2/",
+        "slope-3": "https://c598907c-5367-42e4-96e5-eda20e01cd6e.id.repl.co",
+        "tunnelrush-2": "https://eng-docs-opensocial.googleusercontent.com/gadgets/ifr?url=https://749201648-319375013826385014.preview.editmysite.com/uploads/b/139890129-296476716652996764/files/tr.xml",
+        "tunnelrush": "/0/g/tunnel-rush/"
     };
 
     const filePath = pageMappings[queryString];
