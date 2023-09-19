@@ -15,8 +15,9 @@ What versions does nate-games currently require accepting the cookie consent, pr
 Opening an issue
 
 Your Github account must be
-- Atleast 2 months old
-- A minimum of 3 stars on one of your repositories.
-- A minimum of 1 follower
+- Atleast 2 weeks old
+- Has a profile picture
+- Has this repository starred
+
 
 Please stop telling me to put desktop games on my site you get the point! Some games you tell me to put I wish I could, but my repo is limited with space. #68, #64 and #60, these are desktop games not BROWSER games!
