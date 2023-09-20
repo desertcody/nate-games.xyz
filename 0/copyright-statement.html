@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copyright Statement</title>
+</head>
+
+<body>
+    <header>
+        <h1>Copyright Statement</h1>
+        <p>Last Updated: 9/19/2023</p>
+    </header>
+
+    <section>
+        <!--<h2></h2>!-->
+        <p>
+            1. <strong>Statement</strong>: The software is provided "as is," without any warranty of any kind, whether express or implied. <br> This includes, but is not limited to, the warranties of merchantability, fitness for a particular purpose, <br>and noninfringement. In no event shall the authors or copyright holders be liable for any claims, damages, <br>
+             or other liabilities, whether in an action of contract, tort, or otherwise. This liability arises from, out of,<br> or in connection with the software or its use, or any other dealings with the software.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023-2024 nate-games</p>
+    </footer>
+
+    <strong>
+        <p id="displayIP"></p>
+    </strong>
+    <a id="fetchIP" style="display: block; cursor: pointer;">Click to reveal your IP Address</a>
+
+    <script>
+        function fetchText() {
+            document.getElementById('fetchIP').style.display = 'none';
+
+            fetch('https://ip.nate-games.workers.dev/')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('displayIP').textContent = data;
+                })
+                .catch(error => {
+                    console.error('Error fetching text:', error);
+                });
+        }
+
+        document.getElementById('fetchIP').addEventListener('click', fetchText);
+    </script>
+
+
+</body>
