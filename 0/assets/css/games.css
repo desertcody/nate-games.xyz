@@ -154,23 +154,44 @@ h1 {
     transition: background-color 0.2s;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
 .back:hover {
     background-color: #000;
     color: #fff;
 }
 
 .hg2793-container {
-    visibility: hidden; /* temp */
+    width: 100%;
+    padding: 50px 0 0;
+    position: absolute;
+    text-align: center;
     user-select: none;
     display: inline-block;
-    text-align: center;
-    transition: .2s;
-    margin: 40px 40px 0;
-    width: 400px;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;
 }
+
+.hg2793-container .nice-border {
+    margin: 0;
+    overflow: hidden;
+    display: none;
+    background-color: #111;
+    border-radius: 16px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+    padding: 25px 50px 25px;
+}
+
+@-moz-document url-prefix() {
+    .hg2793-container .nice-border {
+      justify-content: center;
+      text-align: center;
+      margin: 0 auto;
+      overflow: hidden;
+      display: inline-block;
+      background-color: #111;
+      border-radius: 16px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+      padding: 25px 50px 25px;
+    }
+  }
 
 .dropdown {
     position: relative;
@@ -206,13 +227,15 @@ h1 {
 
 .dropdown:hover .dropdown-content {
     visibility: visible;
-    animation: dropdown-menu 0.4s forwards; /* fowards value needed to stop if from disapearing instantly */
+    animation: dropdown-menu 0.4s forwards;
+    /* fowards value needed to stop if from disapearing instantly */
 }
 
 @keyframes dropdown-menu {
     from {
         max-height: 0;
     }
+
     to {
         max-height: 100vh;
     }
@@ -243,15 +266,15 @@ h1 {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-  }
-  
-  .btn-41 {
+}
+
+.btn-41 {
     border-radius: 8px !important;
     z-index: 1;
     color: white;
-  }
-  
-  .btn-41:after {
+}
+
+.btn-41:after {
     position: absolute;
     content: "";
     width: 0;
@@ -262,11 +285,11 @@ h1 {
     z-index: -1;
     background: black;
     transition: all 0.3s ease;
-  }
-  
-  .btn-41:hover:after {
+}
+
+.btn-41:hover:after {
     border-radius: 8px !important;
     left: auto;
     right: 0;
     width: 100%;
-  }
+}

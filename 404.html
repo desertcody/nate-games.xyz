@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="/0/assets/css/games.css">
   <link rel="icon" type="image/png" href="/favicon.ico">
   <title>404 | Page not found</title>
@@ -39,6 +41,27 @@
       background-color: #bbb;
     }
 
+    .sfn {
+      display: inline-block;
+      padding: 7px 13px;
+      font-size: 11px;
+      background-color: #33b056;
+      color: #333;
+      text-decoration: none;
+      border-radius: 9px;
+      transition: background-color 0.3s;
+    }
+
+    .sfn:hover {
+      background-color: #31a250;
+    }
+
+    #sfn {
+      display: none;
+      font-size: 11px;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+
     .container2 {
       font-family: Arial, sans-serif;
       display: flex;
@@ -55,12 +78,13 @@
     }
 
     iframe {
-        border: 0;
-        height: 100%;
-        width: 100%;
-        z-index: 9999;
-        position: absolute;
-      }
+      border: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 9999;
+      position: absolute;
+      background-color: white;
+    }
   </style>
 </head>
 
@@ -126,7 +150,52 @@
       <h2>404 | Page not found.</h2>
       <p>Sorry, The URL <span id="path"></span> was <br> not found on this server or you don't have access.</p>
       <a class="buttons" href="/">Home</a>
-      <a class="buttons" href="/0/g/">Games</a>
+      <a class="buttons" href="/0/g/">Games</a><br><br>
+      <a class="sfn" onclick="statsForNerds()">Stats for nerds <span class="material-symbols-outlined"
+          style="vertical-align: middle; font-size: 20px;">
+          bug_report
+        </span></a>
+
+      <div id="sfn" class="message">
+        <br>
+        <b>Screen height:</b> <span id="height">Fetching...</span><br />
+        <b>Screen width:</b> <span id="width">Fetching...</span><br />
+        <b>Window height:</b> <span id="winheight">Fetching...</span><br />
+        <b>Window width:</b> <span id="winwidth">Fetching...</span><br />
+        <b>Cookies Enabled:</b> <span id="cookie">Fetching...</span><br />
+        <b>User's IP:</b> <span id="displayIP">Fetching...</span><br />
+      </div>
+
+      <script>
+        // Credits 3kh0, some changes were made
+        function statsForNerds() {
+          var x = document.getElementById("sfn");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        document.getElementById("height").innerHTML = screen.height + "px";
+        document.getElementById("width").innerHTML = screen.width + "px";
+        document.getElementById("winheight").innerHTML =
+          window.innerHeight + "px";
+        document.getElementById("winwidth").innerHTML = window.innerWidth + "px";
+        document.getElementById("cookie").innerText = navigator.cookieEnabled;
+
+        function fetchText() {
+          fetch('https://ip.nate-games.workers.dev/')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('displayIP').textContent = data;
+            })
+            .catch(error => {
+              console.error('Error fetching text:', error);
+            });
+        }
+        fetchText();
+      </script>
+
     </div>
   </div>
   <script>

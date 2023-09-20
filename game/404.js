@@ -1,5 +1,7 @@
 const urlMappings = {
   '/cosmic-city': 'https://cosmic-city.github.io', /*TEST*/
+  '/ip-address': 'https://ip.nate-games.workers.dev',
+  '/404/stats-for-nerds': '/404',
 };
 
 function changeIframeSource() {
