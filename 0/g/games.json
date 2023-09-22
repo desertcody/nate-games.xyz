@@ -485,6 +485,11 @@
     "name": "Slither.io"
   },
   {
+    "url": "/game/?google-snake",
+    "imageSrc": "https://play-lh.googleusercontent.com/LU72Y-ZB_yLGsIP9-qQVN5jx39k-Zk_YVRWGbZAkNU0mZak2aQHQhf8MM5Z1cE6q7XE",
+    "name": "Google Snake"
+  },
+  {
     "url": "./slither-remake/",
     "imageSrc": "./slither-remake/game/splash.png",
     "name": "Slither.io (Remake)"

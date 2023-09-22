@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "cut-the-rope": "https://cdn-ngs.pages.dev/cut-the-rope/",
         "cut-the-rope-holiday-gift": "https://cdn-ngs.pages.dev/cut-the-rope/holiday-gift/",
         "cut-the-rope-time-travel": "https://cdn-ngs.pages.dev/cut-the-rope/time-travel/",
+        "google-snake" : "https://emulatoros.github.io/gfile/snake/"
     };
 
     const filePath = pageMappings[queryString];
