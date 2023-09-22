@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "cluster-rush": "/0/g/cluster-rush/",
         "1": "/0/g/1/",
         "2048": "/0/g/2048/",
-        "wings.io": "http://wings.io",
+        "wings.io": "https://wings.io",
         "roblox": "/0/g/Roblox/",
         "gacha-club": "/0/g/gacha-club/",
         "papas-burgeria": "/0/g/papas-burgeria/",
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "papas-scooperia": "/0/g/papas-scooperia/",
         "repuls.io": "/0/g/repuls/",
         "flash-sonic": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fultimate-flash-sonic.xml",
-        "sonic-revert": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@e9968afeca44cc43b16d23cd23af95e6a4e23887/ks85nc4/Sonic_Revert.xml",
+        "sonic-revert": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@c14b72fdb88d7c697da0f38ed0e9cd0acb3fc4bf/Sonic_Revert.xml",
         "subway-surfers": "https://da211f97-3b87-4f53-9b9f-34d3fbc5d016.id.repl.co",
         "electricman": "/0/g/electricman/",
         "tooncup": "https://emea.iframed.cn.dmti.cloud/content/691/toon-cup/game/uk/en.e0732106/index.html", // Very likely to be blocked
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "cut-the-rope": "https://cdn-ngs.pages.dev/cut-the-rope/",
         "cut-the-rope-holiday-gift": "https://cdn-ngs.pages.dev/cut-the-rope/holiday-gift/",
         "cut-the-rope-time-travel": "https://cdn-ngs.pages.dev/cut-the-rope/time-travel/",
-        "google-snake" : "https://emulatoros.github.io/gfile/snake/"
+        "google-snake" : "/0/g/google-snake/"
     };
 
     const filePath = pageMappings[queryString];
