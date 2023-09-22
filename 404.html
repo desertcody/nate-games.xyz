@@ -90,7 +90,7 @@
 
 <body>
   <iframe src="" frameborder="0" id="game-id"></iframe>
-  <header class="header">
+  <header class="header" id="hide-header">
     <div class="logo">
       <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
         <img src="/favicon.ico" class="nav-icon">
@@ -208,6 +208,26 @@
 
       document.getElementById('path').textContent = path;
     });
+  </script>
+  <script>
+    function getParameterByName(name) {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(name);
+    }
+
+    function hideElementById(elementId) {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.style.display = 'none';
+      }
+    }
+
+    const elementToHide = getParameterByName('hide');
+
+    if (elementToHide) {
+      hideElementById(elementToHide);
+    }
+
   </script>
   <script src="/game/404.js"></script>
 </body>

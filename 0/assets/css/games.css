@@ -1,4 +1,5 @@
 @import url(image-container.css);
+@import url(mobile.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -228,16 +229,22 @@ h1 {
 .dropdown:hover .dropdown-content {
     visibility: visible;
     animation: dropdown-menu 0.4s forwards;
-    /* fowards value needed to stop if from disapearing instantly */
 }
 
 @keyframes dropdown-menu {
     from {
-        max-height: 0;
+        /*max-height: 0;*/
+        margin-top: -8.5px;
+        max-height: 100vh;
+        opacity: 0;
+        transform: scale(.85) rotate3d(1, 100deg, 1, 1);
     }
 
     to {
+        /*max-height: 100vh;*/
         max-height: 100vh;
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
