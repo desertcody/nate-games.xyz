@@ -1,4 +1,4 @@
-var allowedDomains = ['nate-games.github.io', 'nate-games.netlify.app', 'cdn.nat-games.xyz'];
+var allowedDomains = ['nate-games.github.io', 'nate-games.netlify.app', 'cdn.nate-games.xyz', 'nate-games.xyz'];
 
 function getReferringDomain() {
   var referrer = document.referrer;
