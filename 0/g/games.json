@@ -448,31 +448,37 @@
     "url": "./stack/",
     "imageSrc": "./stack/game/stack.png",
     "name": "Stack",
-    "tags":"html5, kids, point-and-click, action"
+    "tags": "html5, kids, point-and-click, action"
   },
   {
     "url": "./stickmanhook/",
     "imageSrc": "stickmanhook/unnamed.jpg",
     "name": "Stickman Hook",
-    "tags":"html5, intense, singleplayer, action, point-and-click"
+    "tags": "html5, intense, singleplayer, action, point-and-click"
   },
   {
     "url": "neonswing/",
     "imageSrc": "https://play-lh.googleusercontent.com/aUUqrS7i6UFtiG7oQdrfRdyCWN2XXV13DVeJTHmYub7Qdz7lQ6XyGJpB7RaeNlyXPw",
     "name": "Neon Swing",
-    "tags":"html5, intense, singleplayer, action, point-and-click"
+    "tags": "html5, intense, singleplayer, action, point-and-click"
   },
   {
     "url": "./pooreddie/",
     "imageSrc": "pooreddie/game/quj6uler.bmp",
     "name": "Poor Eddie",
-    "tags":"html5, intense, singleplayer, action, point-and-click"
+    "tags": "html5, intense, singleplayer, action, point-and-click"
+  },
+  {
+    "url": "/game/?swingo",
+    "imageSrc": "/game/img/swingo.avif",
+    "name": "Swingo",
+    "tags": "html5, intense, singleplayer, action, point-and-click"
   },
   {
     "url": "/game/?dumb-ways-to-die",
     "imageSrc": "https://play-lh.googleusercontent.com/jrRzz98Tb0JK1XuO0Yw01Ep1zVQDM14IDl4fq21nMpmt7yAXfXwSF0xlc60Hv_FUAx79",
     "name": "Dumb ways to Die",
-    "tags":"unity, intense, singleplayer, action, point-and-click"
+    "tags": "unity, intense, singleplayer, action, point-and-click"
   },
   {
     "url": "./uno/",
@@ -498,6 +504,11 @@
     "url": "./superhot/",
     "imageSrc": "./superhot/game/splash.jpg",
     "name": "Superhot"
+  },
+  {
+    "url": "/game/?masked-forces",
+    "imageSrc": "/game/img/masked-forces.jpg",
+    "name": "Masked Forces"
   },
   {
     "url": "./shellshockers/",
@@ -579,7 +590,7 @@
     "url": "./BloonsTD3/",
     "imageSrc": "./BloonsTD3/game/splash.webp",
     "name": "BTD 3",
-    "tags":"flash, tower-defense, ninjakiwi, btd, bloons"
+    "tags": "flash, tower-defense, ninjakiwi, btd, bloons"
   },
   {
     "url": "./BloonsTD4/",
@@ -612,6 +623,11 @@
     "url": "stair-race3d/",
     "imageSrc": "stair-race3d/ys0ffene.bmp",
     "name": "Stair Race 3D"
+  },
+  {
+    "url": "/game/?burnin-rubber-5-xs",
+    "imageSrc": "/game/img/burnin-rubber-5-xs.avif",
+    "name": "Burnin Rubber 5 XS"
   },
   {
     "url": "./drive-mad/",
@@ -823,36 +839,41 @@
     "imageSrc": "/0/g/snowball.io/game/img/unnamed.png",
     "name": "Snowball.io"
   },
-    {
-      "url": "/0/g/hole.io/",
-      "imageSrc": "./hole.io/game/imgupscaler.jpg",
-      "name": "Hole.io"
-    },
-    {
-      "url": "/0/g/hole.io-scratch/",
-      "imageSrc": "./hole.io-scratch/game/scratch.png",
-      "name": "Hole.io (Scratch)"
-    },
-    {
-      "url": "/0/g/smashkarts/",
-      "imageSrc": "/0/g/smashkarts/game/images/icon-512.png",
-      "name": "Smash Karts"
-    },
-    {
-      "url": "./draw-the-hill/",
-      "imageSrc": "/0/g/draw-the-hill/game/icons/icon-512.png",
-      "name": "Draw the Hill"
-    },
-    {
-      "url": "/0/g/retrobowl/",
-      "imageSrc": "https://play-lh.googleusercontent.com/WRM5Y1xZmzcCP1YtO5zl6G2g7CU5c5ZfjX4UVrgi1bpNgkfy-wuB-bQx3kkeRfaGYQ",
-      "name": "Retro Bowl"
-    },
-    {
-      "url": "./fallguys/",
-      "imageSrc": "/0/g/fallguys/game/splash.png",
-      "name": "Fall Guys"
-    },  
+  {
+    "url": "/0/g/hole.io/",
+    "imageSrc": "./hole.io/game/imgupscaler.jpg",
+    "name": "Hole.io"
+  },
+  {
+    "url": "/0/g/hole.io-scratch/",
+    "imageSrc": "./hole.io-scratch/game/scratch.png",
+    "name": "Hole.io (Scratch)"
+  },
+  {
+    "url": "/0/g/smashkarts/",
+    "imageSrc": "/0/g/smashkarts/game/images/icon-512.png",
+    "name": "Smash Karts"
+  },
+  {
+    "url": "./draw-the-hill/",
+    "imageSrc": "/0/g/draw-the-hill/game/icons/icon-512.png",
+    "name": "Draw the Hill"
+  },
+  {
+    "url": "/0/g/retrobowl/",
+    "imageSrc": "https://play-lh.googleusercontent.com/WRM5Y1xZmzcCP1YtO5zl6G2g7CU5c5ZfjX4UVrgi1bpNgkfy-wuB-bQx3kkeRfaGYQ",
+    "name": "Retro Bowl"
+  },
+  {
+    "url": "./fallguys/",
+    "imageSrc": "/0/g/fallguys/game/splash.png",
+    "name": "Fall Guys"
+  },
+  {
+    "url": "/game/?hello-guys",
+    "imageSrc": "/game/img/helloguys-thumb1.webp",
+    "name": "Hello Guys"
+  },
   {
     "name": "Stumble Guys",
     "imageSrc": "/0/g/Stumble Guys/splash.png",
@@ -887,6 +908,11 @@
     "name": "Tomb of the Mask",
     "imageSrc": "https://play-lh.googleusercontent.com/V3M-ZVyu4NCOR8oxeHEQSrt5LJhu44xlDtIx-d3YnrPCMEvV-lxPJDyWoJkxsS1Soxsx",
     "url": "./tombmask/"
+  },
+  {
+    "name": "Temple of Boom",
+    "imageSrc": "/game/img/templeofboom.avif",
+    "url": "/game/?temple-of-boom"
   },
   {
     "name": "Granny",
@@ -1002,6 +1028,12 @@
     "name": "Duck Life",
     "imageSrc": "https://play-lh.googleusercontent.com/AUGkRrKMtUCLVE9vCvlfMY9Ny9EBqzx17yejVtEEhvpkw-H6lJlvBHgCMqPJm8HV_tM",
     "url": "/0/g/duck-life/"
+  },
+  {
+    "name": "Stick Defenders",
+    "imageSrc": "/game/img/stick-defenders.avif",
+    "url": "/game/?stick-defenders",
+    "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin",

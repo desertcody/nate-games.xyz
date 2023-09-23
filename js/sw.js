@@ -16,14 +16,16 @@ function isDomainAllowed() {
   var referringDomain = getReferringDomain();
   if (!referringDomain) return false;
 
+  var currentURL = window.location.href;
   for (var i = 0; i < allowedDomains.length; i++) {
-    if (referringDomain === allowedDomains[i]) {
+    if (currentURL.indexOf(allowedDomains[i]) !== -1) {
       return true;
     }
   }
 
   return false;
 }
+
 if (!isDomainAllowed()) {
   // alert('Access to this site is not allowed from the current domain.');
   window.location.href = 'https://nate-games.xyz/en-us/sitelock';

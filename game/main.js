@@ -46,7 +46,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "repuls.io": "https://cdn-ngs.pages.dev/repuls/",
         "fnaf-4": "https://cdn-ngs.pages.dev/fnaf-4/",
         "fnf-mid-fight-masses": "https://cdn-ngs.pages.dev/fnfmidfight/",
-        "vex-7": "https://cdn.nate-games.xyz/vex-7/"
+        "vex-7": "https://cdn.nate-games.xyz/vex-7/",
+        "masked-forces": "https://topvazstore.github.io/g8/masked-forces/",
+        "stick-defenders": "https://topvazstore.github.io/g6/stick-defenders/",
+        "swingo": "https://topvazstore.github.io/g3/swingo/",
+        "temple-of-boom": "https://topvazstore.github.io/g3/temple-of-boom/",
+        "hello-guys": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://362963852-037591742967942863.preview.editmysite.com/uploads/b/139890129-842828255751613847/files/hegu.xml",
+        "burnin-rubber-5-xs": "https://webglmath.github.io/burnin-rubber-5-xs/"
     };
 
     const filePath = pageMappings[queryString];
