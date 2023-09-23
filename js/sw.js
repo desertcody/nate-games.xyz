@@ -1,4 +1,4 @@
-var allowedDomains = ['nate-games.github.io', 'nate-games.netlify.app', 'localhost:8080'];
+var allowedDomains = ['nate-games.github.io', 'nate-games.netlify.app', 'cdn.nat-games.xyz'];
 
 function getReferringDomain() {
   var referrer = document.referrer;
@@ -25,6 +25,6 @@ function isDomainAllowed() {
   return false;
 }
 if (!isDomainAllowed()) {
-  alert('Access to this site is not allowed from the current domain.');
+  // alert('Access to this site is not allowed from the current domain.');
   window.location.href = 'https://nate-games.xyz/en-us/sitelock';
 }
