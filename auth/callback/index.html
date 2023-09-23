@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub OAuth Callback</title>
+</head>
+<body>
+    <h1>GitHub OAuth Callback</h1>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get("code");
+
+        if (code) {
+            // Exchange the code for an access token
+            fetch("https://github.com/login/oauth/access_token", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    client_id: "17c5984bdd8ef07cd652",
+                    client_secret: "YOUR_CLIENT_SECRET",
+                    code: code,
+                }),
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    // Use the access token to fetch user data
+                    const accessToken = data.access_token;
+                    fetch("https://api.github.com/user", {
+                        headers: {
+                            Authorization: `Bearer ${accessToken}`,
+                        },
+                    })
+                        .then((response) => response.json())
+                        .then((userData) => {
+                            // Display the user's username
+                            const username = userData.login;
+                            alert(`Logged in as: ${username}`);
+                        });
+                });
+        }
+    </script>
+</body>
+</html>
