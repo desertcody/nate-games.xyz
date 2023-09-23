@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         "doge-miner": "/0/g/doge-miner/",
         "papas-pancakeria": "/0/g/papas-pancakeria/",
         "papas-scooperia": "/0/g/papas-scooperia/",
-        "repuls.io": "/0/g/repuls/",
         "flash-sonic": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fultimate-flash-sonic.xml",
         "sonic-revert": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@c14b72fdb88d7c697da0f38ed0e9cd0acb3fc4bf/Sonic_Revert.xml",
         "subway-surfers": "https://da211f97-3b87-4f53-9b9f-34d3fbc5d016.id.repl.co",
@@ -43,7 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "cut-the-rope": "https://cdn-ngs.pages.dev/cut-the-rope/",
         "cut-the-rope-holiday-gift": "https://cdn-ngs.pages.dev/cut-the-rope/holiday-gift/",
         "cut-the-rope-time-travel": "https://cdn-ngs.pages.dev/cut-the-rope/time-travel/",
-        "google-snake" : "/0/g/google-snake/"
+        "google-snake" : "/0/g/google-snake/",
+        "repuls.io": "https://cdn-ngs.pages.dev/repuls/",
+        "fnaf-4": "https://cdn-ngs.pages.dev/fnaf-4/",
+        "fnf-mid-fight-masses": "https://cdn-ngs.pages.dev/fnfmidfight/",
     };
 
     const filePath = pageMappings[queryString];

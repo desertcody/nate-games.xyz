@@ -337,8 +337,8 @@
     "tags": "html5, intense, singleplayer, action, fnf"
   },
   {
-    "url": "./fnfmidfight/",
-    "imageSrc": "fnfmidfight/splash.jpg",
+    "url": "/game/?fnf-mid-fight-masses",
+    "imageSrc": "/game/img/fnfmidfight.jpg",
     "name": "FNF Mid-Fight Masses",
     "tags": "fnf, html5, intense, singleplayer, action"
   },
@@ -379,8 +379,8 @@
     "tags": "fnaf, scratch, horror"
   },
   {
-    "url": "./fnaf-4/",
-    "imageSrc": "./fnaf-4/game/splash.webp",
+    "url": "/game/?fnaf-4",
+    "imageSrc": "/game/img/fnaf-4.webp",
     "name": "FNAF 4",
     "tags": "fnaf, scratch, horror"
   },
@@ -511,7 +511,7 @@
   },
   {
     "url": "/game/?repuls.io",
-    "imageSrc": "./repuls/repuls-io.jpg",
+    "imageSrc": "/game/img/repuls-io.jpg",
     "name": "Repuls.io",
     "tags": "action, shooting, unity"
   },
