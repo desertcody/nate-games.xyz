@@ -1,15 +1,15 @@
 <p align="center">
 <kbd>
-<a href="https://bit.ly/nate-games">
+<a href="https://nate-games.xyz">
 <img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/nate-games/nate-games.github.io/main/0/assets/img/favicon.png"></a>
 </kbd>
 </p>
 
 <h1 align="center">nate-games</h1>
-<p align="center">Preparing for a new UI!</p>
+<p align="center">New CDN! | <a href="https://cdn.nate-games.xyz">cdn.nate-games.xyz</a></p>
 
 > **Note**
-> **NEED to submit DMCA? Please don't immediately report us, send an issue!**
+> **Website moved to [nate-games.xyz](https://nate-games.xyz)!**
 
 Website blocked? View [links](https://github.com/nate-games/nate-games.github.io/wiki/URLS)
 
