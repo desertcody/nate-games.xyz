@@ -15,11 +15,5 @@ var isRootPath = window.location.pathname === "/";
 if (isSitelock && isRootPath) {
   window.location.href = "https://nate-games.xyz/en-us/sitelock";
 } else {
-  var isAllowedDomain = allowedDomains.some(function (domain) {
-    return referringUrl.indexOf(domain) !== -1;
-  });
-
-  if (!isAllowedDomain) {
-    window.location.href = allowedDomains[0];
-  }
+  // what else?
 }
