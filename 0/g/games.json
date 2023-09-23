@@ -975,8 +975,8 @@
   },
   {
     "name": "Vex 7",
-    "imageSrc": "/0/g/vex-7/game/assets/icon.jpeg",
-    "url": "/0/g/vex-7/"
+    "imageSrc": "/game/img/vex-7.jpeg",
+    "url": "/game/?vex-7"
   },
   {
     "name": "Big Tower",

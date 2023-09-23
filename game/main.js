@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "repuls.io": "https://cdn-ngs.pages.dev/repuls/",
         "fnaf-4": "https://cdn-ngs.pages.dev/fnaf-4/",
         "fnf-mid-fight-masses": "https://cdn-ngs.pages.dev/fnfmidfight/",
+        "vex-7": "https://cdn.nate-games.xyz/vex-7/"
     };
 
     const filePath = pageMappings[queryString];
