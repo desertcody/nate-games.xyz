@@ -133,7 +133,7 @@
         const img = document.createElement('img');
         img.src = game.imageSrc;
         img.onerror = function () {
-          this.src = '/static/image-placeholder.svg';
+          this.src = '/game/image-placeholder.svg';
         };
 
         const h3 = document.createElement('h3');
@@ -169,11 +169,10 @@
       <p>Games shown on this website are the property of their respective owners.</p>
     </center>
     <div class="game-container" id="game-container">
-      <!--onerror="this.src='https://www.livenirvana.com/demotapes/images/no-image.png'" DEFAULT: onerror="this.src='../../static/image-placeholder.svg'"-->
       <div class="game-card"
         onclick="window.location.href='https://github.com/nate-games/nate-games.github.io/issues/new?assignees=nate-games&labels=Add-Game&projects=&template=add_game.yaml&title=%5BGame+Recommendation%5D%3A+%3Ctitle%3E'">
         <div class="image-container">
-          <img src="request-svg.png" onerror="this.src='../../static/image-placeholder.svg'" />
+          <img src="request-svg.png" onerror="this.src='/game/image-placeholder.svg'" />
         </div>
         <h3>Add a game!</h3>
       </div>

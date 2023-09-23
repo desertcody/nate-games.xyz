@@ -12,7 +12,7 @@ function changeIframeSource() {
     iframe.src = urlMappings[currentURL];
     iframe.target = '_top';
     document.title = 'Classes'
-    changeFavicon('/static/class.png');
+    changeFavicon('/game/class.png');
   } else {
     iframe.src = '';
     iframe.style.display = 'none';
