@@ -169,6 +169,7 @@
       </div>
       <input type="text" id="search-bar" placeholder="Search..." oninput="search()" class="search-input" />
       <p>Games shown on this website are the property of their respective owners.</p>
+      <p style="font-weight: bold;">Check out our partner <img src="/en-us/partner-platformer-io.png" style="vertical-align: middle; height: 17px;"> | <a href="https://platformerdotio.co/" target="_blank">platformer.io</a>!</p>
     </center>
     <div class="game-container" id="game-container">
       <div class="game-card"
@@ -178,6 +179,13 @@
         </div>
         <h3>Add a game!</h3>
       </div>
+      <div class="game-card"
+      onclick="window.open('https://platformerdotio.co/', '_blank', 'width=800,height=600'); return false;">
+      <div class="image-container">
+        <img src="/en-us/partner-platformer-io.png" onerror="this.src='/game/image-placeholder.svg'" />
+      </div>
+      <h3>Play Platformer.io now!</h3>
+    </div>
       <!--note to myself: The div below is for the TOS don't touch it!-->
     </div>
     <footer style="margin-bottom: 4em; margin-top: 9em;">
@@ -198,7 +206,7 @@
     <script src="/0/assets/js/tos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-    <script src="/js/sw.js"></script>
+    
 </body>
 
 </html>

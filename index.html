@@ -103,32 +103,39 @@
     <div class="content" style="padding-bottom: 155px;">
       <h1 class="title"><img src="/favicon.ico" style="vertical-align: middle; height: 42px;"><br>NATE-GAMES</h1>
       <p class="p29">
-      <span id="newDomain" style="display: none;">
-        <span>Website officially moved to <b>nate-games.xyz</b>!<br></span>
-      </span>
-      Latest:
-      <a href="https://github.com/nate-games/nate-games.github.io/releases/latest" class="txt49" target="_blank">Whats
-        New?
-      </a>
+        <span id="newDomain" style="display: none;">
+          <span>Website officially moved to <b>nate-games.xyz</b>!<br></span>
+        </span>
+        Latest:
+        <a href="https://github.com/nate-games/nate-games.github.io/releases/latest" class="txt49" target="_blank">Whats
+          New?
+        </a>
       </p>
       <div class="button-container">
-        <a class="bn39" href="https://discord.gg/9mJcqwZ2a5" target="_blank"><span class="bn39span">Join the
-            Discord</span></a>
+        <a class="github-button" href="https://github.com/nate-games/nate-games.github.io"
+          data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large"
+          data-show-count="true" aria-label="Star nate-games/nate-games.github.io on GitHub">Star</a>
+
+        <a class="github-button" href="https://github.com/nate-games/nate-games.github.io/fork"
+          data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked"
+          data-size="large" data-show-count="true" aria-label="Fork nate-games/nate-games.github.io on GitHub">Fork</a>
       </div>
+      <!--<div class="button-container">
+        <a class="bn39" href="https://discord.gg/9mJcqwZ2a5" target="_blank"><span class="bn39span">Join the
+            Discord</span></a>!-->
     </div>
+  </div>
   </div>
   <footer>
     <small>
       &copy; 2023-2024 nate-games<br><br>
     </small>
   </footer>
-  <script src="/0/assets/js/tos.js"></script>
-  <script src="/js/sw.js"></script>
   <script>
-    function nNet() {
+    function nXyz() {
       var currentURL = window.location.href;
       var targetDomain = "nate-games.github.io";
-      var nateGamesDomain = "nate-games.net";
+      var nateGamesDomain = "nate-games.xyz";
 
       if (currentURL.indexOf(targetDomain) !== -1) {
         document.getElementById("newDomain").style.display = "block";
@@ -137,8 +144,12 @@
       }
     }
 
-    window.onload = nNet;
+    window.onload = nXyz;
   </script>
+  <script src="/0/assets/js/tos.js"></script>
+  <script src="/js/sw.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async defer src="https://cdn.nate-games.xyz/js/buttons.js"></script>
 </body>
 
 </html>
