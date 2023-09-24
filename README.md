@@ -1,3 +1,4 @@
+<img align="center" src="https://img.shields.io/github/repo-size/nate-games/nate-games.github.io">
 <p align="center">
 <kbd>
 <a href="https://nate-games.xyz">
@@ -12,6 +13,7 @@
 > **Website moved to [nate-games.xyz](https://nate-games.xyz)!**
 
 Website blocked? View [links](https://github.com/nate-games/nate-games.github.io/wiki/URLS)
+
 
 # Features
 - 190+ games & apps
