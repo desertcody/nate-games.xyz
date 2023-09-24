@@ -881,8 +881,8 @@
   },
   {
     "name": "Zombs Royale",
-    "imageSrc": "/0/g/zombs-royale/game/zomb.png",
-    "url": "./zombs-royale/"
+    "imageSrc": "/game/img/zombs-royale.png",
+    "url": "/game/?zombs-royale"
   },
   {
     "name": "Getting Over it",
@@ -982,22 +982,22 @@
   {
     "name": "Vex 3",
     "imageSrc": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/87/06/4e/87064e7a-c9fd-7135-6ba3-f321f013e01e/mzl.kqcjsyop.png/512x512bb.jpg",
-    "url": "/0/g/vex-3/"
+    "url": "/game/?vex-3"
   },
   {
     "name": "Vex 4",
-    "imageSrc": "/0/g/vex-4/unnamed.jpg",
-    "url": "/0/g/vex-4/"
+    "imageSrc": "/game/img/vex-4.jpg",
+    "url": "/game/?vex-4"
   },
   {
     "name": "Vex 5",
-    "imageSrc": "/0/g/vex-5/game/vex.jpeg",
-    "url": "/0/g/vex-5/"
+    "imageSrc": "/game/img/vex-5.jpeg",
+    "url": "/game/?vex-5"
   },
   {
     "name": "Vex 6",
-    "imageSrc": "/0/g/vex-6/game/assets/icon.jpeg",
-    "url": "/0/g/vex-6/"
+    "imageSrc": "/game/img/vex-6.jpeg",
+    "url": "/game/?vex-6"
   },
   {
     "name": "Vex 7",

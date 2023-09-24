@@ -46,6 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "repuls.io": "https://cdn-ngs.pages.dev/repuls/",
         "fnaf-4": "https://cdn-ngs.pages.dev/fnaf-4/",
         "fnf-mid-fight-masses": "https://cdn-ngs.pages.dev/fnfmidfight/",
+        "vex-3": "https://cdn.nate-games.xyz/vex-3/",
+        "vex-4": "https://cdn.nate-games.xyz/vex-4/",
+        "vex-5": "https://cdn.nate-games.xyz/vex-5/",
+        "vex-6": "https://cdn.nate-games.xyz/vex-6/",
         "vex-7": "https://cdn.nate-games.xyz/vex-7/",
         "masked-forces": "/0/g/masked-forces/",
         "stick-defenders": "https://topvazstore.github.io/g6/stick-defenders/",
@@ -59,7 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "fnaf-2-hacks": "https://cdn-ngs.pages.dev/fnaf-2hacks/game/",
         "fnf-mobile": "https://cdn-ngs.pages.dev/fnfmobile/game/",
         "undertale": "https://cdn-ngs.pages.dev/Undertale/game/",
-        "fnf": "https://cdn-ngs.pages.dev/fnf/game/"
+        "fnf": "https://cdn-ngs.pages.dev/fnf/game/",
+        "zombs-royale": "https://advanced-channeler.02.gz-associates.com/?t=tmm-zombsroyale"
     };
 
     const filePath = pageMappings[queryString];
