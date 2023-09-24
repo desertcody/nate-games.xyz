@@ -53,7 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
         "temple-of-boom": "https://topvazstore.github.io/g3/temple-of-boom/",
         "hello-guys": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://362963852-037591742967942863.preview.editmysite.com/uploads/b/139890129-842828255751613847/files/hegu.xml",
         "burnin-rubber-5-xs": "https://webglmath.github.io/burnin-rubber-5-xs/",
-        "burger-and-frights": "https://cdn.nate-games.xyz/burger-frights/"
+        "burger-and-frights": "https://cdn.nate-games.xyz/burger-frights/",
+        "mad-gunz": "https://webglmath.github.io/mad-gunz/",
+        "precision-client": "https://cdn-ngs.pages.dev/PrecisionClient/game/compiled/web/",
+        "fnaf-2-hacks": "https://cdn-ngs.pages.dev/fnaf-2hacks/game/",
+        "fnf-mobile": "https://cdn-ngs.pages.dev/fnfmobile/game/",
+        "undertale": "https://cdn-ngs.pages.dev/Undertale/game/",
+        "fnf": "https://cdn-ngs.pages.dev/fnf/game/"
     };
 
     const filePath = pageMappings[queryString];
