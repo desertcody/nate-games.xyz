@@ -10,3 +10,6 @@ var currentDomain = window.location.origin;
 if (allowedDomains.indexOf(currentDomain) === -1) {
   window.top.location.href = "https://nate-games.xyz/en-us/sitelock";
 }
+
+// LOCALHOST; ❎
+// COMPUTER IP; ✅
