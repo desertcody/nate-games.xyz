@@ -169,8 +169,8 @@
     "tags": "html5, kids, action"
   },
   {
-    "url": "/0/g/AngryBirds/",
-    "imageSrc": "./AngryBirds/game/AngryBirdsFavIcon_512x512.png",
+    "url": "/game/?angrybirds",
+    "imageSrc": "/game/img/angrybirds.png",
     "name": "Angry Birds",
     "tags": "html5, kids, action, point-and-click"
   },

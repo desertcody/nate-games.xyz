@@ -64,7 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "fnf-mobile": "https://cdn-ngs.pages.dev/fnfmobile/game/",
         "undertale": "https://cdn-ngs.pages.dev/Undertale/game/",
         "fnf": "https://cdn-ngs.pages.dev/fnf/game/",
-        "zombs-royale": "https://advanced-channeler.02.gz-associates.com/?t=tmm-zombsroyale"
+        "zombs-royale": "https://the.deconstructors.co.uk/tmm-zombsroyale/",
+        "angrybirds": "https://cdn.nate-games.xyz/angrybirds/"
     };
 
     const filePath = pageMappings[queryString];
