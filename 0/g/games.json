@@ -68,7 +68,7 @@
   },
   {
     "url": "/game/?tanuki-sunset",
-    "imageSrc": "tanuki-sunset/tanuki-sunset.png",
+    "imageSrc": "/game/img/tanuki-sunset.png",
     "name": "Tanuki Sunset",
     "tags": "kids, fun, action, singleplayer, unity, adventure"
   },

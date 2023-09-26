@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "jelly-mario": "/0/g/jellymario/",
         "2048-multitask": "/0/g/2048-multitask/",
         "game-inside-a-game": "/0/g/giag/",
-        "tanuki-sunset": "/0/g/tanuki-sunset/",
+        "tanuki-sunset": "https://tanuki-sunset-one.vercel.app/",
         "bottle-flip-3d": "/0/g/bf3d/",
         "tiny-fishing": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/tf.xml",
         "worlds-hardest-game": "/0/g/whg/1/",
