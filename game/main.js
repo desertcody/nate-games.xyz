@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "vex-5": "https://cdn.nate-games.xyz/vex-5/",
         "vex-6": "https://cdn.nate-games.xyz/vex-6/",
         "vex-7": "https://cdn.nate-games.xyz/vex-7/",
-        "masked-forces": "/0/g/masked-forces/",
+        "masked-forces": "https://tanuki-sunset-one.vercel.app/masked-forces/",
         "stick-defenders": "https://topvazstore.github.io/g6/stick-defenders/",
         "swingo": "https://topvazstore.github.io/g3/swingo/",
         "temple-of-boom": "https://topvazstore.github.io/g3/temple-of-boom/",

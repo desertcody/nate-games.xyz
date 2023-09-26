@@ -3,6 +3,7 @@ var allowedDomains = [
   "https://nate-games.github.io",
   "https://nate-games.netlify.app",
   "https://nate-games.vercel.app",
+  "http://192.168.4.63:8080"
 ];
 
 var currentDomain = window.location.origin;
