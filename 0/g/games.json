@@ -427,6 +427,18 @@
     "tags": "kids, fun, clicker"
   },
   {
+    "url": "/game/?nut-simulator",
+    "imageSrc": "/game/img/nutsim.jpg",
+    "name": "Nut Simulator",
+    "tags": "kids, fun, clicker"
+  },
+  {
+    "url": "/game/?nut-simulator-hacks",
+    "imageSrc": "/game/img/nutsim.jpg",
+    "name": "Nut Simulator [Hacked]",
+    "tags": "kids, fun, clicker"
+  },
+  {
     "url": "./fruitninja/",
     "imageSrc": "https://yt3.googleusercontent.com/ytc/AGIKgqMRFpsditeb0jRlTO0fOflkCfh4q0e2_SHGDLae6Q=s900-c-k-c0x00ffffff-no-rj",
     "name": "Fruit Ninja",
@@ -543,6 +555,12 @@
     "imageSrc": "./doodle-jump/game/doodle.png",
     "name": "Doodle Jump",
     "tags": "fun, kids, doodle, scribble, drawing, action, adventure, intense"
+  },
+  {
+    "url": "/game/?combat-reloaded",
+    "imageSrc": "/game/img/combat-reloaded.png",
+    "name": "Combat Reloaded",
+    "tags": "action, adventure, intense, fps"
   },
   {
     "url": "./elasticman/",
@@ -863,6 +881,11 @@
     "url": "/0/g/retrobowl/",
     "imageSrc": "https://play-lh.googleusercontent.com/WRM5Y1xZmzcCP1YtO5zl6G2g7CU5c5ZfjX4UVrgi1bpNgkfy-wuB-bQx3kkeRfaGYQ",
     "name": "Retro Bowl"
+  },
+  {
+    "url": "/game/?4th-and-goal-2022",
+    "imageSrc": "/game/img/4th-and-goal-2022.avif",
+    "name": "4th and goal 2022"
   },
   {
     "url": "./fallguys/",

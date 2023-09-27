@@ -52,5 +52,3 @@ var currentURL = window.location.href;
 var linkElement = document.getElementById("bug.referer");
 
 linkElement.href += currentURL;
-
-// 4th and goal 2022 https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://284711640-164027483921740274.preview.editmysite.com/uploads/b/139890129-601329693740539694/files/4g22.xml

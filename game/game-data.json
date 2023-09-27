@@ -318,5 +318,25 @@
         "pageMapping": "https://cdn.nate-games.xyz/angrybirds/",
         "imageSrc": "/game/img/angrybirds.png",
         "gameTitle": "Angry Birds"
+    },
+    "4th-and-goal-2022": {
+        "pageMapping": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://284711640-164027483921740274.preview.editmysite.com/uploads/b/139890129-601329693740539694/files/4g22.xml",
+        "imageSrc": "/game/img/4th-and-goal-2022.avif",
+        "gameTitle": "4th and Goal 2022"
+    },
+    "combat-reloaded": {
+        "pageMapping": "http://nadgames.com/WebGL/Combat_Reloaded/embed/",
+        "imageSrc": "/game/img/combat-reloaded.png",
+        "gameTitle": "Combat Reloaded"
+    },
+    "nut-simulator": {
+        "pageMapping": "https://raw.githack.com/nate-games/cdn/main/nutsimulator/index.html",
+        "imageSrc": "/game/img/nutsim.jpg",
+        "gameTitle": "Nut Simulator"
+    },
+    "nut-simulator-hacks": {
+        "pageMapping": "https://raw.githack.com/nate-games/cdn/main/hacked-nutsimulator/index.html",
+        "imageSrc": "/game/img/nutsim.jpg",
+        "gameTitle": "Nut Simulator [Hacked]"
     }
 }
