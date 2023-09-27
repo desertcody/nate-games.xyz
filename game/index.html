@@ -2,138 +2,149 @@
 <html>
 
 <head>
-    <title>nate-games</title>
-    <meta name="description" content="Play a archive of online games now on nate-games!" />
-    <link rel="stylesheet" href="/0/assets/css/games.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://nate-games.xyz/en-us/game/">
-    <link rel="stylesheet" href="./preloader.css">
+  <title>nate-games</title>
+  <meta name="description" content="Play a archive of online games now on nate-games!" />
+  <link rel="stylesheet" href="/0/assets/css/games.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://nate-games.xyz/en-us/game/">
+  <link rel="stylesheet" href="./preloader.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
-                <img src="/favicon.ico" class="nav-icon">
-                <strong>nate-games</strong>
-            </button>
-        </div>
-        <nav class="menu">
-            <div class="dropdown">
-                <button class="menu-item dropbtn">Categories</button>
-                <div class="dropdown-content">
-                    <a href="/0/g/#all">ALL | 💯+</a>
-                    <a href="/0/g/?clicker">Clicker | <img src="/0/assets/img/tags/pc-mice.svg"
-                            style="vertical-align: middle; height: 20px;"></a>
-                    <a href="/0/g/?shooting">Shooting | <img src="/0/assets/img/tags/crosshair.svg"
-                            style="vertical-align: middle;"></a>
-                    <a href="/0/g/?point-and-click">Point & Click | 🖱️</a>
-                    <a href="/0/g/?action">Action | 💥</a>
-                    <a href="/0/g/?kids">Kids | 👨🏿‍🌾</a>
-                    <span style="border-top: 2px solid #222; border-bottom: 2px solid #222; border-radius: 0;"><b>Game
-                            engines</b></span>
-                    <a href="/0/g/?html5">HTML5 | <img src="/0/assets/img/misc/html5.svg"
-                            style="vertical-align: middle; height: 14px;"></a>
-                    <a href="/0/g/?unity">Unity | <img src="/0/assets/img/misc/unity.svg"
-                            style="vertical-align: middle; height: 14px;"></a>
-                    <a href="/0/g/?flash">Flash | <img src="/0/assets/img/misc/adobe-flash.svg"
-                            style="vertical-align: middle; height: 14px;"></a>
-                    <a href="/0/g/?scratch">Scratch | <img src="/0/assets/img/misc/scratch.svg"
-                            style="vertical-align: middle; height: 14px;"></a>
-                    <!-- https://upload.wikimedia.org/wikipedia/commons/b/b1/Scratch_S.svg !-->
-                </div>
-            </div>
-
-            <button class="menu-item" onclick="window.location.href='/0/g/'">
-                Games
-            </button>
-            <button class="menu-item" onclick="window.location.href='/0/a/'">
-                Apps
-            </button>
-            <button class="menu-item" onclick="window.location.href='https://docs.nate-games.xyz/'">
-                Documentation
-            </button>
-            <div class="dropdown">
-                <button class="menu-item dropbtn">More</button>
-                <div class="dropdown-content" style="right: 0; min-width: 180px;">
-                    <a href="https://discord.gg/9mJcqwZ2a5" target="_blank">Join the Discord | 💬</a>
-                    <a href="/en-us/contact" target="_blank">Contact | 📝</a>
-                    <a href="https://github.com/nate-games/nate-games.github.io" target="_blank">GitHub | <img
-                            src="/0/assets/img/misc/github.svg" style="vertical-align: middle; height: 25px;"></a>
-                    <a href="https://github.com/nate-games/nate-games.github.io" target="_blank">Sponsor | <img
-                            src="/0/assets/img/misc/sponsor.svg" class="sponsor"></a>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <a href="javascript:window.location.href='/0/g/';"><button class="back">
-            &lt;&mdash; Go back
-        </button></a>
-    <div class="center-container">
-        <div id="embed-container">
-            <div class="preloader-container">
-                <div class="game-loader">
-                    <div class="image-content">
-                        <img src="" id="game-img" draggable="false">
-                    </div>
-                    <h3 id="game-h3">Fetching...</h3>
-                    <button class="arrow-button" id="play-button">Play<span class="arrow"></span></button>
-                </div>
-                <iframe src="" id="content" frameborder="0" allowfullscreen
-                    style="display: none; z-index: 888;"></iframe>
-            </div>
-
-            <a title="Enter Fullscreen (F)" onclick="enterFullscreen()"><button id="fullscreen-button">
-                    <?xml version="1.0" ?><svg height="18px" version="1.1" viewBox="0 0 14 14" width="14px"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title />
-                        <desc />
-                        <defs />
-                        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
-                            <g fill="#fff" id="Core" transform="translate(-215.000000, -257.000000)">
-                                <g id="fullscreen" transform="translate(215.000000, 257.000000)">
-                                    <path
-                                        d="M2,9 L0,9 L0,14 L5,14 L5,12 L2,12 L2,9 L2,9 Z M0,5 L2,5 L2,2 L5,2 L5,0 L0,0 L0,5 L0,5 Z M12,12 L9,12 L9,14 L14,14 L14,9 L12,9 L12,12 L12,12 Z M9,0 L9,2 L12,2 L12,5 L14,5 L14,0 L9,0 L9,0 Z"
-                                        id="Shape" />
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                </button></a>
-            <span class="bar"><a href="http://nate-games.xyz" target="_blank">
-                    <p class="game-title">nate-games.xyz<img src="/favicon.ico" draggable="false"></p>
-                </a>
-                <p class="games-title">|
-                <p id="game-title"></p>
-                </p>
-            </span>
-        </div>
+  <header class="header">
+    <div class="logo">
+      <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
+        <img src="/favicon.ico" class="nav-icon">
+        <strong>nate-games</strong>
+      </button>
     </div>
-    <center style="margin: 1em;">
-        <a id="bug.referer"
-            href="http://github.com/nate-games/nate-games.github.io/issues/new?template=bug_reporting.yaml&url="
-            target="_blank"><button class="button3d" style="margin-top: 20px;">Report a bug</button></a><br><br>
-        <div id="comments">
+    <nav class="menu">
+      <div class="dropdown">
+        <button class="menu-item dropbtn">Categories</button>
+        <div class="dropdown-content">
+          <a href="/0/g/#all">ALL | 💯+</a>
+          <a href="/0/g/?clicker">Clicker | <img src="/0/assets/img/tags/pc-mice.svg"
+              style="vertical-align: middle; height: 20px;"></a>
+          <a href="/0/g/?shooting">Shooting | <img src="/0/assets/img/tags/crosshair.svg"
+              style="vertical-align: middle;"></a>
+          <a href="/0/g/?point-and-click">Point & Click | 🖱️</a>
+          <a href="/0/g/?action">Action | 💥</a>
+          <a href="/0/g/?kids">Kids | 👨🏿‍🌾</a>
+          <span style="border-top: 2px solid #222; border-bottom: 2px solid #222; border-radius: 0;"><b>Game
+              engines</b></span>
+          <a href="/0/g/?html5">HTML5 | <img src="/0/assets/img/misc/html5.svg"
+              style="vertical-align: middle; height: 14px;"></a>
+          <a href="/0/g/?unity">Unity | <img src="/0/assets/img/misc/unity.svg"
+              style="vertical-align: middle; height: 14px;"></a>
+          <a href="/0/g/?flash">Flash | <img src="/0/assets/img/misc/adobe-flash.svg"
+              style="vertical-align: middle; height: 14px;"></a>
+          <a href="/0/g/?scratch">Scratch | <img src="/0/assets/img/misc/scratch.svg"
+              style="vertical-align: middle; height: 14px;"></a>
         </div>
-    </center>
-    <script src="main.js"></script>
-    <script src="/js/sw.js"></script>
-    <script>
-        function enterFullscreen() {
-            const iframe = document.querySelector('#embed-container');
-            if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-            } else if (iframe.mozRequestFullScreen) {
-                iframe.mozRequestFullScreen();
-            } else if (iframe.webkitRequestFullscreen) {
-                iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) {
-                iframe.msRequestFullscreen();
-            }
-        }
-    </script>
+      </div>
+      <a href="/0/g/">
+        <button class="menu-item">
+          Games
+        </button>
+      </a>
+      <a href="/0/a/">
+        <button class="menu-item">
+          Apps
+        </button>
+      </a>
+      <a href="https://docs.nate-games.xyz/">
+        <button class="menu-item">
+          Documentation
+        </button>
+      </a>
+      <div class="dropdown">
+        <button class="menu-item dropbtn">More</button>
+        <div class="dropdown-content" style="right: 0; min-width: 180px;">
+          <a href="https://discord.gg/9mJcqwZ2a5" target="_blank">Join the Discord | 💬</a>
+          <a href="/en-us/contact" target="_blank">Contact | 📝</a>
+          <a href="https://github.com/nate-games/nate-games.github.io" target="_blank">GitHub | <img
+              src="/0/assets/img/misc/github.svg" style="vertical-align: middle; height: 25px;"></a>
+          <a href="https://github.com/nate-games/nate-games.github.io" target="_blank">Sponsor | <img
+              src="/0/assets/img/misc/sponsor.svg" class="sponsor"></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <a href="javascript:window.location.href='/0/g/';"><button class="back">
+      &lt;&mdash; Go back
+    </button></a>
+  <div class="center-container">
+    <div id="embed-container">
+      <div class="preloader-container">
+        <div class="game-loader">
+          <div class="image-content">
+            <img src="" id="game-img" draggable="false">
+          </div>
+          <h3 id="game-h3">Fetching...</h3>
+          <button class="arrow-button" id="play-button">Play<span class="arrow"></span></button>
+        </div>
+        <iframe src="" id="content" frameborder="0" allowfullscreen style="display: none; z-index: 888;"></iframe>
+      </div>
+
+      <a title="Enter Fullscreen (F)" onclick="enterFullscreen()"><button id="fullscreen-button">
+          <?xml version="1.0" ?><svg height="18px" version="1.1" viewBox="0 0 14 14" width="14px"
+            xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title />
+            <desc />
+            <defs />
+            <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+              <g fill="#fff" id="Core" transform="translate(-215.000000, -257.000000)">
+                <g id="fullscreen" transform="translate(215.000000, 257.000000)">
+                  <path
+                    d="M2,9 L0,9 L0,14 L5,14 L5,12 L2,12 L2,9 L2,9 Z M0,5 L2,5 L2,2 L5,2 L5,0 L0,0 L0,5 L0,5 Z M12,12 L9,12 L9,14 L14,14 L14,9 L12,9 L12,12 L12,12 Z M9,0 L9,2 L12,2 L12,5 L14,5 L14,0 L9,0 L9,0 Z"
+                    id="Shape" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button></a>
+      <span class="bar"><a href="http://nate-games.xyz" target="_blank">
+          <p class="game-title">nate-games.xyz<img src="/favicon.ico" draggable="false"></p>
+        </a>
+        <p class="games-title">| <a class="thumbnail"><img src="" id="game-thumb" draggable="false"
+              style="padding: 0; margin: 0;"></a>
+        <p id="game-title"></p>
+        </p>
+        <center>
+          <p class="hide-bar" onclick="hidebar()">Hide Bar <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path
+                d="M12.81 4.36l-1.77 1.78a4 4 0 0 0-4.9 4.9l-2.76 2.75C2.06 12.79.96 11.49.2 10a11 11 0 0 1 12.6-5.64zm3.8 1.85c1.33 1 2.43 2.3 3.2 3.79a11 11 0 0 1-12.62 5.64l1.77-1.78a4 4 0 0 0 4.9-4.9l2.76-2.75zm-.25-3.99l1.42 1.42L3.64 17.78l-1.42-1.42L16.36 2.22z" />
+            </svg></p>
+        </center>
+      </span>
+      <center>
+          <p class="show-bar" onclick="showbar()">Show Bar
+            <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 121.025 121.025"
+              xml:space="preserve">
+              <g>
+                <path d="M1.35,64.212c7.9,9.9,31.4,36.3,59.2,36.3c27.8,0,51.3-26.399,59.2-36.3c1.699-2.2,1.699-5.3,0-7.399
+                c-7.9-9.9-31.4-36.3-59.2-36.3c-27.8-0.1-51.3,26.3-59.2,36.2C-0.45,58.913-0.45,62.012,1.35,64.212z M60.55,36.413
+                c13.3,0,24,10.7,24,24s-10.7,24-24,24c-13.3,0-24-10.7-24-24S47.25,36.413,60.55,36.413z" />
+                <circle cx="60.55" cy="60.413" r="12" />
+              </g>
+            </svg>
+          </p>
+      </center>
+    </div>
+  </div>
+  <center style="margin: 1em;">
+    <a id="report-referer"
+      href="http://github.com/nate-games/nate-games.github.io/issues/new?template=bug_reporting.yaml&url="
+      target="_blank"><button class="button3d" style="margin-top: 20px;">Report a bug</button></a><br><br>
+    <div id="comments">
+
+    </div>
+  </center>
+  <script src="main.js"></script>
+  <script src="/js/sw.js"></script>
 </body>
 
 </html>

@@ -993,6 +993,11 @@
     "url": "./basketball-stars/"
   },
   {
+    "name": "Bouncy Basketball",
+    "imageSrc": "/game/img/bouncy-basketball.avif",
+    "url": "/game/?bouncy-basketball"
+  },
+  {
     "name": "Basketball Random",
     "imageSrc": "https://play-lh.googleusercontent.com/gP8T5Z1O-ngxIloiwcBZzrzyLPYDp0R_1BDNKUDZboIRPVImeyWI8-7aExvB9gAGNKc",
     "url": "/game/?basketball-random"

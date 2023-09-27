@@ -100,7 +100,7 @@
         "gameTitle": "Plants vs. Zombies; DS"
     },
     "basketball-random": {
-        "pageMapping": "https://cdn.nate-games.xyz/basketrandom/",
+        "pageMapping": "https://cdn-ngs.pages.dev/basketrandom/",
         "imageSrc": "https://play-lh.googleusercontent.com/gP8T5Z1O-ngxIloiwcBZzrzyLPYDp0R_1BDNKUDZboIRPVImeyWI8-7aExvB9gAGNKc",
         "gameTitle": "Basketball Random"
     },
@@ -215,17 +215,17 @@
         "gameTitle": "FNF Mid-Fight Masses"
     },
     "vex-3": {
-        "pageMapping": "https://cdn.nate-games.xyz/vex-3/",
+        "pageMapping": "https://cdn-ngs.pages.dev/vex-3/",
         "imageSrc": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/87/06/4e/87064e7a-c9fd-7135-6ba3-f321f013e01e/mzl.kqcjsyop.png/512x512bb.jpg",
         "gameTitle": "Vex 3"
     },
     "vex-4": {
-        "pageMapping": "https://cdn.nate-games.xyz/vex-4/",
+        "pageMapping": "https://cdn-ngs.pages.dev/vex-4/",
         "imageSrc": "/game/img/vex-4.jpg",
         "gameTitle": "Vex 4"
     },
     "vex-5": {
-        "pageMapping": "https://cdn.nate-games.xyz/vex-5/",
+        "pageMapping": "https://cdn-ngs.pages.dev/vex-5/",
         "imageSrc": "/game/img/vex-5.jpeg",
         "gameTitle": "Vex 5"
     },
@@ -235,7 +235,7 @@
         "gameTitle": "Vex 6"
     },
     "vex-7": {
-        "pageMapping": "https://cdn.nate-games.xyz/vex-7/",
+        "pageMapping": "https://cdn-ngs.pages.dev/vex-7/",
         "imageSrc": "/game/img/vex-7.jpeg",
         "gameTitle": "Vex 7"
     },
@@ -275,7 +275,7 @@
         "gameTitle": "Burnin Rubber 5 XS"
     },
     "burger-and-frights": {
-        "pageMapping": "https://cdn.nate-games.xyz/burger-frights/",
+        "pageMapping": "https://cdn-ngs.pages.dev/burger-frights/",
         "imageSrc": "https://img.itch.zone/aW1nLzY4MDU0NjcucG5n/315x250%23c/Wda88F.png",
         "gameTitle": "Burger and Frights"
     },
@@ -315,7 +315,7 @@
         "gameTitle": "Zombs Royale"
     },
     "angrybirds": {
-        "pageMapping": "https://cdn.nate-games.xyz/angrybirds/",
+        "pageMapping": "https://cdn-ngs.pages.dev/angrybirds/",
         "imageSrc": "/game/img/angrybirds.png",
         "gameTitle": "Angry Birds"
     },
@@ -338,5 +338,10 @@
         "pageMapping": "https://raw.githack.com/nate-games/cdn/main/hacked-nutsimulator/index.html",
         "imageSrc": "/game/img/nutsim.jpg",
         "gameTitle": "Nut Simulator [Hacked]"
+    },
+    "bouncy-basketball": {
+        "pageMapping": "/0/g/bouncybasketball/",
+        "imageSrc": "/game/img/bouncy-basketball.avif",
+        "gameTitle": "Bouncy Basketball"
     }
 }
