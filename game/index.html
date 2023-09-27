@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://nate-games.xyz/en-us/game/">
+    <link rel="stylesheet" href="./preloader.css">
 </head>
 
 <body>
@@ -71,9 +72,19 @@
         </button></a>
     <div class="center-container">
         <div id="embed-container">
-            <iframe src="/404?hide=hide-header" frameborder="0" allowfullscreen id="content"></iframe>
-            <a href="javascript:enterFullscreen();" title="Enter Fullscreen (F12), Exit Fullscreen (ESC)"><button
-                    id="fullscreen-button">
+            <div class="preloader-container">
+                <div class="game-loader">
+                    <div class="image-content">
+                        <img src="" id="game-img" draggable="false">
+                    </div>
+                    <h3 id="game-h3">Fetching...</h3>
+                    <button class="arrow-button" id="play-button">Play<span class="arrow"></span></button>
+                </div>
+                <iframe src="" id="content" frameborder="0" allowfullscreen
+                    style="display: none; z-index: 888;"></iframe>
+            </div>
+
+            <a title="Enter Fullscreen (F)" onclick="enterFullscreen()"><button id="fullscreen-button">
                     <?xml version="1.0" ?><svg height="18px" version="1.1" viewBox="0 0 14 14" width="14px"
                         xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -100,13 +111,19 @@
             </span>
         </div>
     </div>
-    <center style="margin: 1em;"><div class="like-count"><p style="
-        padding: 5px 20px; margin-top: 50px;"></p></div><br><br><a id="bug.referer"
-        href="http://github.com/nate-games/nate-games.github.io/issues/new?template=bug_reporting.yaml&url="
-        target="_blank"><button class="button3d" style="margin-top: -50px;">Report a bug</button></a></center>
+    <center style="margin: 1em;">
+        <div class="like-count">
+            <p style="
+        padding: 5px 20px; margin-top: 50px;"></p>
+        </div><br><br><a id="bug.referer"
+            href="http://github.com/nate-games/nate-games.github.io/issues/new?template=bug_reporting.yaml&url="
+            target="_blank"><button class="button3d" style="margin-top: -50px;">Report a bug</button></a>
+    </center>
+    <script src="main.js"></script>
+    <script src="/js/sw.js"></script>
     <script>
         function enterFullscreen() {
-            const iframe = document.querySelector('iframe');
+            const iframe = document.querySelector('#embed-container');
             if (iframe.requestFullscreen) {
                 iframe.requestFullscreen();
             } else if (iframe.mozRequestFullScreen) {
@@ -118,41 +135,6 @@
             }
         }
     </script>
-    <script>
-        var currentURL = window.location.href;
-
-        var linkElement = document.getElementById("bug.referer");
-
-        linkElement.href += currentURL;
-    </script>
-    <script>
-        function changeText(textMappings) {
-            var query = window.location.search.substring(1);
-            var queryParams = query.split('&');
-            var dynamicText = 'Error fetching json';
-
-            for (var i = 0; i < queryParams.length; i++) {
-                var param = queryParams[i];
-                if (textMappings[param]) {
-                    dynamicText = textMappings[param];
-                    break;
-                }
-            }
-
-            document.getElementById('game-title').textContent = dynamicText;
-        }
-
-        fetch('game-title.json')
-            .then(response => response.json())
-            .then(data => {
-                changeText(data);
-            })
-            .catch(error => {
-                console.error('Error fetching game title', error);
-            });
-    </script>
-    <script src="main.js"></script>
-    <script src="/js/sw.js"></script>
 </body>
 
 </html>

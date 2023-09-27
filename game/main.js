@@ -1,76 +1,56 @@
 document.addEventListener("DOMContentLoaded", function () {
     const queryString = window.location.search.substring(1);
 
-    const pageMappings = {
-        "1v1.lol": "https://cdn.nate-games.xyz/src/play-now/?1v1.lol",
-        "1v1.lol-method-2": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/ko1ov/edit@main/d3hjf73j2e92ge4y.xml",
-        "justfall.lol": "/0/g/just-fall/",
-        "cluster-rush": "/0/g/cluster-rush/",
-        "1": "/0/g/1/",
-        "2048": "/0/g/2048/",
-        "wings.io": "https://wings.io",
-        "roblox": "/0/g/Roblox/",
-        "gacha-club": "/0/g/gacha-club/",
-        "papas-burgeria": "/0/g/papas-burgeria/",
-        "papas-doggeria": "/0/g/papas-doggeria/",
-        "doge-miner": "/0/g/doge-miner/",
-        "papas-pancakeria": "/0/g/papas-pancakeria/",
-        "papas-scooperia": "/0/g/papas-scooperia/",
-        "flash-sonic": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fultimate-flash-sonic.xml",
-        "sonic-revert": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@c14b72fdb88d7c697da0f38ed0e9cd0acb3fc4bf/Sonic_Revert.xml",
-        "subway-surfers": "https://da211f97-3b87-4f53-9b9f-34d3fbc5d016.id.repl.co",
-        "electricman": "/0/g/electricman/",
-        "tooncup": "https://emea.iframed.cn.dmti.cloud/content/691/toon-cup/game/uk/en.e0732106/index.html", // Very likely to be blocked
-        "pvz-ds": "https://www.greenfoot.org/scenarios/31337?embed=true",
-        "basketball-random": "https://tylerpalko.github.io/gamehub/basketrandom/", // IF BLOCKED: https://github.com/TylerPalko/gamehub/tree/main/basketrandom
-        "jelly-mario": "/0/g/jellymario/",
-        "2048-multitask": "/0/g/2048-multitask/",
-        "game-inside-a-game": "/0/g/giag/",
-        "tanuki-sunset": "https://tanuki-sunset-one.vercel.app/",
-        "bottle-flip-3d": "/0/g/bf3d/",
-        "tiny-fishing": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/tf.xml",
-        "worlds-hardest-game": "/0/g/whg/1/",
-        "worlds-hardest-game-2": "/0/g/whg/2/",
-        "worlds-hardest-game-3": "/0/g/whg/3/",
-        "dumb-ways-to-die": "https://html5.iclouds.io/dumb-ways-die/?ref", // /0/g/dumb-ways/?ref, https://cdn6.aptoide.com/imgs/8/5/d/85d7dca13a04c6d4cb56fb9f2657fcb8_icon.png
-        "geometry-dash": "https://cdn.nate-games.workers.dev/?geometry-dash",
-        "slope-game": "/0/g/slope/",
-        "slope-2": "/0/g/slope-2/",
-        "slope-3": "https://c598907c-5367-42e4-96e5-eda20e01cd6e.id.repl.co",
-        "tunnelrush-2": "https://eng-docs-opensocial.googleusercontent.com/gadgets/ifr?url=https://749201648-319375013826385014.preview.editmysite.com/uploads/b/139890129-296476716652996764/files/tr.xml",
-        "tunnelrush": "/0/g/tunnel-rush/",
-        "cut-the-rope": "https://cdn-ngs.pages.dev/cut-the-rope/",
-        "cut-the-rope-holiday-gift": "https://cdn-ngs.pages.dev/cut-the-rope/holiday-gift/",
-        "cut-the-rope-time-travel": "https://cdn-ngs.pages.dev/cut-the-rope/time-travel/",
-        "google-snake" : "/0/g/google-snake/",
-        "repuls.io": "https://cdn-ngs.pages.dev/repuls/",
-        "fnaf-4": "https://cdn-ngs.pages.dev/fnaf-4/",
-        "fnf-mid-fight-masses": "https://cdn-ngs.pages.dev/fnfmidfight/",
-        "vex-3": "https://cdn.nate-games.xyz/vex-3/",
-        "vex-4": "https://cdn.nate-games.xyz/vex-4/",
-        "vex-5": "https://cdn.nate-games.xyz/vex-5/",
-        "vex-6": "https://cdn.nate-games.xyz/vex-6/",
-        "vex-7": "https://cdn.nate-games.xyz/vex-7/",
-        "masked-forces": "https://tanuki-sunset-one.vercel.app/masked-forces/",
-        "stick-defenders": "https://topvazstore.github.io/g6/stick-defenders/",
-        "swingo": "https://topvazstore.github.io/g3/swingo/",
-        "temple-of-boom": "https://topvazstore.github.io/g3/temple-of-boom/",
-        "hello-guys": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://362963852-037591742967942863.preview.editmysite.com/uploads/b/139890129-842828255751613847/files/hegu.xml",
-        "burnin-rubber-5-xs": "https://webglmath.github.io/burnin-rubber-5-xs/",
-        "burger-and-frights": "https://cdn.nate-games.xyz/burger-frights/",
-        "mad-gunz": "https://webglmath.github.io/mad-gunz/",
-        "precision-client": "https://cdn-ngs.pages.dev/PrecisionClient/game/compiled/web/",
-        "fnaf-2-hacks": "https://cdn-ngs.pages.dev/fnaf-2hacks/game/",
-        "fnf-mobile": "https://cdn-ngs.pages.dev/fnfmobile/game/",
-        "undertale": "https://cdn-ngs.pages.dev/Undertale/game/",
-        "fnf": "https://cdn-ngs.pages.dev/fnf/game/",
-        "zombs-royale": "https://the.deconstructors.co.uk/tmm-zombsroyale/",
-        "angrybirds": "https://cdn.nate-games.xyz/angrybirds/"
-    };
+    const preloaderContainer = document.querySelector('.preloader-container');
+    const iframe = document.getElementById("content");
+    const playButton = document.getElementById("play-button");
+    const gameImage = document.getElementById("game-img");
 
-    const filePath = pageMappings[queryString];
+    fetch('game-data.json')
+        .then(response => response.json())
+        .then(data => {
+            const queryParamsData = data[queryString];
 
-    if (filePath) {
-        document.getElementById("content").src = filePath;
-    }
+            if (queryParamsData) {
+                const pageMapping = queryParamsData.pageMapping;
+                const gameTitle = queryParamsData.gameTitle;
+                const imageSrc = queryParamsData.imageSrc;
+
+                if (pageMapping) {
+                    iframe.src = pageMapping;
+                }
+
+                changeText(gameTitle);
+
+                if (imageSrc) {
+                    gameImage.src = imageSrc;
+                }
+            } else {
+                changeText("Error fetching json");
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching json data', error);
+        });
+
+    playButton.addEventListener("click", function () {
+        iframe.style.display = "block";
+    });
 });
+
+function changeText(dynamicText) {
+    document.getElementById('game-title').textContent = dynamicText || 'Error fetching json';
+    document.getElementById('game-h3').textContent = dynamicText || 'Error fetching json';
+}
+
+
+
+// Bug Report
+
+var currentURL = window.location.href;
+
+var linkElement = document.getElementById("bug.referer");
+
+linkElement.href += currentURL;
+
+// 4th and goal 2022 https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://284711640-164027483921740274.preview.editmysite.com/uploads/b/139890129-601329693740539694/files/4g22.xml

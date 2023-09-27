@@ -7,7 +7,7 @@ body {
 }
 
 .center-container {
-    margin-top: 7em;
+    margin-top: 6em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,9 @@ body {
 #embed-container {
     position: relative;
     width: 1200px;
-    height: calc(675px - 50px);
+    height: 625px; /* 675 + 50px */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+    background-color: #171717;
 }
 
 #embed-container iframe {
@@ -40,7 +42,6 @@ body {
     cursor: pointer;
     transition: .2s;
     border-radius: 0;
-    margin-bottom: -50px;
 }
 
 #fullscreen-button:hover {
@@ -69,13 +70,13 @@ body {
     padding-left: calc(100% - 15px);
     bottom: 0px;
     left: 0px;
+    display: flex;
     height: 20px;
     background-color: #111;
     z-index: 9998;
     user-select: none;
     overflow: hidden;
     bottom: 0px;
-    margin-bottom: -50px;
 }
 
 .game-title {
