@@ -56,7 +56,7 @@
   },
   {
     "url": "/game/?subway-surfers",
-    "imageSrc": "./subway-surfers/unnamed.jpg",
+    "imageSrc": "/game/img/subway-surfers.jpg",
     "name": "Subway Surfers",
     "tags": "kids, action, unity"
   },
@@ -134,7 +134,7 @@
   },
   {
     "url": "/0/g/HexGL/",
-    "imageSrc": "./HexGL/game/icon_256.png",
+    "imageSrc": "./HexGL/icon_256.png",
     "name": "HexGL",
     "tags": "unity, kids, action"
   },
@@ -545,14 +545,14 @@
     "tags": "battle-royale, adventure, pixel, minecraft, shooting, action, intense"
   },
   {
-    "url": "./valorant/",
-    "imageSrc": "./valorant/splash.webp",
+    "url": "/game/?valorant",
+    "imageSrc": "/game/img/valorant.webp",
     "name": "Valorant",
     "tags": "br, fun, intense, action, shooting, powers, intense"
   },
   {
-    "url": "./doodle-jump/",
-    "imageSrc": "./doodle-jump/game/doodle.png",
+    "url": "/game/?doodle-jump",
+    "imageSrc": "/game/img/doodle-jump.png",
     "name": "Doodle Jump",
     "tags": "fun, kids, doodle, scribble, drawing, action, adventure, intense"
   },
@@ -899,8 +899,8 @@
   },
   {
     "name": "Stumble Guys",
-    "imageSrc": "/0/g/Stumble Guys/splash.png",
-    "url": "./Stumble Guys/"
+    "imageSrc": "/game/img/stumble-guys.png",
+    "url": "/game/?stumble-guys"
   },
   {
     "name": "Zombs Royale",
@@ -1004,8 +1004,8 @@
   },
   {
     "name": "Getaway Shootout",
-    "imageSrc": "getaway-shootout/unnamed.jpg",
-    "url": "./getaway-shootout/"
+    "imageSrc": "/game/img/getaway-shootout.jpg",
+    "url": "/game/?getaway-shootout"
   },
   {
     "name": "Vex 3",

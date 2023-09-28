@@ -19,6 +19,11 @@
         "imageSrc": "https://raw.githubusercontent.com/OutRed/outred-assets-cdn.outred.org/main/cluster-rush/splash.png",
         "gameTitle": "Cluster Rush"
     },
+    "doodle-jump": {
+        "pageMapping": "/0/g/doodle-jump/",
+        "imageSrc": "/game/img/doodle-jump.png",
+        "gameTitle": "Doodle Jump"
+    },
     "1": {
         "pageMapping": "/0/g/1/",
         "imageSrc": "/0/g/1/meta/apple-touch-icon.png",
@@ -81,7 +86,7 @@
     },
     "subway-surfers": {
         "pageMapping": "https://da211f97-3b87-4f53-9b9f-34d3fbc5d016.id.repl.co",
-        "imageSrc": "/0/g/subway-surfers/unnamed.jpg",
+        "imageSrc": "/game/img/subway-surfers.jpg",
         "gameTitle": "Subway Surfers"
     },
     "electricman": {
@@ -269,6 +274,11 @@
         "imageSrc": "/game/img/helloguys-thumb1.webp",
         "gameTitle": "Hello Guys"
     },
+    "stumble-guys": {
+        "pageMapping": "https://selfstudybrain.com/play/kitka-games/7999/stumble-guys",
+        "imageSrc": "/game/img/stumble-guys.png",
+        "gameTitle": "Stumble Guys"
+    },
     "burnin-rubber-5-xs": {
         "pageMapping": "https://webglmath.github.io/burnin-rubber-5-xs/",
         "imageSrc": "/game/img/burnin-rubber-5-xs.avif",
@@ -283,6 +293,11 @@
         "pageMapping": "https://webglmath.github.io/mad-gunz/",
         "imageSrc": "https://webglmath.github.io/mad-gunz/logo.png",
         "gameTitle": "Mad Gunz"
+    },
+    "getaway-shootout": {
+        "pageMapping": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@d2542b2b948a265eddaa25f984368f25fafc1447/g64dh6j/Getaway-Shootout.xml",
+        "imageSrc": "/game/img/getaway-shootout.jpg",
+        "gameTitle": "Getaway Shootout"
     },
     "precision-client": {
         "pageMapping": "https://cdn-ngs.pages.dev/PrecisionClient/game/compiled/web/",
@@ -313,6 +328,11 @@
         "pageMapping": "https://the.deconstructors.co.uk/tmm-zombsroyale/",
         "imageSrc": "/game/img/zombs-royale.png",
         "gameTitle": "Zombs Royale"
+    },
+    "valorant": {
+        "pageMapping": "https://games.construct.net/35134/42190/embed.html",
+        "imageSrc": "/game/img/valorant.webp",
+        "gameTitle": "Valorant"
     },
     "angrybirds": {
         "pageMapping": "https://cdn-ngs.pages.dev/angrybirds/",
