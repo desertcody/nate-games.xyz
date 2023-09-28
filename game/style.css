@@ -6,12 +6,21 @@ body {
     margin: 0;
 }
 
+.checked {
+    color: goldenrod;
+}
+
 .center-container {
     margin-top: 6em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.divider {
+    border-bottom: #202020 solid 2px;
+    width: 100px;
 }
 
 #embed-container {
@@ -44,6 +53,7 @@ body {
     transition: .2s;
     border-radius: 0;
 }
+
 
 #fullscreen-button:hover {
     background-color: #222;

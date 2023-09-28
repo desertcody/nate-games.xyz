@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const iframe = document.getElementById("content");
     const playButton = document.getElementById("play-button");
     const gameImage = document.getElementById("game-img");
-
     const gameThumbnail = document.getElementById("game-thumb");
+
+    let iframeSrc = null;
 
     fetch('game-data.json')
         .then(response => response.json())
@@ -15,13 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
             if (queryParamsData) {
                 const pageMapping = queryParamsData.pageMapping;
                 const gameTitle = queryParamsData.gameTitle;
+                const gameDesc = queryParamsData.description;
                 const imageSrc = queryParamsData.imageSrc;
 
                 if (pageMapping) {
-                    iframe.src = pageMapping;
+                    iframeSrc = pageMapping;
                 }
 
                 changeText(gameTitle);
+                changeDescription(gameDesc);
 
                 if (imageSrc) {
                     gameImage.src = imageSrc;
@@ -36,13 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     playButton.addEventListener("click", function () {
-        iframe.style.display = "block";
+        if (iframeSrc) {
+            iframe.src = iframeSrc;
+            iframe.style.display = "block";
+        }
     });
 });
 
 function changeText(dynamicText) {
     document.getElementById('game-title').textContent = dynamicText || 'Error fetching json';
     document.getElementById('game-h3').textContent = dynamicText || 'Error fetching json';
+}
+
+function changeDescription(dynamicText) {
+    document.getElementById('game-description').textContent = dynamicText || 'Play now on nate-games! 👇';
 }
 
 function enterFullscreen() {

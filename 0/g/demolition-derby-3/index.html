@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+    html,
+    body {
+      background-color: #333;
+      color: white;
+      font-family: 'Lato', sans-serif;
+      font-size: 13px;
+      user-select: none;
+    }
+
+    code {
+      background-color: #222;
+      border-radius: 2px;
+      border-color: white;
+      user-select: all;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <button class="blank-button" data-url="https://universityequality.com/play/aptoide/1440/aptoide">Server 1</button>
+    <button class="blank-button" data-url="https://now.gg/play/aptoide/1440/aptoide">Server 2</button>
+    <br><p>If none work there are alternatives like <a href="https://saucelabs.com" target="_blank">SauceLabs</a>, you can use a virtual pc and run now.gg on it. <br>Paste <code>https://now.gg/play/aptoide/1440/aptoide</code> into the search bar once you are there.</p>
+
+  </center>
+  <script>
+    var buttons = document.querySelectorAll(".blank-button");
+    var windows = {};
+
+    buttons.forEach(function (button) {
+      button.onclick = function () {
+        var url = button.getAttribute("data-url");
+
+        if (!url) {
+          return;
+        }
+
+        if (windows[url] && !windows[url].closed) {
+          windows[url].focus();
+        } else {
+          var win = window.open();
+          win.document.body.style.margin = "0";
+          win.document.body.style.height = "100vh";
+          var iframe = win.document.createElement("iframe");
+          iframe.style.border = "none";
+          iframe.style.width = "100%";
+          iframe.style.height = "100%";
+          iframe.style.margin = "0";
+          iframe.src = url;
+          win.document.body.appendChild(iframe);
+
+          var interval = setInterval(function () {
+            if (win.closed) {
+              clearInterval(interval);
+              windows[url] = undefined;
+            }
+          }, 500);
+
+          windows[url] = win;
+        }
+      };
+    });
+  </script>
+
+  
+</body>
+
+</html>

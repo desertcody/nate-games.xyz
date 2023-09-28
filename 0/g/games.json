@@ -133,38 +133,38 @@
     "tags": "html5, kids, action"
   },
   {
-    "url": "/0/g/HexGL/",
-    "imageSrc": "./HexGL/icon_256.png",
+    "url": "/game/?hexgl",
+    "imageSrc": "/game/img/hexgl.bmp",
     "name": "HexGL",
     "tags": "unity, kids, action"
   },
   {
-    "url": "/0/g/Hextris/",
-    "imageSrc": "./Hextris/game/images/icons/transparent-192.png",
+    "url": "/game/?hextris",
+    "imageSrc": "/game/img/hextris.webp",
     "name": "Hextris",
     "tags": "kids, html5"
   },
   {
-    "url": "/0/g/tetris/",
+    "url": "/game/?tetris",
     "imageSrc": "https://play-lh.googleusercontent.com/za2Nu_qjMw5GzWfbzet4zeiZT1xvJlTRi4NJzGpJWX9grxFAAko5dGBwe7qeqK01THw",
     "name": "Tetris",
     "tags": "kids, flash"
   },
   {
-    "url": "/0/g/paperio2/",
-    "imageSrc": "./paperio2/game/splash.avif",
+    "url": "/game/?paperio-2",
+    "imageSrc": "/game/img/paperio-2.avif",
     "name": "Paper.io 2",
     "tags": "html5, kids"
   },
   {
-    "url": "/0/g/paperio3d/",
-    "imageSrc": "./paperio3d/game/splash.jpg",
+    "url": "/game/?paperio-3d",
+    "imageSrc": "/game/img/paperio-3d.jpg",
     "name": "Paper.io 3d",
     "tags": "html5, kids"
   },
   {
-    "url": "/0/g/flappybird/",
-    "imageSrc": "./flappybird/game/splash.png",
+    "url": "/game/?flappy-bird",
+    "imageSrc": "/game/img/flappy-bird.png",
     "name": "Flappy Bird",
     "tags": "html5, kids, action"
   },
@@ -651,6 +651,16 @@
     "url": "./drive-mad/",
     "imageSrc": "./drive-mad/game/webapp/logo.avif",
     "name": "Drive Mad"
+  },
+  {
+    "url": "/game/?drift-hunters",
+    "imageSrc": "/game/img/drift-hunters.png",
+    "name": "Drift Hunters"
+  },
+  {
+    "url": "/game/?demolition-derby-3",
+    "imageSrc": "https://play-lh.googleusercontent.com/_96MKqR7vQJfEunLKi4oJVuv2jWrB3VEoAr6Rg2jSYic1fIqliqAX2F9zO4fENgZUE4",
+    "name": "Demolition Derby 3"
   },
   {
     "url": "./eggycar/",

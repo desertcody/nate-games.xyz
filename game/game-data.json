@@ -66,7 +66,7 @@
     },
     "papas-scooperia": {
         "pageMapping": "/0/g/papas-scooperia/",
-        "imageSrc": "/0/g/papas-pancakeria/unnamed.png",
+        "imageSrc": "https://m.media-amazon.com/images/I/81BoBmWngJL.png",
         "gameTitle": "Papa's Scooperia"
     },
     "doge-miner": {
@@ -135,17 +135,17 @@
         "gameTitle": "Tiny Fishing"
     },
     "worlds-hardest-game": {
-        "pageMapping": "/0/g/whg/1/",
+        "pageMapping": "/0/g/flash/whg/1/",
         "imageSrc": "/game/img/whg.png",
         "gameTitle": "World's Hardest Game"
     },
     "worlds-hardest-game-2": {
-        "pageMapping": "/0/g/whg/2/",
+        "pageMapping": "/0/g/flash/whg/2/",
         "imageSrc": "/game/img/whg2.jpg",
         "gameTitle": "World's Hardest Game 2"
     },
     "worlds-hardest-game-3": {
-        "pageMapping": "/0/g/whg/3/",
+        "pageMapping": "/0/g/flash/whg/3/",
         "imageSrc": "/game/img/whg3.jpg",
         "gameTitle": "World's Hardest Game 3"
     },
@@ -337,7 +337,14 @@
     "angrybirds": {
         "pageMapping": "https://cdn-ngs.pages.dev/angrybirds/",
         "imageSrc": "/game/img/angrybirds.png",
-        "gameTitle": "Angry Birds"
+        "gameTitle": "Angry Birds",
+        "description": "(Opens in CDN)"
+    },
+    "drift-hunters": {
+        "pageMapping": "https://topvazstore.github.io/g/drift-hunters/",
+        "imageSrc": "/game/img/drift-hunters.png",
+        "gameTitle": "Drift Hunters",
+        "description": ""
     },
     "4th-and-goal-2022": {
         "pageMapping": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://284711640-164027483921740274.preview.editmysite.com/uploads/b/139890129-601329693740539694/files/4g22.xml",
@@ -363,5 +370,40 @@
         "pageMapping": "/0/g/bouncybasketball/",
         "imageSrc": "/game/img/bouncy-basketball.avif",
         "gameTitle": "Bouncy Basketball"
+    },
+    "hexgl": {
+        "pageMapping": "/0/g/HexGL/",
+        "imageSrc": "/game/img/hexgl.bmp",
+        "gameTitle": "HexGL"
+    },
+    "hextris": {
+        "pageMapping": "/0/g/Hextris/",
+        "imageSrc": "/game/img/hextris.webp",
+        "gameTitle": "Hextris"
+    },
+    "tetris": {
+        "pageMapping": "/0/g/flash/tetris/",
+        "imageSrc": "https://play-lh.googleusercontent.com/za2Nu_qjMw5GzWfbzet4zeiZT1xvJlTRi4NJzGpJWX9grxFAAko5dGBwe7qeqK01THw",
+        "gameTitle": "Tetris"
+    },
+    "paperio-2": {
+        "pageMapping": "/0/g/paperio2/",
+        "imageSrc": "/game/img/paperio-2.avif",
+        "gameTitle": "Paper.io 2"
+    },
+    "paperio-3d": {
+        "pageMapping": "/0/g/paperio3d/",
+        "imageSrc": "/game/img/paperio-3d.jpg",
+        "gameTitle": "Paper.io 3D"
+    },
+    "flappy-bird": {
+        "pageMapping": "/0/g/flappybird/",
+        "imageSrc": "/game/img/flappy-bird.png",
+        "gameTitle": "Flappy Bird"
+    },
+    "demolition-derby-3": {
+        "pageMapping": "/0/g/demolition-derby-3/",
+        "imageSrc": "/game/img/demolition-derby-3.png",
+        "gameTitle": "Demolition Derby 3"
     }
 }
