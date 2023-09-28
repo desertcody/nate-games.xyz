@@ -345,7 +345,7 @@
         "gameTitle": "4th and Goal 2022"
     },
     "combat-reloaded": {
-        "pageMapping": "http://nadgames.com/WebGL/Combat_Reloaded/embed/",
+        "pageMapping": "https://nadgames.com/WebGL/Combat_Reloaded/embed/",
         "imageSrc": "/game/img/combat-reloaded.png",
         "gameTitle": "Combat Reloaded"
     },
