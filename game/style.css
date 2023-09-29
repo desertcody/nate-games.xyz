@@ -52,6 +52,8 @@ body {
     bottom: 0px;
     right: 0px;
     z-index: 9999;
+    max-height: 50px;
+    overflow: hidden;
     border: none;
     background-color: #111;
     padding: 15px;
