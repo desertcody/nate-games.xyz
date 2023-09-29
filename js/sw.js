@@ -1,3 +1,12 @@
+function handleKeyPress(event) {
+
+  if (event.code === 'Backquote') {
+    window.location.href = "https://launchpad.classlink.com";
+  }
+}
+
+document.addEventListener('keydown', handleKeyPress);
+
 var allowedDomains = [
   "https://nate-games.xyz",
   "https://nate-games.github.io",
