@@ -339,3 +339,20 @@ h1 {
     border-bottom: #777 solid 2px;
     width: 420px;
 }
+
+#progress-container {
+    width: 400px;
+    margin: 20px auto;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #4287f5;
+    transition: width 0.5s ease-in-out;
+    left: 0;
+}

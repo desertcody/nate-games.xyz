@@ -76,7 +76,7 @@ body {
 
 /* Define CSS styles for the progress bar */
 #progress-container {
-    width: 50%;
+    width: 200px;
     margin: 20px auto;
     background-color: #ddd;
     border-radius: 5px;

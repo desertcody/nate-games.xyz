@@ -13,6 +13,10 @@ function updateXPAndLevel() {
     console.log(`Congratulations! You reached level ${level}!`);
 
     document.getElementById("progress-bar").style.width = "100%";
+
+    setTimeout(() => {
+      document.getElementById("progress-bar").style.width = "0%";
+    }, 2500);
   } else {
     const progressBar = document.getElementById("progress-bar");
     const progress = (xp / xpPerLevel) * 100;
@@ -34,7 +38,7 @@ document.getElementById("level").textContent = level;
 document.getElementById("xp").textContent = xp;
 
 function startXPGeneration() {
-  setInterval(updateXPAndLevel, 60000); // user gets 50xp every minute
+  setInterval(updateXPAndLevel, 10000); // user gets 50xp every 10 seconds
 }
 
 startXPGeneration();
