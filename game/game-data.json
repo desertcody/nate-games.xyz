@@ -418,7 +418,7 @@
         "gameTitle": "Funny Shooter"
     },
     "funny-shooter-2": {
-        "pageMapping": "/0/g/funny-shooter/2/",
+        "pageMapping": "https://smartfoloolol.netlify.app/assets/funny-shooter-2/",
         "imageSrc": "/game/img/funnyshooter2.png",
         "gameTitle": "Funny Shooter 2"
     }
