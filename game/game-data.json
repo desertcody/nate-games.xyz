@@ -411,5 +411,15 @@
         "pageMapping": "/0/g/demolition-derby-3/",
         "imageSrc": "/game/img/demolition-derby-3.png",
         "gameTitle": "Demolition Derby 3"
+    },
+    "funny-shooter": {
+        "pageMapping": "/0/g/funny-shooter/",
+        "imageSrc": "/game/img/funnyshooter-thumb.png",
+        "gameTitle": "Funny Shooter"
+    },
+    "funny-shooter-2": {
+        "pageMapping": "/0/g/funny-shooter/2/",
+        "imageSrc": "/game/img/funnyshooter2.png",
+        "gameTitle": "Funny Shooter 2"
     }
 }

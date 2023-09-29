@@ -46,24 +46,25 @@ document.addEventListener("DOMContentLoaded", function () {
             setTimeout(() => {
                 iframe.src = iframeSrc;
                 loading.style.display = "none";
-            }, 2000); // 1000 milseconds per second
+            }, 2000);
             setTimeout(() => {
                 loadingText.textContent = "Preparing your game...";
+                iframe.style.backgroundColor = "#171717";
             }, 250);
             setTimeout(() => {
                 loadingText.textContent = "Loading your game...";
-            }, 850);
+            }, 750);
             setTimeout(() => {
-                loadingText.textContent = "Sucess! ✅";
+                loadingText.textContent = "Successful! ✅";
                 loadingText.style.color = "#42f57e";
             }, 1500);
-                iframe.style.display = "block";
-                loading.style.display = "block";
-                loadingText.textContent = "Downloading your game contents...";
-                nateLogo.style.height = "20px";
-                nateLogo.style.verticalAlign = "middle";
-            }
-        });
+            iframe.style.display = "block";
+            loading.style.display = "block";
+            loadingText.textContent = "Downloading your game contents...";
+            nateLogo.style.height = "20px";
+            nateLogo.style.verticalAlign = "middle";
+        }
+    });
 });
 
 function changeText(dynamicText) {

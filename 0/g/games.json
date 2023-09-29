@@ -524,6 +524,16 @@
     "name": "Superhot"
   },
   {
+    "url": "/game/?funny-shooter",
+    "imageSrc": "/game/img/funnyshooter-thumb.png",
+    "name": "Funny Shooter"
+  },
+  {
+    "url": "/game/?funny-shooter-2",
+    "imageSrc": "/game/img/funnyshooter2.png",
+    "name": "Funny Shooter 2"
+  },
+  {
     "url": "/game/?masked-forces",
     "imageSrc": "/game/img/masked-forces.jpg",
     "name": "Masked Forces"
