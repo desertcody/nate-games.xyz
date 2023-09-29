@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const playButton = document.getElementById("play-button");
     const gameImage = document.getElementById("game-img");
     const gameThumbnail = document.getElementById("game-thumb");
+    const loading = document.getElementById("loading-screen");
+    const loadingText = document.getElementById("loading-text");
+    const nateLogo = document.getElementById("nates-logo");
 
     let iframeSrc = null;
 
@@ -40,10 +43,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     playButton.addEventListener("click", function () {
         if (iframeSrc) {
-            iframe.src = iframeSrc;
-            iframe.style.display = "block";
-        }
-    });
+            setTimeout(() => {
+                iframe.src = iframeSrc;
+                loading.style.display = "none";
+            }, 2000); // 1000 milseconds per second
+            setTimeout(() => {
+                loadingText.textContent = "Preparing your game...";
+            }, 250);
+            setTimeout(() => {
+                loadingText.textContent = "Loading your game...";
+            }, 850);
+            setTimeout(() => {
+                loadingText.textContent = "Sucess! ✅";
+                loadingText.style.color = "#42f57e";
+            }, 1500);
+                iframe.style.display = "block";
+                loading.style.display = "block";
+                loadingText.textContent = "Downloading your game contents...";
+                nateLogo.style.height = "20px";
+                nateLogo.style.verticalAlign = "middle";
+            }
+        });
 });
 
 function changeText(dynamicText) {

@@ -6,10 +6,6 @@ body {
     margin: 0;
 }
 
-.checked {
-    color: goldenrod;
-}
-
 .center-container {
     margin-top: 6em;
     display: flex;
@@ -32,13 +28,22 @@ body {
     overflow: hidden;
 }
 
+#loading-screen {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 889;
+    color: white;
+}
+
 #embed-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: calc(100% - 50px);
-    background-color: #000;
 }
 
 #fullscreen-button {
