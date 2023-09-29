@@ -182,17 +182,17 @@ h1 {
 
 @-moz-document url-prefix() {
     .hg2793-container .nice-border {
-      justify-content: center;
-      text-align: center;
-      margin: 0 auto;
-      overflow: hidden;
-      display: inline-block;
-      background-color: #111;
-      border-radius: 16px;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
-      padding: 25px 50px 25px;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+        display: inline-block;
+        background-color: #111;
+        border-radius: 16px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+        padding: 25px 50px 25px;
     }
-  }
+}
 
 .dropdown {
     position: relative;
@@ -299,4 +299,38 @@ h1 {
     left: auto;
     right: 0;
     width: 100%;
+}
+
+.about-us {
+    max-width: 400px;
+    text-align: left;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    position: absolute;
+    margin-top: 50px;
+    font-size: 13px;
+    font-family: 'Lato';
+}
+
+.about-us .smaller {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.about-us summary {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .8;
+    transition: .2s;
+}
+
+.about-us summary:hover {
+    text-decoration: underline wavy #4287f5;
+    opacity: 1;
+}
+
+.divider {
+    border-bottom: #777 solid 2px;
+    width: 420px;
 }

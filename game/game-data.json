@@ -219,6 +219,12 @@
         "imageSrc": "/game/img/fnfmidfight.jpg",
         "gameTitle": "FNF Mid-Fight Masses"
     },
+    "fnf-vs-whitty": {
+        "pageMapping": "https://cdn-ngs.pages.dev/fnfvswhitty/",
+        "imageSrc": "/game/img/fnf-vs-whitty.jpg",
+        "gameTitle": "FNF vs. Whitty",
+        "description": "Recommended by Joaquin"
+    },
     "vex-3": {
         "pageMapping": "https://cdn-ngs.pages.dev/vex-3/",
         "imageSrc": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/87/06/4e/87064e7a-c9fd-7135-6ba3-f321f013e01e/mzl.kqcjsyop.png/512x512bb.jpg",

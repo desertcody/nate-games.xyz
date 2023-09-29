@@ -343,6 +343,12 @@
     "tags": "fnf, html5, intense, singleplayer, action"
   },
   {
+    "url": "/game/?fnf-vs-whitty",
+    "imageSrc": "/game/img/fnf-vs-whitty.jpg",
+    "name": "FNF vs. Whitty",
+    "tags": "fnf, html5, intense, singleplayer, action"
+  },
+  {
     "url": "./fnaf/",
     "imageSrc": "./fnaf/game/splash.jpg",
     "name": "FNAF",
