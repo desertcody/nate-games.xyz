@@ -6,77 +6,8 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="/0/assets/css/games.css">
   <link rel="icon" type="image/png" href="/favicon.ico">
-  <title>Contact | nate-games</title>
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #171717;
-      overflow: hidden;
-      color: black;
-    }
-
-    #path {
-      font-weight: bolder;
-    }
-
-    .main {
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-
-    .buttons {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ddd;
-      color: #333;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s;
-    }
-
-    .buttons:hover {
-      background-color: #bbb;
-    }
-
-    .sfn {
-      display: inline-block;
-      padding: 7px 13px;
-      font-size: 11px;
-      background-color: #33b056;
-      color: #333;
-      text-decoration: none;
-      border-radius: 9px;
-      transition: background-color 0.3s;
-    }
-
-    .sfn:hover {
-      background-color: #31a250;
-    }
-
-    #sfn {
-      display: none;
-      font-size: 11px;
-      font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    }
-
-    .container2 {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      padding: 40px;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Sign Up | nate-games</title>
 </head>
 
 <body>
@@ -144,16 +75,25 @@
       </div>
     </nav>
   </header>
-    <div class="container2">
-      <div class="container">
-        <h2>Contact | nate-games</h2>
-        <p> <i> "How can i contact developers or nate himself?"</i><br> Send us a message,and our dedicated support team
-          <br>will get back to you promptly!</p><a
-          href="mailto:contact@nate-games.xyz">contact@nate-games.xyz</a><br><br>
-        <a class="buttons" href="/">Close</a>
-      </div>
+  <div class="container2">
+    <div class="container">
+      <h2>Sign Up | nate-games</h2>
+      <p>It looks like you don't have an account, <br> please make one and you, will automatically <br> be redirected back.</p>
+      <a class="dark" href="https://github.com/login?return_to=/en-us/signup/">Sign in with GitHub <svg fill="none"
+          height="92" viewBox="0 0 92 92" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd"
+            d="m45.6097 21.0479c-14.2184 0-25.7347 11.4704-25.7347 25.6323 0 11.3423 7.3666 20.9224 17.5961 24.3187 1.2867.2243 1.7693-.5447 1.7693-1.2176 0-.6087-.0322-2.6273-.0322-4.774-6.4658 1.1855-8.1386-1.57-8.6533-3.0118-.2895-.7369-1.5441-3.0118-2.6378-3.6205-.9007-.4807-2.1875-1.6661-.0322-1.6982 2.0266-.032 3.4742 1.8584 3.9567 2.6273 2.3162 3.8769 6.0155 2.7875 7.4953 2.1147.2251-1.6661.9007-2.7875 1.6406-3.4283-5.726-.6408-11.7093-2.8516-11.7093-12.656 0-2.7875.9972-5.0944 2.6378-6.8887-.2574-.6408-1.1581-3.2681.2573-6.7926 0 0 2.1553-.6728 7.0771 2.6274 2.0587-.5768 4.2462-.8651 6.4336-.8651 2.1875 0 4.3749.2883 6.4337.8651 4.9218-3.3323 7.0771-2.6274 7.0771-2.6274 1.4154 3.5245.5146 6.1518.2573 6.7926 1.6406 1.7943 2.6378 4.0691 2.6378 6.8887 0 9.8364-6.0155 12.0152-11.7414 12.656.9328.801 1.737 2.3389 1.737 4.742 0 3.4283-.0321 6.1838-.0321 7.0488 0 .6729.4825 1.4739 1.7692 1.2176 10.1652-3.3963 17.5318-13.0084 17.5318-24.3187 0-14.1619-11.5163-25.6323-25.7347-25.6323z"
+            fill="#fff" fill-rule="evenodd" />
+        </svg></a>
+      <a class="dark" onclick="signUp()"><svg fill="none" height="92" width="0" viewBox="0 0 92 92"
+          xmlns="http://www.w3.org/2000/svg">
+        </svg>Sign in manually</a><br><br>
+      <span id="ManualAuth" style="display: none;">
+        <input type="text" id="usernameInput" placeholder="Username" minlength="1"><button onclick="SaveSignUp()">Save</button><i
+          style="font-size: 9px;"><br>Choose wisely (You can't change your username)</i></span>
     </div>
-    <script src="/js/sw.js"></script>
+  </div>
+  <script src="./script.js"></script>
 </body>
 
 </html>

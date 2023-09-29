@@ -1,0 +1,91 @@
+.dark {
+    background-color: #222;
+    color: white;
+    display: inline-block;
+    padding: 2px 10px;
+    text-align: middle;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.dark:active {
+    background-color: #111;
+    box-shadow: 0px 0px 3px #4287f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+    overflow: hidden;
+    color: black;
+}
+
+#path {
+    font-weight: bolder;
+}
+
+.main {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.sfn {
+    display: inline-block;
+    padding: 7px 13px;
+    font-size: 11px;
+    background-color: #33b056;
+    color: #333;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: background-color 0.3s;
+}
+
+.sfn:hover {
+    background-color: #31a250;
+}
+
+#sfn {
+    display: none;
+    font-size: 11px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container2 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+/* Define CSS styles for the progress bar */
+#progress-container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #ddd;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.5s ease-in-out; /* Smooth transition */
+}

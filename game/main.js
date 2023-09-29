@@ -124,3 +124,13 @@ function showbar() {
     fullscreenbutton.style.display = "block";
     showbarButton.style.display = "none";
 }
+
+document.getElementById("revealLevel").addEventListener("click", function () {
+    var level = document.querySelector("#levelContent");
+    if (level.style.display === "none" || level.style.display === "") {
+      level.style.display = "block";
+    } else {
+      level.style.display = "none";
+    }
+  });
+  

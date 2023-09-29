@@ -69,6 +69,11 @@ body {
 
 }
 
+.menu-item img {
+    vertical-align: middle;
+    height: 20px;
+}
+
 .home-menu-item {
     margin: 0 2px 0;
     color: #fff;
