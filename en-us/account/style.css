@@ -89,3 +89,27 @@ body {
     background-color: #4CAF50;
     transition: width 0.5s ease-in-out; /* Smooth transition */
 }
+
+
+.buttons {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ddd;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    border: none;
+    font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+
+  .buttons:hover {
+    background-color: #bbb;
+  }
+
+  .buttons:active {
+    background-color: #111;
+    box-shadow: 0px 0px 3px #4287f5;
+    color: white;
+  }
