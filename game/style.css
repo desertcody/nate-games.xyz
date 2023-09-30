@@ -205,19 +205,10 @@ center:hover .show-bar {
     margin-left: 20px;
 }
 
-.like img {
-    height: 100%;
-    width: 100%;
-    vertical-align: middle;
-    position: relative;
-}
 
-.like {
-    height: 20px;
-    width: 20px;
-    margin-bottom: 15px;
+.like #starred, #unstarred{
     font-size: 15px;
-    bottom: 0;
+    bottom: 19px;
     right: 0;
     z-index: 9999;
     position: absolute;

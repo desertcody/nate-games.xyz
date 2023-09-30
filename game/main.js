@@ -145,11 +145,15 @@ function showbar() {
 
 
 function setSessionCookie(name, value) {
-    document.cookie = `${name}=${value};path=/`;
+    const urlParams = new URLSearchParams(window.location.search);
+    const key = `${name}_${urlParams.toString()}`;
+    document.cookie = `${key}=${value};path=/`;
 }
 
 function getCookie(name) {
-    const cookieName = `${name}=`;
+    const urlParams = new URLSearchParams(window.location.search);
+    const key = `${name}_${urlParams.toString()}`;
+    const cookieName = `${key}=`;
     const cookies = document.cookie.split(';');
     for (const cookie of cookies) {
         let c = cookie.trim();
