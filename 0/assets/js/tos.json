@@ -3,11 +3,15 @@
   "sections": [
     {
       "title": "Cookie Consent",
-      "content": "We rely on cookies to save game data. Disabling cookies will prevent our site from saving your game progress, passwords, high scores, etc. Cookies do not contain any of your personal information.<br><br>"
+      "content": "We rely on cookies to save game data. Disabling cookies will prevent our site from saving your game progress, passwords, high scores, etc. Cookies do not contain any of your personal information."
     },
     {
-      "title": "Copyright Procedure",
-      "content": "Don't copy our games; this can violate the Digital Millennium Copyright Act (DMCA), which is a copyright law. It's illegal; don't risk it. <a href='https://www.copyright.gov/dmca/' target='_blank' style='text-decoration: none; color: rgba(255, 255, 255, 0.5);'>Read more...</a>"
+      "title": "Data Collection and Usage",
+      "content": "When using our services, please be aware of the following:<br> 1. Personal Information: We do not collect personal information such as your name, email address, postal address, phone number, and other identifiers.<br>2. Usage Information: We may collect information about your usage of the Service, including your IP address, browser type, and operating system. <a href='/0/privacy-policy.html' target='_blank' style='text-decoration: none; color: rgba(255, 255, 255, 0.5);'>Read more...</a>"
+    },
+    {
+      "title": "User Conduct and Community Guidelines",
+      "content": "1.Fair Play: When using our games or interactive features, please play fairly and avoid any cheating, hacking, or exploiting of vulnerabilities.<br>2. Content Contribution: If you contribute content to our platform, such as comments or user-generated content, ensure it is appropriate, relevant, and adheres to our content policies."
     }
   ],
   "acceptanceQuestion": "Do you accept?"

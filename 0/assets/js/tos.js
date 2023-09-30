@@ -6,11 +6,18 @@ function showTOS() {
 function acceptTOS() {
   const tosOverlay = document.getElementById('tos-overlay');
   tosOverlay.style.display = 'none';
+  const expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + 30);
+
   localStorage.setItem('acceptedTOS', 'true');
+  localStorage.setItem('TOSExpirationDate', expirationDate.toISOString());
 }
 
 function checkTOS() {
-  if (!localStorage.getItem('acceptedTOS')) {
+  const acceptedTOS = localStorage.getItem('acceptedTOS');
+  const TOSExpirationDate = localStorage.getItem('TOSExpirationDate');
+
+  if (!acceptedTOS || (TOSExpirationDate && new Date(TOSExpirationDate) < new Date())) {
     showTOS();
     fetch('/0/assets/js/tos.json')
       .then(response => response.json())
@@ -20,7 +27,7 @@ function checkTOS() {
         tosContent.innerHTML = '';
         data.sections.forEach(section => {
           const sectionElement = document.createElement('div');
-          sectionElement.innerHTML = `<p>${section.title}</p><p>${section.content}</p>`;
+          sectionElement.innerHTML = `<div class="divider-title"><h4><b>${section.title}</b></h4></div><p>${section.content}</p>`;
           tosContent.appendChild(sectionElement);
         });
         const acceptanceQuestion = document.createElement('p');

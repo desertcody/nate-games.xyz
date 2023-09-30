@@ -50,6 +50,11 @@
           <img src="/0/assets/img/misc/controller.svg"> Games
         </button>
       </a>
+      <a href="/en-us/emu/">
+        <button class="menu-item">
+          <i class="fa-solid fa-dice-d6"></i> Emulator
+        </button>
+      </a>
       <a href="/0/a/">
         <button class="menu-item">
           Apps
@@ -94,9 +99,10 @@
               (You can
               change your username)</span></i><br></span>
         <span id="GithubAuth" style="display: none;">
-          <p>1. Go to your GitHub tokens: <a href="https://github.com/settings/tokens">PATs</a> <br>
-            2. Click "Generate token", provide "read:user" permission<br>
-            3. Copy the generated PAT.</p>
+          <p>1. Go to this link to create a <a href="https://github.com/settings/tokens/new?description=Login%20to%20nate-games&scopes=read:users">PAT</a> <br>
+            2. Set the expiration to "No Expiration" <br>
+            3. Click "Generate token" <small><i>(Permissions already preset)</i></small><br>
+            4. Copy the generated PAT and paste below.</p>
           <input type="text" id="token-input" placeholder="Personal Access Token">
           <button id="login-button" class="buttons">Login</button>
           <br>Confused? Watch a <a id="open-popup" href="#tutorial">Tutorial</a><br>Error <a href="https://github.com/nate-games/nate-games.github.io/issues/126">#126</a>

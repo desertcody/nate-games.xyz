@@ -76,6 +76,14 @@ body {
     margin: 0 5px 0;
 }
 
+.menu-item i {
+
+    height: 20px;
+    margin: 0 5px 0;
+    color: white;
+    font-size: 14px;
+}
+
 .home-menu-item {
     margin: 0 2px 0;
     color: #fff;

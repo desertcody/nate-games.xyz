@@ -1,6 +1,8 @@
 #tos-overlay p {
   text-align: left;
-  font-size: 13px;
+  font-size: 12px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 #tos-overlay {
@@ -21,11 +23,25 @@
 #tos-box {
   background-color: #222;
   padding: 20px;
-  width: 350px;
-  height: 550px;
+  width: 28%;
+  height: 65%;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px #fff;
 }
+
+.divider-title {
+  border-bottom: #333 solid 2px;
+  width: 300px;
+  margin-left: calc(50% - 150px);
+}
+
+@media only screen and (max-device-width: 480px) {
+  #tos-box {
+    width: 58%;
+  }
+}
+
 .bn5 {
   padding: 7px 31px;
   font-size: 12px;
@@ -37,7 +53,7 @@
   position: relative;
   z-index: 0;
   border-radius: 10px;
-  font-family: Arial;
+  font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .bn5:before {
