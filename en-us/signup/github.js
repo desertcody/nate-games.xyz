@@ -21,7 +21,7 @@ Login.addEventListener('click', () => {
     .then(response => response.json())
     .then(user => {
         usernameElement.textContent = user.login;
-        usernameContainer.style.display = 'block';
+        usernameContainer.style.display = 'none'; // Shows the username container
 
         window.location.href = '/en-us/account/';
         localStorage.setItem('accountSaved', 'true');

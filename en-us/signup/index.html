@@ -95,20 +95,28 @@
               change your username)</span></i><br></span>
         <span id="GithubAuth" style="display: none;">
           <p>1. Go to your GitHub tokens: <a href="https://github.com/settings/tokens">PATs</a> <br>
-            2. Click "Generate token", provide "read:user" permission<br> 
+            2. Click "Generate token", provide "read:user" permission<br>
             3. Copy the generated PAT.</p>
           <input type="text" id="token-input" placeholder="Personal Access Token">
           <button id="login-button" class="buttons">Login</button>
-        </span>
+          <br>Confused? Watch a <a id="open-popup" href="#tutorial">Tutorial</a>
 
-        <div id="username-container" style="display: none;">
+          <div id="video-popup" class="video-popup">
+              <div class="video-container">
+                  <span class="close-button" id="close-popup">&times;</span>
+                  <iframe width="800" height="450" src="/game/media/login_with_github.mp4" frameborder="0" allowfullscreen></iframe>
+              </div>
+          </div>
+        </span>
+        <span id="username-container" style="display: none;">
           <p>Welcome, <a href="#">@<span id="username"></span></a></p>
-        </div>
+        </span>
       </center>
     </div>
   </div>
   <input type="password" id="passwordInput" style="display: none;">
   <script src="./script.js"></script>
+  <script src="./video.js"></script>
   <script src="./github.js"></script>
   <script src="/js/sw.js"></script>
 </body>
