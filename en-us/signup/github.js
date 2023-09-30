@@ -22,6 +22,10 @@ Login.addEventListener('click', () => {
     .then(user => {
         usernameElement.textContent = user.login;
         usernameContainer.style.display = 'block';
+
+        window.location.href = '/en-us/account/';
+        localStorage.setItem('accountSaved', 'true');
+        localStorage.setItem('username', user.login);
     })
     .catch(error => {
         alert("Error fetching username. Please check your Personal Access Token.");
@@ -31,9 +35,8 @@ Login.addEventListener('click', () => {
 
 githubButton.addEventListener('click', function () {
     if (githubAuth.style.display === 'block') {
-
         githubAuth.style.display = 'none';
     } else {
         githubAuth.style.display = 'block';
     }
-  });
+});
