@@ -22,7 +22,7 @@ document.getElementById("changeUsername").addEventListener("click", function () 
     var ownerPassword = password
 
     if (newUsername !== null && newUsername === ownerUsername) {
-        const userPassword = prompt("Please enter the password to confirm the change:");
+        const userPassword = prompt("Please enter the password to confirm the change:", "password = var password");
         if (userPassword === ownerPassword) {
             localStorage.setItem('accountSaved', 'true');
             localStorage.setItem('username', newUsername);
