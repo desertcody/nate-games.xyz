@@ -141,3 +141,56 @@ function showbar() {
     fullscreenbutton.style.display = "block";
     showbarButton.style.display = "none";
 }
+
+
+
+function setSessionCookie(name, value) {
+    document.cookie = `${name}=${value};path=/`;
+}
+
+function getCookie(name) {
+    const cookieName = `${name}=`;
+    const cookies = document.cookie.split(';');
+    for (const cookie of cookies) {
+        let c = cookie.trim();
+        if (c.startsWith(cookieName)) {
+            return c.substring(cookieName.length, c.length);
+        }
+    }
+    return null;
+}
+
+const starred = document.getElementById('starred');
+const unstarred = document.getElementById('unstarred');
+
+if (getCookie('starred') === 'true') {
+    starred.style.display = 'block';
+    unstarred.style.display = 'none';
+} else {
+    starred.style.display = 'none';
+    unstarred.style.display = 'block';
+}
+
+starred.addEventListener('click', function () {
+    if (starred.style.display === 'none') {
+        unstarred.style.display = 'none';
+        starred.style.display = 'block';
+        setSessionCookie('starred', 'true');
+    } else {
+        starred.style.display = 'none';
+        unstarred.style.display = 'block';
+        setSessionCookie('starred', '');
+    }
+});
+
+unstarred.addEventListener('click', function () {
+    if (unstarred.style.display === 'none') {
+        starred.style.display = 'none';
+        unstarred.style.display = 'block';
+        setSessionCookie('starred', '');
+    } else {
+        unstarred.style.display = 'none';
+        starred.style.display = 'block';
+        setSessionCookie('starred', 'true');
+    }
+});

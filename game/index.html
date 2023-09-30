@@ -103,6 +103,10 @@
         <iframe src="" id="content" frameborder="0" allowfullscreen style="display: none; z-index: 888;"></iframe>
       </div>
       <div class="likes">
+        <p class="like">
+          <i class="fa-solid fa-star" id="starred" style="display: none;"></i>
+          <i class="fa-regular fa-star" id="unstarred"></i>
+        </p>
       </div>
       <a title="Enter Fullscreen (F)"><button id="fullscreen-button">
           <?xml version="1.0" ?><svg height="18px" version="1.1" viewBox="0 0 14 14" width="14px"
@@ -128,10 +132,6 @@
         <p class="games-title">| <a class="thumbnail"><img src="" id="game-thumb" draggable="false"
               style="padding: 0; margin: 0;"></a>
         <p id="game-title"></p>
-        <p class="like">
-          <img src="/0/assets/img/misc/unstar.svg" draggable="false"
-          style="vertical-align: middle;" onclick="src = '/0/assets/img/misc/star.svg'" title="Favorite Game">
-        </p>
         </p>
         <center>
           <p class="hide-bar" onclick="hidebar()">Hide Bar <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

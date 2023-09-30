@@ -213,15 +213,16 @@ center:hover .show-bar {
 }
 
 .like {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 9999;
     position: absolute;
-    margin-bottom: 20px;
-    font-size: 15px;
-    margin-left: 350px;
+    margin-right: 50px;
+    color: #ffdb3d;
 }
 
 .button3d {
