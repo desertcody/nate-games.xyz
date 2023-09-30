@@ -98,7 +98,22 @@ body {
     font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;
     color: #333;
     font-size: 12px;
+    text-align: center;
   }
   input::placeholder {
+    opacity: 1;
+  }
+
+  #passwordInput {
+    padding: 2px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #171717;
+    border: none;
+  }
+
+  #passwordInput::placeholder {
+    color: white;
     opacity: 1;
   }

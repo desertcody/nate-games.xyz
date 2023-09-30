@@ -11,13 +11,33 @@ if (isAccountSaved) {
 }
 
 document.getElementById("changeUsername").addEventListener("click", function () {
-    const newUsername = prompt("Enter your new username:");
-    if (newUsername !== null && newUsername !== "") {
+    let newUsername = prompt("Enter your new username:");
+
+    while (newUsername !== null && newUsername.length < 3) {
+        alert("Username must be at least 3 characters long.");
+        newUsername = prompt("Enter your new username (at least 3 characters):");
+    }
+
+    const ownerUsername = 'nate-games';
+    var ownerPassword = password
+
+    if (newUsername !== null && newUsername === ownerUsername) {
+        const userPassword = prompt("Please enter the password to confirm the change:");
+        if (userPassword === ownerPassword) {
+            localStorage.setItem('accountSaved', 'true');
+            localStorage.setItem('username', newUsername);
+            window.location.href = '/en-us/account/';
+        } else {
+            alert("Incorrect password. Username not changed.");
+        }
+    } else {
+        localStorage.setItem('accountSaved', 'true');
         localStorage.setItem('username', newUsername);
-        savedUsername = newUsername;
-        usernameElement.textContent = newUsername;
+        window.location.href = '/en-us/account/';
     }
 });
+
+
 
 document.getElementById("revealLevel").addEventListener("click", function () {
     var level = document.querySelector("#levelContent");
