@@ -1,5 +1,6 @@
 const isAccountSaved = localStorage.getItem('accountSaved');
 const error = document.getElementById('error');
+const signUpButton = document.getElementById('signupButton');
 
 if (isAccountSaved) {
   window.location.href = '/en-us/account/';
@@ -14,10 +15,14 @@ if (isAccountSaved) {
 } else {
   const signIn = document.querySelector('#ManualAuth');
 
-  function signUp() {
-    signIn.style.display = 'block';
-  }
+  signUpButton.addEventListener('click', function () {
+    if (signIn.style.display === 'block') {
 
+      signIn.style.display = 'none';
+    } else {
+      signIn.style.display = 'block';
+    }
+  });
   function SaveSignUp() {
     const usernameInput = document.getElementById('usernameInput').value;
     const passwordInput = document.getElementById('passwordInput').value;
