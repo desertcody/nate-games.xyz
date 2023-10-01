@@ -253,7 +253,8 @@
     "masked-forces": {
         "pageMapping": "https://tanuki-sunset-one.vercel.app/masked-forces/",
         "imageSrc": "/game/img/masked-forces.jpg",
-        "gameTitle": "Masked Forces"
+        "gameTitle": "Masked Forces",
+        "description": "Yes, this game works just give it some time to load."
     },
     "tanuki-sunset": {
         "pageMapping": "https://tanuki-sunset-one.vercel.app/",
