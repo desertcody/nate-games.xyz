@@ -135,17 +135,17 @@
         "gameTitle": "Tiny Fishing"
     },
     "worlds-hardest-game": {
-        "pageMapping": "/0/g/flash/whg/1/",
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/whg.swf",
         "imageSrc": "/game/img/whg.png",
         "gameTitle": "World's Hardest Game"
     },
     "worlds-hardest-game-2": {
-        "pageMapping": "/0/g/flash/whg/2/",
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/whg2.swf",
         "imageSrc": "/game/img/whg2.jpg",
         "gameTitle": "World's Hardest Game 2"
     },
     "worlds-hardest-game-3": {
-        "pageMapping": "/0/g/flash/whg/3/",
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/whg3.swf",
         "imageSrc": "/game/img/whg3.jpg",
         "gameTitle": "World's Hardest Game 3"
     },
@@ -389,7 +389,7 @@
         "gameTitle": "Hextris"
     },
     "tetris": {
-        "pageMapping": "/0/g/flash/tetris/",
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/tetris.swf",
         "imageSrc": "https://play-lh.googleusercontent.com/za2Nu_qjMw5GzWfbzet4zeiZT1xvJlTRi4NJzGpJWX9grxFAAko5dGBwe7qeqK01THw",
         "gameTitle": "Tetris"
     },
