@@ -4,6 +4,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .center-container {
@@ -205,8 +206,19 @@ center:hover .show-bar {
     margin-left: 20px;
 }
 
+.giscus {
+    bottom: 0;
+    position: absolute;
+    z-index: 9999;
+}
+.giscus iframe {
+    margin-top: 22em;
+    width: 50%;
+    margin-left: 25%;
+}
 
-.like #starred, #unstarred{
+.like #starred,
+#unstarred {
     font-size: 15px;
     bottom: 19px;
     right: 0;
@@ -262,9 +274,9 @@ center:hover .show-bar {
     font-family: 'Lato', sans-serif;
 }
 
-  
-  .progress {
-    background: rgba(255,255,255,0.1);
+
+.progress {
+    background: rgba(255, 255, 255, 0.1);
     justify-content: flex-start;
     border-radius: 100px;
     align-items: center;
@@ -273,18 +285,23 @@ center:hover .show-bar {
     display: flex;
     height: 20px;
     width: 250px;
-  }
-  
-  .progress-value {
+}
+
+.progress-value {
     animation: load 2s normal forwards;
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
     background: #fff;
     height: 15px;
     width: 0;
-  }
-  
-  @keyframes load {
-    0% { width: 0; }
-    100% { width: 100%;}
-  }
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
