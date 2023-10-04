@@ -209,7 +209,6 @@ center:hover .show-bar {
 .giscus {
     bottom: 0;
     position: absolute;
-    z-index: 9999;
 }
 .giscus iframe {
     margin-top: 22em;
