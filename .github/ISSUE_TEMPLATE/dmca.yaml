@@ -4,14 +4,10 @@ title: "[DMCA]: <title>"
 labels:
   - DMCA
 body:
-  - type: input
-    id: accept
+  - type: markdown
     attributes:
-      label: Please understand.
-      description: The GPL-3.0 License will provide copyleft unless you use different license other than GPL-3.0. We still like to understand why though!
-      placeholder: yes/no
-    validations:
-      required: true
+      value:
+        You can always contact me at "[contact@nate-games.xyz](mailto:contact@nate-games.xyz)" for more reasonable and personal questions.
   - type: input
     id: dmca-game
     attributes:
