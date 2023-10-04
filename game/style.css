@@ -206,14 +206,11 @@ center:hover .show-bar {
     margin-left: 20px;
 }
 
-.giscus {
-    bottom: 0;
-    position: absolute;
-}
-.giscus iframe {
-    margin-top: 22em;
+
+.giscus-frame {
     width: 50%;
-    margin-left: 25%;
+    display: inline-block;
+    position: relative;
 }
 
 .like #starred,
