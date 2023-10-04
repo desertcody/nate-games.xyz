@@ -328,6 +328,13 @@ h1 {
     font-family: 'Lato';
 }
 
+#red-filler {
+    transition: .3s;
+}
+#red-filler:hover {
+    color: #ff3d3d;
+}
+
 .about-us .smaller {
     font-size: 12px;
     font-style: italic;
