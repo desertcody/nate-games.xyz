@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+    <input id="title" class="input" placeholder="Title" onkeyup="setTitle(this.value)">
+    <input id="icon" class="input" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())">
+    <button onclick="resetTab()">Reset</button><br><br>
+    <h3>Presets</h3>
+    <button onclick="setTitle(title = 'Canvas'); setFavicon('/game/canvas.ico')">Canvas</button>
+    <button onclick="setTitle(title = 'Classes'); setFavicon('/game/class.png')">Google Classroom</button>
+    <button onclick="setTitle(title = 'Classlink'); setFavicon('/game/classlink.png')">Classlink</button>
+    <script src="/js/editor.js"></script>
+</body>
+</html>

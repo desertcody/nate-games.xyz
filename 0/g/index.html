@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="search.css">
   <link rel="stylesheet" href="/0/assets/css/tos.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/favicon.ico">
 </head>
 
 <body onload="checkTOS()">
@@ -36,8 +37,11 @@
         </button>
       </div>
       <nav class="menu">
+        <a href="/en-us/settings/">
+          <button class="menu-item"><i class="fa-solid fa-gear"></i> Settings</button>
+        </a>
         <a href="/en-us/account/">
-          <button class="menu-item"><img src="/0/assets/img/misc/user.svg"> My Account</button>
+          <button class="menu-item"><img src="/0/assets/img/misc/user.svg"> Account</button>
         </a>
         <div class="dropdown">
           <button class="menu-item dropbtn"><img src="/0/assets/img/misc/categories.svg">Categories</button>
@@ -74,7 +78,7 @@
         </a>
         <a href="/0/a/">
           <button class="menu-item">
-            Apps
+            <i class="fa-solid fa-tablet-button"></i> Apps
           </button>
         </a>
         <a href="https://docs.nate-games.xyz/">
@@ -83,7 +87,7 @@
           </button>
         </a>
         <div class="dropdown">
-          <button class="menu-item dropbtn">More</button>
+          <button class="menu-item dropbtn"><i class="fa-solid fa-caret-down"></i> More</button>
           <div class="dropdown-content" style="right: 0; min-width: 180px;">
             <a href="https://discord.gg/9mJcqwZ2a5" target="_blank">Join the Discord | 💬</a>
             <a href="/en-us/contact" target="_blank">Contact | 📝</a>
@@ -165,7 +169,8 @@
             are non-intrusive and support our site. Thank you for your support!</p><br><span
             style="text-decoration: none; color: #2863c2; cursor: pointer;">Do not sell my personal information</span>
         </span><br></div><iframe src="https://invidget.switchblade.xyz/9mJcqwZ2a5?theme=dark" frameborder="0"
-        style="font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif; width: 430px; height: 110px;" scrolling="no">Your
+        style="font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif; width: 430px; height: 110px;"
+        scrolling="no">Your
         browser doesn't support iframes.</iframe>
       <div class="flash-opener">
         <div id="flash-container"></div>
@@ -180,7 +185,9 @@
       </div>
       <input type="text" id="search-bar" placeholder="Search..." oninput="search()" class="search-input" />
       <p>Games shown on this website are the property of their respective owners.</p>
-      <p style="font-weight: bold;">Check out our partner <img src="/en-us/partner-platformer-io.png" style="vertical-align: middle; height: 17px;"> | <a href="https://platformerdotio.co/" target="_blank">platformer.io</a>!</p>
+      <p style="font-weight: bold;">Check out our partner <img src="/en-us/partner-platformer-io.png"
+          style="vertical-align: middle; height: 17px;"> | <a href="https://platformerdotio.co/"
+          target="_blank">platformer.io</a>!</p>
     </center>
     <div class="game-container" id="game-container">
       <div class="game-card"
@@ -191,34 +198,39 @@
         <h3>Add a game!</h3>
       </div>
       <div class="game-card"
-      onclick="window.open('https://platformerdotio.co/', '_blank', 'width=800,height=600'); return false;">
-      <div class="image-container">
-        <img src="/en-us/partner-platformer-io.png" onerror="this.src='/game/image-placeholder.svg'" />
+        onclick="window.open('https://platformerdotio.co/', '_blank', 'width=800,height=600'); return false;">
+        <div class="image-container">
+          <img src="/en-us/partner-platformer-io.png" onerror="this.src='/game/image-placeholder.svg'" />
+        </div>
+        <h3>Play Platformer.io now!</h3>
       </div>
-      <h3>Play Platformer.io now!</h3>
-    </div>
       <!--note to myself: The div below is for the TOS don't touch it!-->
     </div>
-    <footer style="margin-bottom: 4em; margin-top: 9em;">
-      <center style="font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;">
-        <p style="font-size: 11px; font-style: italic;">Discovered by
-          Deus-Scissuras;<br><br><video src="/game/media/IMG_1134.mov" controls
-            style="width: 250px; height: 250px; background-color: #111; border-radius: 20px;"></video></p>&copy;
-        2023-2024 nate-games<br><br><a href="https://github.com/nate-games/nate-games.github.io/blob/main/SECURITY.md"
-          style="text-decoration: none;">Security Policy</a> | <a href="/0/privacy-policy.html"
-          style="text-decoration: none;">Privacy Policy</a> | <a href="/0/terms-of-service.html"
-          style="text-decoration: none;">Terms of
-          Service</a> | <a href="https://github.com/nate-games/nate-games.github.io/wiki"
-          style="text-decoration: none;">Wikipedia/Docs</a>
-      </center>
+    <footer>
+      <div class="footer-content">
+        <p>
+          &copy; 2023 nate-games, <br> Made with <i class="fa-solid fa-heart" id="red-filler"></i> by our amazing
+          community!
+          <br><br>
+          <a href="//github.com/nate-games/nate-games.github.io">GitHub <i class="fa-brands fa-github"></i></a>,
+          <a href="https://discord.gg/9mJcqwZ2a5">Discord <i class="fa-brands fa-discord"></i></a>,
+          <a href="/en-us/contact/">Contact <i class="fa-solid fa-envelope"></i></a>,
+          <a href="https://cdn.nate-games.xyz">ContentDN <i class="fa-solid fa-cloud"></i></a><br><br>
+          <small><span style="color: #4287f5;"><i class="fa-solid fa-circle-info"></i> Discoverd by: </span>
+            Deus-Scissuras</small><br><br>
+          <video src="/game/media/IMG_1134.mov" controls
+            style="width: 250px; height: 250px; background-color: #111; border-radius: 20px;"></video>
+        </p>
+      </div>
     </footer>
     <script src="flash-loader.min.js"></script>
     <script src="search.js"></script>
-    
+
     <script src="/0/assets/js/tos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@ruffle-rs/ruffle"></script>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script src="/js/sw.js"></script>
+    <script src="/js/editor.js"></script>
 </body>
 
 </html>

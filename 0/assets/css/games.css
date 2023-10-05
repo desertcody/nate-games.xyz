@@ -77,7 +77,6 @@ body {
 }
 
 .menu-item i {
-
     height: 20px;
     margin: 0 5px 0;
     color: white;
@@ -318,30 +317,44 @@ h1 {
 
 .about-us {
     max-width: 400px;
-    text-align: left;
-    top: 0;
-    left: 0;
-    padding: 50px;
-    position: absolute;
-    margin-top: 50px;
-    font-size: 13px;
-    font-family: 'Lato';
+    font-size: 11px;
+    font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+.footer-content {
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    z-index: 9999;
+    bottom: 0;
+    padding: 25px 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+footer a {
+    text-decoration: none;
+    color: #4287f5;
+    transition: .2s ease-in-out;
+}
+
+footer a:hover {
+    text-decoration: underline 2px #4287f5;
 }
 
 #red-filler {
     transition: .3s;
 }
+
 #red-filler:hover {
     color: #ff3d3d;
 }
 
-.about-us .smaller {
-    font-size: 12px;
-    font-style: italic;
-}
-
 .about-us summary {
     cursor: pointer;
+    text-align: center;
     text-decoration: none;
     opacity: .8;
     transition: .2s;

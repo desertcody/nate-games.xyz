@@ -5,13 +5,14 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="/0/assets/css/games.css">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <title>My Account | nate-games</title>
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="stylesheet" href="/en-us/account/style.css">
+  <link rel="stylesheet" href="/0/assets/css/themes.css">
+  <title>Settings | nate-games</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="logo">
       <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
         <img src="/favicon.ico" class="nav-icon">
@@ -23,10 +24,10 @@
         <button class="menu-item"><i class="fa-solid fa-gear"></i> Settings</button>
       </a>
       <a href="/en-us/account/">
-        <button class="menu-item"><img src="/0/assets/img/misc/user.svg"> Account</button>
+        <button class="menu-item"><i class="fa-solid fa-user"></i> Account</button>
       </a>
       <div class="dropdown">
-        <button class="menu-item dropbtn"><img src="/0/assets/img/misc/categories.svg">Categories</button>
+        <button class="menu-item dropbtn"><i class="fa-solid fa-dragon"></i> Categories</button>
         <div class="dropdown-content">
           <a href="/0/g/#all">ALL | 💯+</a>
           <a href="/0/g/?clicker">Clicker | <img src="/0/assets/img/tags/pc-mice.svg"
@@ -50,7 +51,7 @@
       </div>
       <a href="/0/g/">
         <button class="menu-item">
-          <img src="/0/assets/img/misc/controller.svg"> Games
+          <i class="fa-solid fa-gamepad"></i> Games
         </button>
       </a>
       <a href="/en-us/emu/">
@@ -65,7 +66,7 @@
       </a>
       <a href="https://docs.nate-games.xyz/">
         <button class="menu-item">
-          <img src="/0/assets/img/misc/book.svg"> Docs
+          <i class="fa-solid fa-book"></i> Docs
         </button>
       </a>
       <div class="dropdown">
@@ -83,29 +84,17 @@
   </header>
   <div class="container2">
     <div class="container">
-      <h2>My account</h2>
-      <p><b>Welcome,</b> <a href="#">@<span id="username">User</span></a>. <br> You gain a 50xp ✨ every 10 seconds you
-        play! <br><i>(There are 150xp every level)</i>
+      <h2>Settings</h2>
+      <p> Settings is in beta and has been voted by our community <br> and is being worked on by our developers. <br><br>
+        <a href="./beta"><button class="buttons">Title and Favicon</button></a>
+        <button class="buttons" id="themeSwitch">Toggle Light Mode</button>
       </p>
-      <a href="./settings/"><button class="buttons">Account Settings</button></a>
-      <button id="revealLevel" class="buttons">Reveal my level</button>
-      <span id="levelContent" style="display: none;">
-        <button id="changeUsername" style="display: none;" class="buttons">Change Username</button>
-        <p>
-          <b>Your Level:</b> <span id="level">1</span>
-          <br>
-          <b>Your XP:</b> <span id="xp">0</span>
-        </p>
-        <div id="progress-container">
-          <div id="progress-bar"></div>
-        </div>
-      </span>
     </div>
+    </span>
   </div>
-  <script src="./script.js"></script>
-  <script src="/js/level_up.js"></script>
-  <script src="/en-us/signup/github.js"></script>
+  </div>
   <script src="/js/editor.js"></script>
+  <script src="/js/themes.js"></script>
 </body>
 
 </html>
