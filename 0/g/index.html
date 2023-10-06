@@ -100,16 +100,16 @@
       </nav>
     </header>
     <center>
-      <div class="adblocker"><img src="./adblocker.png" height="140"><span class="adblock-text">
+      <div class="adblocker" id="adblocker"><img src="./adblocker.png" height="140"><span class="adblock-text">
           <h2>Hello user!</h2>
           <p>We appreciate your visit! To help keep our content free, please consider disabling your adblocker. Our ads
             are non-intrusive and support our site. Thank you for your support!</p><br><span
             style="text-decoration: none; color: #2863c2; cursor: pointer;">Do not sell my personal information</span>
         </span><br></div><iframe src="https://invidget.switchblade.xyz/9mJcqwZ2a5?theme=dark" frameborder="0"
         style="font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif; width: 430px; height: 110px;"
-        scrolling="no">Your
+        scrolling="no" id="join-discord">Your
         browser doesn't support iframes.</iframe>
-      <div class="flash-opener">
+      <div class="flash-opener" id="flash-opener">
         <div id="flash-container"></div>
         <div class="button-container">
           <button for="file-input" class="file-input-button"><label for="file-input" class="file-input-button">Select
@@ -120,10 +120,10 @@
         </div>
         <div id="file-name"></div>
       </div>
-        <div class="textInputWrapper">
+        <div class="textInputWrapper" id="search-contents">
           <input placeholder="Search games.." type="text" class="textInput" oninput="search()" id="search-bar">
       </div>
-      <p style="font-family: 'Roboto', Arial, Helvetica, sans-serif;"><span id="respective-note">Games shown on this
+      <p style="font-family: 'Roboto', Arial, Helvetica, sans-serif;" id="center-text"><span id="respective-note">Games shown on this
           website are the property of
           their respective owners. </span>
         <span id="no-results" style="display: none;">

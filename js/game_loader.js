@@ -1,26 +1,63 @@
+const gameContainer = document.getElementById('game-container');
+const loadingMessage = document.createElement('p');
+loadingMessage.textContent = "Loading games content...";
+const centerAlign = document.getElementById('center-text')
+const imageElement = document.createElement('img');
+const respectiveNote = document.getElementById('respective-note');
+var createLinebreak = document.createElement('br');
+const flashOpener = document.getElementById('flash-opener');
+searchBar = document.getElementById('search-contents');
+const adblocker = document.getElementById('adblocker')
+const joinDiscord = document.getElementById('join-discord')
+imageElement.src = "https://raw.githubusercontent.com/n3r4zzurr0/svg-spinners/main/preview/ring-resize-white-36.svg";
+
+centerAlign.appendChild(loadingMessage);
+loadingMessage.appendChild(createLinebreak);
+loadingMessage.appendChild(imageElement);
+respectiveNote.style.display = "none";
+searchBar.style.display = "none";
+joinDiscord.style.display = "none";
+adblocker.style.display = "none";
+flashOpener.style.display = "none";
+loadingMessage.style.marginTop = "25%"
+
 fetch('games.json')
     .then(response => response.json())
     .then(data => {
-        const gameContainer = document.getElementById('game-container');
-        const urlParams = new URLSearchParams(window.location.search);
+        setTimeout(() => {
+            centerAlign.removeChild(loadingMessage);
+            respectiveNote.style.display = "block";
+            searchBar.style.display = "block";
+            joinDiscord.style.display = "block";
+            adblocker.style.display = "flex";
+            flashOpener.style.display = "flex"
 
-        data.forEach(game => {
-            if (urlParams.toString() === '' || window.location.pathname === '/') {
-                createGameCard(game, gameContainer);
-            } else {
-                const tags = game.tags.split(', ');
+            const urlParams = new URLSearchParams(window.location.search);
 
-                const matchingTags = tags.filter(tag => urlParams.has(tag.toLowerCase()));
-
-                if (matchingTags.length > 0) {
+            data.forEach(game => {
+                if (urlParams.toString() === '' || window.location.pathname === '/') {
                     createGameCard(game, gameContainer);
+                } else {
+                    const tags = game.tags.split(', ');
+
+                    const matchingTags = tags.filter(tag => urlParams.has(tag.toLowerCase()));
+
+                    if (matchingTags.length > 0) {
+                        createGameCard(game, gameContainer);
+                    }
                 }
-            }
-        });
+            });
+        }, 500);
+
     })
     .catch(error => {
         console.error('Error loading JSON data:', error);
+        gameContainer.removeChild(loadingMessage);
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = 'Error loading games. Please try again later.';
+        gameContainer.appendChild(errorMessage);
     });
+
 function createGameCard(game, container) {
     const gameCard = document.createElement('div');
     gameCard.classList.add('game-card');
