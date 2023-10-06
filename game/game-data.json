@@ -134,6 +134,11 @@
         "imageSrc": "/game/img/tiny-fishing.png",
         "gameTitle": "Tiny Fishing"
     },
+    "pizza-tower": {
+        "pageMapping": "https://cdn-ngs.pages.dev/pizzatower/",
+        "imageSrc": "/game/img/pizzatower.jpg",
+        "gameTitle": "Pizza Tower"
+    },
     "worlds-hardest-game": {
         "pageMapping": "/flash-loader/dynamic-loader?swf=files/whg.swf",
         "imageSrc": "/game/img/whg.png",

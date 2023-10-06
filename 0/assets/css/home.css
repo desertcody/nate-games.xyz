@@ -138,7 +138,7 @@ body {
 
 .footer-content {
     position: absolute;
-    z-index: 9999;
+    z-index: 9997;
     bottom: 0;
     padding: 10px 0;
     width: 100%;

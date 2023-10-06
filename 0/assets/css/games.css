@@ -325,7 +325,7 @@ h1 {
 .footer-content {
     position: relative;
     border-radius: 10px 10px 0 0;
-    z-index: 9999;
+    z-index: 9998;
     bottom: 0;
     padding: 25px 0;
     width: 100%;
@@ -336,12 +336,42 @@ h1 {
 }
 footer a {
     text-decoration: none;
-    color: #4287f5;
-    transition: .2s ease-in-out;
 }
 
-footer a:hover {
-    text-decoration: underline 2px #4287f5;
+.footer-content i {
+    font-size: 10px;
+}
+
+.footer-content small {
+    font-size: 11px;
+}
+
+footer a {
+    color: #4287f5;
+    background-color: transparent;
+    padding-bottom: calc(1px * 2);
+    border: none;
+    position: relative;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+footer a::after {
+    display: block;
+    background-color: #4287f5;
+    width: 100%;
+    left: 0;
+    transform-origin: bottom center;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: .3s ease;
+    content: "";
+}
+
+footer a:hover::after {
+    transform: scaleX(1);
 }
 
 #red-filler {

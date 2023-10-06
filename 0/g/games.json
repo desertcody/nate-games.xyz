@@ -504,6 +504,11 @@
     "name": "UNO! Online"
   },
   {
+    "url": "/game/?pizza-tower",
+    "imageSrc": "/game/img/pizzatower.jpg",
+    "name": "Pizza Tower"
+  },
+  {
     "url": "./slitherio/",
     "imageSrc": "https://play-lh.googleusercontent.com/oObkhKfUXOY5yzheKe9w1Y1pXZBgdiSksMeNmT0BijoQ8J75maTCIW2TA7-6pA6EMA",
     "name": "Slither.io"
