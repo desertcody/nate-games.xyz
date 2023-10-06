@@ -1,22 +1,22 @@
-<img align="center" src="https://img.shields.io/github/repo-size/nate-games/nate-games.github.io">
+<img align="center" src="https://img.shields.io/github/repo-size/nate-games/nate-games.xyz">
 <p align="center">
 <kbd>
 <a href="https://nate-games.xyz">
-<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/nate-games/nate-games.github.io/main/0/assets/img/favicon.png"></a>
+<img style="border-radius:50%" height="150px" src="https://raw.githubusercontent.com/nate-games/nate-games.github.io/main/favicon.ico"></a>
 </kbd>
 </p>
 
 <h1 align="center">nate-games</h1>
-<p align="center">New CDN! | <a href="https://cdn.nate-games.xyz">cdn.nate-games.xyz</a></p>
+<p align="center">Comments powered by giscus</p>
 
 > **Note**
-> **Website moved to [nate-games.xyz](https://nate-games.xyz)!**
+> **No in game ads, powered by Google adsense!**
 
 Website blocked? View [links](https://github.com/nate-games/nate-games.github.io/wiki/URLS)
 
 
 # Features
-- 190+ games & apps
+- 225+ games & apps
 - Search bar
 - Adobe Flash
 - HTML5 Games
