@@ -2,7 +2,7 @@
 @import url(mobile.css);
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 body {
     user-select: none;
@@ -120,6 +120,10 @@ h1 {
     font-size: 40px;
 }
 
+.red {
+    color: red;
+}
+
 .game-card {
     border-radius: 18%;
     display: inline-block;
@@ -133,12 +137,50 @@ h1 {
     display: flex;
     font-size: 12px;
     align-items: center;
+    color: white;
+}
+
+.game-url {
+    text-decoration: none;
 }
 
 .game-card:hover {
     background-color: #4287f5;
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.9);
 }
+
+
+
+
+.link {
+    color: #4287f5;
+    background-color: transparent;
+    padding-bottom: calc(1px * 2);
+    border: none;
+    position: relative;
+    transition: .2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link::after {
+    display: block;
+    background-color: #4287f5;
+    width: 100%;
+    left: 0;
+    transform-origin: bottom center;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: .3s ease;
+    content: "";
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+}
+
 
 .game-card:active {
     transform: scale(.9);
@@ -334,6 +376,7 @@ h1 {
     text-align: center;
     display: inline-block;
 }
+
 footer a {
     text-decoration: none;
 }

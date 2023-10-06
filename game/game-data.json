@@ -256,13 +256,18 @@
         "gameTitle": "Vex 7"
     },
     "masked-forces": {
-        "pageMapping": "https://tanuki-sunset-one.vercel.app/masked-forces/",
+        "pageMapping": "https://topvazstore.github.io/g8/masked-forces/",
         "imageSrc": "/game/img/masked-forces.jpg",
         "gameTitle": "Masked Forces",
         "description": "Yes, this game works just give it some time to load."
     },
+    "idle-startup-tycoon": {
+        "pageMapping": "https://topvazstore.github.io/g5/idle-startup-tycoon/",
+        "imageSrc": "/game/img/idle-startup-tycoon.avif",
+        "gameTitle": "Idle Startup Tycoon"
+    },
     "tanuki-sunset": {
-        "pageMapping": "https://tanuki-sunset-one.vercel.app/",
+        "pageMapping": "https://topvazstore.github.io/g8/tanuki-sunset/",
         "imageSrc": "/game/img/tanuki-sunset.png",
         "gameTitle": "Tanuki Sunset"
     },

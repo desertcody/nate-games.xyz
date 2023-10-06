@@ -1,5 +1,19 @@
 [
   {
+    "url": "https://github.com/nate-games/nate-games.github.io/issues/new?assignees=nate-games&labels=Add-Game&projects=&template=add_game.yaml&title=%5BGame+Recommendation%5D%3A+%3Ctitle%3E",
+    "imageSrc": "request-svg.png",
+    "name": "Add a game!",
+    "tags": "null",
+    "target": "_blank"
+  },
+  {
+    "url": "https://platformerdotio.co/",
+    "imageSrc": "/en-us/partner-platformer-io.png",
+    "name": "Play Platformer.io now!",
+    "tags": "null",
+    "target": "window.open"
+  },
+  {
     "url": "/game/?1v1.lol",
     "imageSrc": "./1v1lol/1v1lol.jpg",
     "name": "1v1.LOL",
@@ -65,6 +79,12 @@
     "imageSrc": "https://img.itch.zone/aW1nLzQ1OTUwODcucG5n/original/Xdhfjt.png",
     "name": "Game inside a Game",
     "tags": "kids, fun, unity, action, singleplayer"
+  },
+  {
+    "url": "/game/?idle-startup-tycoon",
+    "imageSrc": "/game/img/idle-startup-tycoon.avif",
+    "name": "Idle Startup Tycoon",
+    "tags": "tycoon, kids, singleplayer"
   },
   {
     "url": "/game/?tanuki-sunset",

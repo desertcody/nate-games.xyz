@@ -22,7 +22,7 @@
       <div id="tos-content">
       </div>
       <p><a style="text-decoration: none;" href="/0/copyright-statement.html">LICENSE</a> &bull; <a
-          href="https://github.com/nate-games/nate-games.github.io/releases/latest" target="_blank"
+          href="https://github.com/nate-games/nate-games.xyz/releases/latest" target="_blank"
           style="text-decoration: none;" target="_blank">Latest Release</a> &bull; <a style="text-decoration: none;"
           href="/en-us/account/">Create Account</a></p>
       <button onclick="acceptTOS()" class="bn5" style="margin-top: 25px;">I Accept</button>
@@ -91,77 +91,14 @@
           <div class="dropdown-content" style="right: 0; min-width: 180px;">
             <a href="https://discord.gg/9mJcqwZ2a5" target="_blank">Join the Discord | 💬</a>
             <a href="/en-us/contact" target="_blank">Contact | 📝</a>
-            <a href="https://github.com/nate-games/nate-games.github.io" target="_blank">GitHub | <img
+            <a href="https://github.com/nate-games/nate-games.xyz" target="_blank">GitHub | <img
                 src="/0/assets/img/misc/github.svg" style="vertical-align: middle; height: 25px;"></a>
-            <a href="https://github.com/nate-games/nate-games.github.io" target="_blank">Sponsor | <img
+            <a href="https://github.com/nate-games/nate-games.xyz" target="_blank">Sponsor | <img
                 src="/0/assets/img/misc/sponsor.svg" class="sponsor"></a>
           </div>
         </div>
       </nav>
     </header>
-    <script>
-      fetch('games.json')
-        .then(response => response.json())
-        .then(data => {
-          const gameContainer = document.getElementById('game-container');
-          const urlParams = new URLSearchParams(window.location.search);
-
-          data.forEach(game => {
-            if (urlParams.toString() === '' || window.location.pathname === '/') {
-              createGameCard(game, gameContainer);
-            } else {
-              const tags = game.tags.split(', ');
-
-              const matchingTags = tags.filter(tag => urlParams.has(tag.toLowerCase()));
-
-              if (matchingTags.length > 0) {
-                createGameCard(game, gameContainer);
-              }
-            }
-          });
-        })
-        .catch(error => {
-          console.error('Error loading JSON data:', error);
-        });
-
-      function createGameCard(game, container) {
-        const gameCard = document.createElement('div');
-        gameCard.classList.add('game-card');
-
-        gameCard.addEventListener('click', function () {
-          if (game.requiresProxy) {
-            const userResponse = prompt('A Proxy or VPN is required to play this game. Do you have a proxy or VPN enabled? (yes/no)');
-
-            if (userResponse && userResponse.toLowerCase() === 'yes') {
-              window.location.href = game.url;
-            } else {
-              alert('You need a proxy or VPN to play this game. Please enable one and come back.');
-            }
-          } else {
-            window.location.href = game.url;
-          }
-        });
-
-        const imageContainer = document.createElement('div');
-        imageContainer.classList.add('image-container');
-
-        const img = document.createElement('img');
-        img.src = game.imageSrc;
-        img.onerror = function () {
-          this.src = '/game/image-placeholder.svg';
-        };
-
-        const h3 = document.createElement('h3');
-        h3.textContent = game.name;
-
-        imageContainer.appendChild(img);
-        gameCard.appendChild(imageContainer);
-        gameCard.appendChild(h3);
-        container.appendChild(gameCard);
-      }
-
-
-    </script>
     <center>
       <div class="adblocker"><img src="./adblocker.png" height="140"><span class="adblock-text">
           <h2>Hello user!</h2>
@@ -184,27 +121,18 @@
         <div id="file-name"></div>
       </div>
       <input type="text" id="search-bar" placeholder="Search..." oninput="search()" class="search-input" />
-      <p>Games shown on this website are the property of their respective owners.</p>
-      <p style="font-weight: bold;">Check out our partner <img src="/en-us/partner-platformer-io.png"
-          style="vertical-align: middle; height: 17px;"> | <a href="https://platformerdotio.co/"
-          target="_blank">platformer.io</a>!</p>
+      <p style="font-family: 'Roboto', Arial, Helvetica, sans-serif;"><span id="respective-note">Games shown on this
+          website are the property of
+          their respective owners. </span>
+        <span id="no-results" style="display: none;">
+          No results found, check your spelling and try again. <i class="fa-solid fa-rotate-right"></i> <br> If this
+          seems like an issue please let us know.
+          <a href="/en-us/contact/" class="link">Contact</a>
+        </span>
+      </p>
     </center>
     <div class="game-container" id="game-container">
-      <div class="game-card"
-        onclick="window.location.href='https://github.com/nate-games/nate-games.github.io/issues/new?assignees=nate-games&labels=Add-Game&projects=&template=add_game.yaml&title=%5BGame+Recommendation%5D%3A+%3Ctitle%3E'">
-        <div class="image-container">
-          <img src="request-svg.png" onerror="this.src='/game/image-placeholder.svg'" />
-        </div>
-        <h3>Add a game!</h3>
-      </div>
-      <div class="game-card"
-        onclick="window.open('https://platformerdotio.co/', '_blank', 'width=800,height=600'); return false;">
-        <div class="image-container">
-          <img src="/en-us/partner-platformer-io.png" onerror="this.src='/game/image-placeholder.svg'" />
-        </div>
-        <h3>Play Platformer.io now!</h3>
-      </div>
-      <!--note to myself: The div below is for the TOS don't touch it!-->
+      <!--onclick="window.open('https://platformerdotio.co/', '_blank', 'width=800,height=600'); return false;">-->
     </div>
     <footer>
       <div class="footer-content">
@@ -220,6 +148,7 @@
             Deus-Scissuras</small><br><br>
           <video src="/game/media/IMG_1134.mov" controls
             style="width: 250px; height: 250px; background-color: #111; border-radius: 20px;"></video>
+          <span id="createText" style="display: none;"></span>
         </p>
       </div>
     </footer>
@@ -231,6 +160,7 @@
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
     <script src="/js/sw.js"></script>
     <script src="/js/editor.js"></script>
+    <script src="/js/game_loader.js"></script>
 </body>
 
 </html>
