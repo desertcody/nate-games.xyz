@@ -6,31 +6,17 @@ const imageElement = document.createElement('img');
 const respectiveNote = document.getElementById('respective-note');
 var createLinebreak = document.createElement('br');
 const flashOpener = document.getElementById('flash-opener');
-searchBar = document.getElementById('search-contents');
-const adblocker = document.getElementById('adblocker')
-const joinDiscord = document.getElementById('join-discord')
 imageElement.src = "https://raw.githubusercontent.com/n3r4zzurr0/svg-spinners/main/preview/ring-resize-white-36.svg";
 
 centerAlign.appendChild(loadingMessage);
 loadingMessage.appendChild(createLinebreak);
 loadingMessage.appendChild(imageElement);
-respectiveNote.style.display = "none";
-searchBar.style.display = "none";
-joinDiscord.style.display = "none";
-adblocker.style.display = "none";
-flashOpener.style.display = "none";
-loadingMessage.style.marginTop = "25%"
 
 fetch('games.json')
     .then(response => response.json())
     .then(data => {
         setTimeout(() => {
             centerAlign.removeChild(loadingMessage);
-            respectiveNote.style.display = "block";
-            searchBar.style.display = "block";
-            joinDiscord.style.display = "block";
-            adblocker.style.display = "flex";
-            flashOpener.style.display = "flex"
 
             const urlParams = new URLSearchParams(window.location.search);
 
@@ -47,7 +33,7 @@ fetch('games.json')
                     }
                 }
             });
-        }, 500);
+        }, 0);
 
     })
     .catch(error => {

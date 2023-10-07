@@ -19,7 +19,7 @@
   pointer-events: none;
   bottom: -1px;
   z-index: 4;
-  width: 100%;
+  width: calc(100% + 20px + 4px); /* 100% */
 }
 
 .textInputWrapper:focus-within:before {
