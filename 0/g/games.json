@@ -63,7 +63,7 @@
   },
   {
     "url": "https://play.geforcenow.com/",
-    "imageSrc": "./Fortnite/splash.png",
+    "imageSrc": "/game/img/fortnite.png",
     "name": "Fortnite",
     "tags": "action, shooting",
     "requiresProxy": true
@@ -477,8 +477,8 @@
     "tags": "html5, kids, action, point-and-click"
   },
   {
-    "url": "./circle/",
-    "imageSrc": "./circle/game/splash.png",
+    "url": "/game/?circle",
+    "imageSrc": "/game/img/circle.png",
     "name": "Circle",
     "tags": "point-and-click, kids, html5, action"
   },
@@ -584,6 +584,18 @@
     "imageSrc": "https://webglmath.github.io/mad-gunz/logo.png",
     "name": "Mad Gunz",
     "tags": "battle-royale, adventure, pixel, minecraft, shooting, action, intense"
+  },
+  {
+    "url": "/game/?stick-merge",
+    "imageSrc": "/game/img/stickmerge.avif",
+    "name": "Stick Merge",
+    "tags": "adventure, shooting, action, intense, fps" 
+  },
+  {
+    "url": "/game/?gun-spin",
+    "imageSrc": "/game/img/gunspin.png",
+    "name": "Gun Spin",
+    "tags": "adventure, shooting, action, intense"
   },
   {
     "url": "/game/?valorant",

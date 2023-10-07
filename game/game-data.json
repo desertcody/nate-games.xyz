@@ -110,7 +110,7 @@
         "gameTitle": "Basketball Random"
     },
     "jelly-mario": {
-        "pageMapping": "/0/g/jellymario/",
+        "pageMapping": "/0/g/html/jellymario/",
         "imageSrc": "/game/img/jelly-mar.gif",
         "gameTitle": "Jelly Mario"
     },
@@ -321,6 +321,16 @@
         "imageSrc": "https://webglmath.github.io/mad-gunz/logo.png",
         "gameTitle": "Mad Gunz"
     },
+    "stick-merge": {
+        "pageMapping": "/0/g/html/stick-merge/",
+        "imageSrc": "/game/img/stickmerge.avif",
+        "gameTitle": "Stick Merge"
+    },
+    "gun-spin": {
+        "pageMapping": "/0/g/unity/gunspin/",
+        "imageSrc": "/game/img/gunspin.png",
+        "gameTitle": "Gun Spin"
+    },
     "getaway-shootout": {
         "pageMapping": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/fr6ks8ab/vi9syd1rm@d2542b2b948a265eddaa25f984368f25fafc1447/g64dh6j/Getaway-Shootout.xml",
         "imageSrc": "/game/img/getaway-shootout.jpg",
@@ -392,6 +402,11 @@
         "pageMapping": "https://raw.githack.com/nate-games/cdn/main/hacked-nutsimulator/index.html",
         "imageSrc": "/game/img/nutsim.jpg",
         "gameTitle": "Nut Simulator [Hacked]"
+    },
+    "circle": {
+        "pageMapping": "/0/g/html/circle/",
+        "imageSrc": "/game/img/circle.png",
+        "gameTitle": "Circle"
     },
     "bouncy-basketball": {
         "pageMapping": "/0/g/bouncybasketball/",
