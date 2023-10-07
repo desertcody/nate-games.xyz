@@ -85,12 +85,12 @@
     </nav>
   </header>
   <a href="/0/g/"><button class="back">
-    <i class="fa-sharp fa-solid fa-caret-left"></i> Go back
+      <i class="fa-sharp fa-solid fa-caret-left"></i> Go back
     </button></a>
   <div class="center-container">
     <div id="embed-container">
       <div class="preloader-container">
-        <div class="game-loader">
+        <div class="game-loader" id="game-loader">
           <div class="image-content">
             <img src="" id="game-img" draggable="false">
           </div>
@@ -109,6 +109,23 @@
             <p id="note" style="display: none;">Dont forget to join the discord <img src="./media/discord-icon.svg"
                 id="discord"></p>
           </center>
+        </div>
+        <div id="ad_preloader" style="display: none;">
+          <div id="ad_content" style="display: none;">
+            <video id="video_ad" src="/game/media/acrobats_got_it.mp4">
+              <!-- This was the test video below and it was fun to work with lol -->
+              <!--https://www.w3schools.com/html/mov_bbb.mp4-->
+            </video><a class="skip_ad" title="Skip Ad" id="skipButton">
+              <span id="skipCount" style="display: block;">3</span>
+              <span id="skipAllow" style="display: none;">Skip Ads <i
+                  class="fa-sharp fa-solid fa-forward-step"></i></span>
+            </a>
+          </div>
+          <div id="preload_ad-content">
+            <div class="center-align">
+              <button class="continue_game" id="continueButton">Continue to game</button>
+            </div>
+          </div>
         </div>
         <iframe src="" id="content" frameborder="0" allowfullscreen style="display: none; z-index: 888;"></iframe>
       </div>
@@ -199,7 +216,7 @@
         <a href="//github.com/nate-games/nate-games.xyz">GitHub <i class="fa-brands fa-github"></i></a>,
         <a href="https://discord.gg/9mJcqwZ2a5">Discord <i class="fa-brands fa-discord"></i></a>,
         <a href="/en-us/contact/">Contact <i class="fa-solid fa-envelope"></i></a>,
-        <a href="https://cdn.nate-games.xyz">CDN <i class="fa-solid fa-cloud"></i></a>, 
+        <a href="https://cdn.nate-games.xyz">CDN <i class="fa-solid fa-cloud"></i></a>,
         <a href="/0/g/?kids">Kids <i class="fa-solid fa-child"></i></a><br><br>
         <small><span style="color: #4287f5;"><i class="fa-solid fa-circle-info"></i> Fun fact: </span>
           Did you know nate-games used to be called pixelbit?</small>

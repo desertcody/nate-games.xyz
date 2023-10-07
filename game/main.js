@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const loading = document.getElementById("loading-screen");
     const loadingText = document.getElementById("loading-text");
     const nateLogo = document.getElementById("nates-logo");
+    const adPreloader = document.getElementById("ad_preloader");
+    const gameLoader = document.getElementById("game-loader");
 
     let iframeSrc = null;
 
@@ -40,12 +42,51 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => {
             console.error('Error fetching json data', error);
         });
+    function showAd() {
+        const videoAd = document.getElementById("video_ad")
+        const adContent = document.getElementById("ad_content")
+        const adPreloader = document.getElementById("preload_ad-content")
+        adContent.style.display = "block";
+        const skipButton = document.getElementById("skipButton")
+        const skipCount = document.getElementById("skipCount")
+        const skipAllow = document.getElementById("skipAllow")
+        adPreloader.style.display = "none";
+        document.getElementById("video_ad").play(); // https://www.w3schools.com/tags/av_met_play.asp
+        setTimeout(() => {
+            skipButton.addEventListener("click", skipAd);
+            skipAllow.style.display = "block";
+            skipCount.style.display = "none";
+        }, 3000);
+        setTimeout(() => {
+            skipCount.textContent = "2";
+        }, 1000);
+        setTimeout(() => {
+            skipCount.textContent = "1";
+        }, 2000);
+        const videoDuration = videoAd.duration;
+        setTimeout(skipAd, videoDuration * 1000); // https://www.w3schools.com/tags/av_prop_duration.asp
+    }
+    function skipAd() {
+        const continueButton = document.getElementById("continueButton")
+        const adContent = document.getElementById("ad_content")
+        const adPreloader = document.getElementById("preload_ad-content")
+        adContent.style.display = "none";
+        adPreloader.style.display = "block";
+        continueButton.addEventListener("click", continueGame);
+        document.getElementById("video_ad").pause(); // https://www.w3schools.com/tags/av_met_play.asp 
+    }
 
+    function continueGame() {
+        iframe.src = iframeSrc;
+        iframe.style.display = "block";
+        iframe.style.zIndex = "9999";
+    }
     playButton.addEventListener("click", function () {
         if (iframeSrc) {
             setTimeout(() => {
-                iframe.src = iframeSrc;
+                adPreloader.style.display = "block";
                 loading.style.display = "none";
+                showAd()
             }, 2000);
             setTimeout(() => {
                 loadingText.textContent = "Preparing your game...";
@@ -58,11 +99,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 loadingText.textContent = "Successful! ✅";
                 loadingText.style.color = "#42f57e";
             }, 1500);
-            iframe.style.display = "block";
             loading.style.display = "block";
             loadingText.textContent = "Downloading your game contents...";
             nateLogo.style.height = "20px";
             nateLogo.style.verticalAlign = "middle";
+            gameLoader.style.display = "none";
         }
     });
 });
@@ -78,7 +119,7 @@ function changeDescription(dynamicText) {
 
 function enterFullscreen() {
     const iframe = document.querySelector('#embed-container');
-    
+
     if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
         if (document.exitFullscreen) {
             document.exitFullscreen();
@@ -129,7 +170,7 @@ function hidebar() {
     bar.style.display = "none";
     iframe.style.height = "100%";
     showbarButton.style.display = "block";
-    Likes.style.display  = "none";
+    Likes.style.display = "none";
 
 }
 
