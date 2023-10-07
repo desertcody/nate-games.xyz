@@ -40569,7 +40569,7 @@ self.C3.Behaviors.Anchor.Exps = {}; {
                 d = a._GetNode(1).GetVar();
             return () => c.ExpObject() - d.GetValue()
         }, () => "UI Adjustments", () => "Social Media", () => "MouseOver", () => 1.01, () => "MouseNotOver", () => "https://www.youtube.com/channel/UCdhJvu9vO1w4tge1Ev5INFA", () => "NewWindow", () => "https://twitter.com/EvilObjective", () => "https://www.facebook.com/EvilObjective", () => "https://www.instagram.com/evilobjective/", () => "https://www.tiktok.com/@evilobjective", () => "https://discord.gg/bqtwv6uS4e", () => "https://apps.apple.com/us/app/big-neon-tower-vs-tiny-square/id1561217173", () => "https://store.steampowered.com/app/1725430/Big_FLAPPY_Tower_VS_Tiny_Square/?curator_clanid=36300963",
-        () => "https://play.google.com/store/apps/details?id=com.eointeractive.bigneontower.android", () => "https://evilobjective.itch.io/big-neon-tower-tiny-square", () => "https://github.com/nate-games/nate-games.github.io", () => "ResponsiveUI", a => {
+        () => "https://play.google.com/store/apps/details?id=com.eointeractive.bigneontower.android", () => "https://evilobjective.itch.io/big-neon-tower-tiny-square", () => "https://github.com/nate-games/nate-games.xyz", () => "ResponsiveUI", a => {
             const c = a._GetNode(0).GetBoundMethod(),
                 d = a._GetNode(1);
             return () => c(d.ExpInstVar_Family(), "left")

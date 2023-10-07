@@ -802,7 +802,7 @@ var $User = function() { var b = navigator.platform,
         EDAll = $("dBody").replaceChild(EDNewAll, EDAll);
         $("dBody").replaceChild(EDNewFlagMeter, $("dFlagMeter"));
         LoadLvl(g) },
-    GotoAuthorWebsite = function() { window.open("http://nate-games.github.io"); return },
+    GotoAuthorWebsite = function() { window.open("http://nate-games.xyz"); return },
     InitGame = function() { var e = NewEle("dServer", "div", "position:absolute;line-height:28px;left:706px;top:245px;width:700px;height:100px;font-size:16px;color:#040;font-family:Tahoma;font-weight:bold;z-index:2;display:none", 0, $("dAll")),
             c = $User.Server,
             b = c.List,

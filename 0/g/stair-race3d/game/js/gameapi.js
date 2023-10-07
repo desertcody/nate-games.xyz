@@ -9058,7 +9058,7 @@ fg_api.prototype.init = function () {
 			);
 			// eslint-disable-next-line no-console
 			console.log(
-				"%c ||| nate-games.github.io |||",
+				"%c ||| nate-games.xyz |||",
 				"background-color: #333; background-image: -webkit-linear-gradient(top, #333, #eee); background-image: linear-gradient(to bottom, #333, #eee); padding: 5px 10px; color: #fff"
 			);
 		}

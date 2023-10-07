@@ -2,7 +2,7 @@ services:
   - type: web
     name: nate-games
     runtime: static
-    repo: https://github.com/nate-games/nate-games.github.io.git
+    repo: https://github.com/nate-games/nate-games.xyz.git
     branch: main
     healthCheckPath: /
     staticPublishPath: .

@@ -10010,9 +10010,9 @@ var preNewGameState = (function() {
         function() { 
             exitTo(aboutGameState);
         });
-	menu.addTextButtonLink("NATE-GAMES.GITHUB.IO",
+	menu.addTextButtonLink("nate-games.xyz",
         function() {
-            window.open("https://nate-games.github.io");
+            window.open("https://nate-games.xyz");
         });
     /*
 	dsg hide back button
@@ -10616,7 +10616,7 @@ var aboutState = (function(){
     var menu = new Menu("", 2*tileSize,mapHeight-11*tileSize,mapWidth-4*tileSize,3*tileSize,tileSize,tileSize+"px ArcadeR", "#EEE");
     menu.addTextButton("GO TO PROJECT PAGE",
         function() {
-            window.open("https://github.com/nate-games/nate-games.github.io");
+            window.open("https://github.com/nate-games/nate-games.xyz");
         });
     menu.addTextButton("BACK",
         function() {

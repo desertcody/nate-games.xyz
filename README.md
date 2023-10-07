@@ -12,7 +12,7 @@
 > **Note**
 > **No in game ads, powered by Google adsense!**
 
-Website blocked? View [links](https://github.com/nate-games/nate-games.github.io/wiki/URLS)
+Website blocked? View [links](https://github.com/nate-games/nate-games.xyz/wiki/URLS)
 
 
 # Features
