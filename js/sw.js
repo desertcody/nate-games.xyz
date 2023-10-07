@@ -1,13 +1,3 @@
-const dateString = "2023-04-26T18:39:15Z";
-const event = new Date(dateString);
-const formattedDateString = event.toString();
-const isoString = event.toISOString();
-const createText = document.getElementById("createText")
-createText.textContent = formattedDateString;
-console.log(formattedDateString);
-console.log(isoString);
-
-
 function handleKeyPress(event) {
 
   if (event.code === 'Backquote') {
@@ -28,6 +18,8 @@ var allowedDomains = [
 ];
 
 var currentDomain = window.location.origin;
+console.log("Page hostname is " + window.location.hostname); // https://www.w3schools.com/js/js_window_location.asp
+console.log("Port number is " + window.location.port);
 
 if (allowedDomains.indexOf(currentDomain) === -1) {
   window.top.location.href = "https://nate-games.xyz/en-us/sitelock";
