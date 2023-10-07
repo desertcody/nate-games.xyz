@@ -735,7 +735,7 @@
   },
   {
     "url": "/game/?jelly-mario",
-    "imageSrc": "https://jellymar.io/jelly-mario.gif",
+    "imageSrc": "/game/img/jelly-mar.gif",
     "name": "Jelly Mario Bros"
   },
   {
@@ -975,13 +975,13 @@
   },
   {
     "name": "Candy Crush",
-    "imageSrc": "./candycrush/game/cfqdm2r4.bmp",
-    "url": "./candycrush/"
+    "imageSrc": "/game/img/candycrush.bmp",
+    "url": "/game/?candy-crush"
   },
   {
     "name": "Tomb of the Mask",
     "imageSrc": "https://play-lh.googleusercontent.com/V3M-ZVyu4NCOR8oxeHEQSrt5LJhu44xlDtIx-d3YnrPCMEvV-lxPJDyWoJkxsS1Soxsx",
-    "url": "./tombmask/"
+    "url": "/game/?tomb-of-the-mask"
   },
   {
     "name": "Temple of Boom",

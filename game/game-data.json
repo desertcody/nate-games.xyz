@@ -180,7 +180,7 @@
         "gameTitle": "Slope 3"
     },
     "tunnelrush": {
-        "pageMapping": "/0/g/tunnel-rush/",
+        "pageMapping": "/0/g/unity/tunnel-rush/",
         "imageSrc": "/game/img/tunnelrush.jpg",
         "gameTitle": "Tunnel Rush"
     },
@@ -188,6 +188,16 @@
         "pageMapping": "https://eng-docs-opensocial.googleusercontent.com/gadgets/ifr?url=https://749201648-319375013826385014.preview.editmysite.com/uploads/b/139890129-296476716652996764/files/tr.xml",
         "imageSrc": "/game/img/tunnelrush2.webp",
         "gameTitle": "Tunnel Rush 2"
+    },
+    "tomb-of-the-mask": {
+        "pageMapping": "/0/g/unity/tombmask/",
+        "imageSrc": "https://play-lh.googleusercontent.com/V3M-ZVyu4NCOR8oxeHEQSrt5LJhu44xlDtIx-d3YnrPCMEvV-lxPJDyWoJkxsS1Soxsx",
+        "gameTitle": "Tomb of the Mask"
+    },
+    "candy-crush": {
+        "pageMapping": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://830581635-628405001538672842.preview.editmysite.com/uploads/b/139890129-709153476852373754/files/cc.xml",
+        "imageSrc": "/game/img/candycrush.bmp",
+        "gameTitle": "Candy Crush"
     },
     "cut-the-rope": {
         "pageMapping": "https://cdn-ngs.pages.dev/cut-the-rope/",
