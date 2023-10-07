@@ -1,5 +1,12 @@
 function search() {
-    var input = document.getElementById("search-bar").value.toLowerCase();
+    var input = getURLParameter("search");
+    if (input) {
+        document.getElementById("search-bar").value = input;
+        input = input.toLowerCase();
+    } else {
+        input = document.getElementById("search-bar").value.toLowerCase();
+    }
+
     var cards = document.getElementsByClassName("game-url");
     var noResultsMessage = document.getElementById("no-results");
     var hasResults = false;
@@ -25,4 +32,14 @@ function search() {
     }
 }
 
+
 document.getElementById("search-bar").addEventListener("input", search);
+window.addEventListener("load", function() {
+    search();
+});
+
+
+function getURLParameter(name) {
+    var urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
