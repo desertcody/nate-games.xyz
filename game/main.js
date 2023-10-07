@@ -86,9 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function skipAd() {
         const continueButton = document.getElementById("continueButton")
         const adContent = document.getElementById("ad_content")
-        const adPreloader = document.getElementById("preload_ad-content")
+        // const adPreloader = document.getElementById("preload_ad-content")
         adContent.style.display = "none";
-        adPreloader.style.display = "block";
+        // adPreloader.style.display = "block";
         continueGame() // Automatic goes to game instead of having to press the btn
         continueButton.addEventListener("click", continueGame);
         document.getElementById("video_ad").pause(); // https://www.w3schools.com/tags/av_met_play.asp 
