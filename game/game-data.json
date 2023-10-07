@@ -85,7 +85,7 @@
         "gameTitle": "Sonic Revert"
     },
     "subway-surfers": {
-        "pageMapping": "https://da211f97-3b87-4f53-9b9f-34d3fbc5d016.id.repl.co",
+        "pageMapping": "https://raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html",
         "imageSrc": "/game/img/subway-surfers.jpg",
         "gameTitle": "Subway Surfers"
     },
@@ -175,7 +175,7 @@
         "gameTitle": "Slope 2"
     },
     "slope-3": {
-        "pageMapping": "https://c598907c-5367-42e4-96e5-eda20e01cd6e.id.repl.co",
+        "pageMapping": "https://webglmath.github.io/slope3/",
         "imageSrc": "/game/img/slope3.bmp",
         "gameTitle": "Slope 3"
     },
