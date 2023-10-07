@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function continueGame() {
         iframe.src = iframeSrc;
         iframe.style.display = "block";
-        iframe.style.zIndex = "9999";
+        iframe.style.zIndex = "1";
     }
     playButton.addEventListener("click", function () {
         if (iframeSrc) {
