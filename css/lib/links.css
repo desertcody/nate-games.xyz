@@ -1,0 +1,27 @@
+.link:hover::after {
+  transform: scaleX(1);
+}
+.link::after {
+  display: block;
+  background-color: #4287f5;
+  width: 100%;
+  left: 0;
+  transform-origin: bottom center;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: 0.3s ease;
+  content: "";
+}
+
+.link {
+  color: #4287f5;
+  background-color: transparent;
+  padding-bottom: calc(1px * 2);
+  border: none;
+  position: relative;
+  transition: 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+}

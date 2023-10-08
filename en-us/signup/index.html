@@ -3,7 +3,8 @@
 
 <head>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098145720803384"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="/0/assets/css/games.css">
@@ -102,21 +103,29 @@
           <input type="text" id="usernameInput" placeholder="Username" minlength="1"><button onclick="SaveSignUp()"
             class="buttons">Save</button><i style="font-size: 9px;"><br><span id="error">You don't have to choose wisely
               (You can
-              change your username)</span></i><br></span>
+              change your username)</span></i><br><button class="buttons" onclick="closeManual()">Close</button></span>
         <span id="GithubAuth" style="display: none;">
-          <p>1. Go to this link to create a <a href="https://github.com/settings/tokens/new?description=Login%20to%20nate-games&scopes=read:users">PAT</a> <br>
+          <p>1. Go to
+            <span class="tooltip fade" data-title="(Opens in new tab)"><a
+                href="https://github.com/settings/tokens/new?description=Login%20to%20nate-games&scopes=read:users"
+                class="link" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </span>
+            <br>
             2. Set the expiration to "No Expiration" <br>
-            3. Click "Generate token" <small><i>(Permissions already preset)</i></small><br>
-            4. Copy the generated PAT and paste below.</p>
+            3. Click "Generate token" <br>
+            4. Paste the generated PAT below. <br>
+          </p>
           <input type="text" id="token-input" placeholder="Personal Access Token">
           <button id="login-button" class="buttons">Login</button>
-          <br>Confused? Watch a <a id="open-popup" href="#tutorial">Tutorial</a><br>Error <a href="https://github.com/nate-games/nate-games.xyz/issues/126">#126</a>
+          <br>Confused? Watch a <a id="open-popup" href="#" class="link">Tutorial</a><br>
+          <button class="buttons" onclick="closeGithub()">Close</button>
 
           <div id="video-popup" class="video-popup">
-              <div class="video-container">
-                  <span class="close-button" id="close-popup">&times;</span>
-                  <iframe width="800" height="450" src="/game/media/login_with_github.mp4" frameborder="0" allowfullscreen></iframe>
-              </div>
+            <div class="video-container">
+              <span class="close-button" id="close-popup"><i class="fa-solid fa-xmark"></i></span>
+              <iframe width="800" height="450" src="/game/media/login_with_github.mp4" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
           </div>
         </span>
         <span id="username-container" style="display: none;">

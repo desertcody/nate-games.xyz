@@ -4,6 +4,7 @@ const usernameContainer = document.getElementById('username-container');
 const usernameElement = document.getElementById('username');
 const githubButton = document.querySelector('#GithubSignUp');
 const githubAuth = document.querySelector('#GithubAuth');
+const ManualAuth = document.querySelector('#ManualAuth');
 
 Login.addEventListener('click', () => {
     const accessToken = tokenInput.value.trim();
@@ -34,9 +35,13 @@ Login.addEventListener('click', () => {
 });
 
 githubButton.addEventListener('click', function () {
-    if (githubAuth.style.display === 'block') {
+    if (ManualAuth.style.display === 'block') {
         githubAuth.style.display = 'none';
     } else {
         githubAuth.style.display = 'block';
     }
 });
+
+function closeGithub() {
+    githubAuth.style.display = "none";
+}
