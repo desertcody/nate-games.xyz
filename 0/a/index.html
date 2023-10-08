@@ -1,263 +1,195 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>APPS | nate-games</title>
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-    <link rel="stylesheet" href="../assets/css/games.css" />
-    <script src="/0/assets/js/tos.js"></script>
-    <link rel="stylesheet" href="/0/assets/css/tos.css" />
-  </head>
 
-  <body onload="checkTOS()">
-    <div id="tos-overlay">
-      <div id="tos-box">
-        <h2 id="tos-title">Terms of Service</h2>
-        <br />
-        <div id="tos-content"></div>
-        <p>
-          <a style="text-decoration: none" href="/0/copyright-statement.html"
-            >LICENSE</a
-          >
-          &bull;
-          <a
-            href="https://github.com/nate-games/nate-games.xyz/releases/latest"
-            target="_blank"
-            style="text-decoration: none"
-            target="_blank"
-            >Latest Release</a
-          >
-          &bull;
-          <a style="text-decoration: none" href="/en-us/account/"
-            >Create Account</a
-          >
-        </p>
-        <button onclick="acceptTOS()" class="bn5" style="margin-top: 25px">
-          I Accept
+<head>
+  <title>APPS | nate-games</title>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+  <link rel="stylesheet" href="../assets/css/games.css" />
+  <link rel="stylesheet" href="/0/assets/css/tos.css" />
+</head>
+
+<body onload="checkTOS()">
+  <div id="tos-overlay">
+    <div id="tos-box">
+      <h2 id="tos-title">Terms of Service</h2>
+      <br />
+      <div id="tos-content"></div>
+      <p>
+        <a style="text-decoration: none" href="/0/copyright-statement.html">LICENSE</a>
+        &bull;
+        <a href="https://github.com/nate-games/nate-games.xyz/releases/latest" target="_blank"
+          style="text-decoration: none" target="_blank">Latest Release</a>
+        &bull;
+        <a style="text-decoration: none" href="/en-us/account/">Create Account</a>
+      </p>
+      <button onclick="acceptTOS()" class="bn5" style="margin-top: 25px">
+        I Accept
+      </button>
+    </div>
+  </div>
+  <div id="content">
+    <header class="header">
+      <div class="logo">
+        <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
+          <img src="/favicon.ico" class="nav-icon" />
+          <strong>nate-games</strong>
         </button>
       </div>
-    </div>
-    <div id="content">
-      <header class="header">
-        <div class="logo">
-          <button
-            class="home-menu-item btn41-43 btn-41"
-            onclick="window.location.href='/'"
-            class="title"
-          >
-            <img src="/favicon.ico" class="nav-icon" />
-            <strong>nate-games</strong>
+      <nav class="menu">
+        <a href="/en-us/settings/">
+          <button class="menu-item">
+            <i class="fa-solid fa-gear"></i> Settings
           </button>
-        </div>
-        <nav class="menu">
-          <a href="/en-us/settings/">
-            <button class="menu-item">
-              <i class="fa-solid fa-gear"></i> Settings
-            </button>
-          </a>
-          <a href="/en-us/account/">
-            <button class="menu-item">
-              <img src="/0/assets/img/misc/user.svg" /> Account
-            </button>
-          </a>
-          <div class="dropdown">
-            <button class="menu-item dropbtn">
-              <img src="/0/assets/img/misc/categories.svg" />Categories
-            </button>
-            <div class="dropdown-content">
-              <a href="/0/g/?search=">ALL | 💯+</a>
-              <a href="/0/g/#clicker"
-                >Clicker |
-                <img
-                  src="/0/assets/img/tags/pc-mice.svg"
-                  style="vertical-align: middle; height: 20px"
-              /></a>
-              <a href="/0/g/#shooting"
-                >Shooting |
-                <img
-                  src="/0/assets/img/tags/crosshair.svg"
-                  style="vertical-align: middle"
-              /></a>
-              <a href="/0/g/#point-and-click">Point & Click | 🖱️</a>
-              <a href="/0/g/#action">Action | 💥</a>
-              <a href="/0/g/#kids">Kids | 👨🏿‍🌾</a>
-              <span
-                style="
+        </a>
+        <a href="/en-us/account/">
+          <button class="menu-item">
+            <img src="/0/assets/img/misc/user.svg" /> Account
+          </button>
+        </a>
+        <div class="dropdown">
+          <button class="menu-item dropbtn">
+            <img src="/0/assets/img/misc/categories.svg" />Categories
+          </button>
+          <div class="dropdown-content">
+            <a href="/0/g/?search=">ALL | 💯+</a>
+            <a href="/0/g/#clicker">Clicker |
+              <img src="/0/assets/img/tags/pc-mice.svg" style="vertical-align: middle; height: 20px" /></a>
+            <a href="/0/g/#shooting">Shooting |
+              <img src="/0/assets/img/tags/crosshair.svg" style="vertical-align: middle" /></a>
+            <a href="/0/g/#point-and-click">Point & Click | 🖱️</a>
+            <a href="/0/g/#action">Action | 💥</a>
+            <a href="/0/g/#kids">Kids | 👨🏿‍🌾</a>
+            <span style="
                   border-top: 2px solid #222;
                   border-bottom: 2px solid #222;
                   border-radius: 0;
-                "
-                ><b>Game engines</b></span
-              >
-              <a href="/0/g/#html5"
-                >HTML5 |
-                <img
-                  src="/0/assets/img/misc/html5.svg"
-                  style="vertical-align: middle; height: 14px"
-              /></a>
-              <a href="/0/g/#unity"
-                >Unity |
-                <img
-                  src="/0/assets/img/misc/unity.svg"
-                  style="vertical-align: middle; height: 14px"
-              /></a>
-              <a href="/0/g/#flash"
-                >Flash |
-                <img
-                  src="/0/assets/img/misc/adobe-flash.svg"
-                  style="vertical-align: middle; height: 14px"
-              /></a>
-              <a href="/0/g/#scratch"
-                >Scratch |
-                <img
-                  src="/0/assets/img/misc/scratch.svg"
-                  style="vertical-align: middle; height: 14px"
-              /></a>
-            </div>
+                "><b>Game engines</b></span>
+            <a href="/0/g/#html5">HTML5 |
+              <img src="/0/assets/img/misc/html5.svg" style="vertical-align: middle; height: 14px" /></a>
+            <a href="/0/g/#unity">Unity |
+              <img src="/0/assets/img/misc/unity.svg" style="vertical-align: middle; height: 14px" /></a>
+            <a href="/0/g/#flash">Flash |
+              <img src="/0/assets/img/misc/adobe-flash.svg" style="vertical-align: middle; height: 14px" /></a>
+            <a href="/0/g/#scratch">Scratch |
+              <img src="/0/assets/img/misc/scratch.svg" style="vertical-align: middle; height: 14px" /></a>
           </div>
-          <a href="/0/g/">
-            <button class="menu-item">
-              <img src="/0/assets/img/misc/controller.svg" /> Games
-            </button>
-          </a>
-          <a href="/en-us/emu/">
-            <button class="menu-item">
-              <i class="fa-solid fa-dice-d6"></i> Emulator
-            </button>
-          </a>
-          <a href="/0/a/">
-            <button class="menu-item">
-              <i class="fa-solid fa-tablet-button"></i> Apps
-            </button>
-          </a>
-          <a href="https://docs.nate-games.xyz/">
-            <button class="menu-item">
-              <img src="/0/assets/img/misc/book.svg" /> Docs
-            </button>
-          </a>
-          <div class="dropdown">
-            <button class="menu-item dropbtn">
-              <i class="fa-solid fa-caret-down"></i> More
-            </button>
-            <div class="dropdown-content" style="right: 0; min-width: 180px">
-              <a href="https://discord.gg/9mJcqwZ2a5" target="_blank"
-                >Join the Discord | 💬</a
-              >
-              <a href="/en-us/contact" target="_blank">Contact | 📝</a>
-              <a
-                href="https://github.com/nate-games/nate-games.xyz"
-                target="_blank"
-                >GitHub |
-                <img
-                  src="/0/assets/img/misc/github.svg"
-                  style="vertical-align: middle; height: 25px"
-              /></a>
-              <a
-                href="https://github.com/nate-games/nate-games.xyz"
-                target="_blank"
-                >Sponsor |
-                <img src="/0/assets/img/misc/sponsor.svg" class="sponsor"
-              /></a>
-            </div>
+        </div>
+        <a href="/0/g/">
+          <button class="menu-item">
+            <img src="/0/assets/img/misc/controller.svg" /> Games
+          </button>
+        </a>
+        <a href="/en-us/emu/">
+          <button class="menu-item">
+            <i class="fa-solid fa-dice-d6"></i> Emulator
+          </button>
+        </a>
+        <a href="/0/a/">
+          <button class="menu-item">
+            <i class="fa-solid fa-tablet-button"></i> Apps
+          </button>
+        </a>
+        <a href="https://docs.nate-games.xyz/">
+          <button class="menu-item">
+            <img src="/0/assets/img/misc/book.svg" /> Docs
+          </button>
+        </a>
+        <div class="dropdown">
+          <button class="menu-item dropbtn">
+            <i class="fa-solid fa-caret-down"></i> More
+          </button>
+          <div class="dropdown-content" style="right: 0; min-width: 180px">
+            <a href="https://discord.gg/9mJcqwZ2a5" target="_blank">Join the Discord | 💬</a>
+            <a href="/en-us/contact" target="_blank">Contact | 📝</a>
+            <a href="https://github.com/nate-games/nate-games.xyz" target="_blank">GitHub |
+              <img src="/0/assets/img/misc/github.svg" style="vertical-align: middle; height: 25px" /></a>
+            <a href="https://github.com/nate-games/nate-games.xyz" target="_blank">Sponsor |
+              <img src="/0/assets/img/misc/sponsor.svg" class="sponsor" /></a>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
-      <div class="game-container">
-        <div class="game-card" onclick="window.location.href='./vscode/'">
-          <div class="image-container"><img src="./vscode/splash.png" /></div>
-          <h3>vscode</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./chatgpt/'">
-          <div class="image-container">
-            <img src="./chatgpt/app/splash.jpg" />
-          </div>
-          <h3>ChatGPT (A.I Chatbot)</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./luna/'">
-          <div class="image-container"><img src="./luna/splash.bmp" /></div>
-          <h3>Amazon Luna</h3>
-        </div>
-        <div
-          class="game-card"
-          onclick="alert('a Proxy or VPN is required, come back to this page with a proxy & continue'), window.location.href='https://play.geforcenow.com/'"
-        >
-          <div class="image-container">
-            <img src="./geforce/uwp1xoj9.bmp" />
-          </div>
-          <h3>GeForce NOW</h3>
-        </div>
-        <div
-          class="game-card"
-          onclick="alert('a Proxy or VPN is required, come back to this page with a proxy & continue'), alert('Also you need a controller!'), window.location.href='https://www.xbox.com/en-US/play'"
-        >
-          <div class="image-container"><img src="./xbox/p9znlayw.bmp" /></div>
-          <h3>Xbox Cloud Gaming</h3>
-        </div>
-        <div
-          class="game-card"
-          onclick="window.location.href='https://github.com/TurboWarp/packager'"
-        >
-          <div class="image-container">
-            <img
-              src="https://avatars.githubusercontent.com/u/67349469?s=280&v=4"
-            />
-          </div>
-          <h3>Turbowarp Packager</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./downgit/'">
-          <div class="image-container">
-            <img
-              src="https://minhaskamal.github.io/DownGit/res/images/downgit.png"
-            />
-          </div>
-          <h3>DownGit</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./softr/'">
-          <div class="image-container"><img src="./softr/splash.png" /></div>
-          <h3>Wave Generator (softr)</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./imgup/'">
-          <div class="image-container">
-            <img
-              src="https://images.emojiterra.com/twitter/v14.0/512px/2b06.png"
-            />
-          </div>
-          <h3>IMG Upscaler</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./electron/'">
-          <div class="image-container">
-            <img
-              src="https://2105299320-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LBKK1y7h_XWAtuRJG9X-4037718589%2Ficon%2FzSCYXfXdUPvs7AL9g6NO%2FElectron_Software_Framework_Logo.svg%20(1).png?alt=media&token=325f86f6-2e2a-4d0f-a8c7-b28d4eea56a4"
-            />
-          </div>
-          <h3>ElectronJS</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./reactjs/'">
-          <div class="image-container">
-            <img
-              src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png"
-            />
-          </div>
-          <h3>ReactJS</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./gmail/'">
-          <div class="image-container">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/013/948/544/original/gmail-logo-on-transparent-white-background-free-vector.jpg"
-            />
-          </div>
-          <h3>Gmail Remake</h3>
-        </div>
-        <div class="game-card" onclick="window.location.href='./md/'">
-          <div class="image-container">
-            <img src="https://macdown.uranusjr.com/static/images/logo.png" />
-          </div>
-          <h3>Markdown Platformer</h3>
-        </div>
+    <div class="game-container">
+      <div class="game-card" onclick="window.location.href='./vscode/'">
+        <div class="image-container"><img src="./vscode/splash.png" /></div>
+        <h3>vscode</h3>
       </div>
-      <!--note to myself: The div below is for the TOS don't touch it!-->
+      <div class="game-card" onclick="window.location.href='./chatgpt/'">
+        <div class="image-container">
+          <img src="./chatgpt/app/splash.jpg" />
+        </div>
+        <h3>ChatGPT (A.I Chatbot)</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='./luna/'">
+        <div class="image-container"><img src="./luna/splash.bmp" /></div>
+        <h3>Amazon Luna</h3>
+      </div>
+      <div class="game-card"
+        onclick="alert('a Proxy or VPN is required, come back to this page with a proxy & continue'), window.location.href='https://play.geforcenow.com/'">
+        <div class="image-container">
+          <img src="./geforce/uwp1xoj9.bmp" />
+        </div>
+        <h3>GeForce NOW</h3>
+      </div>
+      <div class="game-card"
+        onclick="alert('a Proxy or VPN is required, come back to this page with a proxy & continue'), alert('Also you need a controller!'), window.location.href='https://www.xbox.com/en-US/play'">
+        <div class="image-container"><img src="./xbox/p9znlayw.bmp" /></div>
+        <h3>Xbox Cloud Gaming</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='https://github.com/TurboWarp/packager'">
+        <div class="image-container">
+          <img src="https://avatars.githubusercontent.com/u/67349469?s=280&v=4" />
+        </div>
+        <h3>Turbowarp Packager</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='./downgit/'">
+        <div class="image-container">
+          <img src="https://minhaskamal.github.io/DownGit/res/images/downgit.png" />
+        </div>
+        <h3>DownGit</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='./softr/'">
+        <div class="image-container"><img src="./softr/splash.png" /></div>
+        <h3>Wave Generator (softr)</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='./imgup/'">
+        <div class="image-container">
+          <img src="https://images.emojiterra.com/twitter/v14.0/512px/2b06.png" />
+        </div>
+        <h3>IMG Upscaler</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='./electron/'">
+        <div class="image-container">
+          <img
+            src="https://2105299320-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-LBKK1y7h_XWAtuRJG9X-4037718589%2Ficon%2FzSCYXfXdUPvs7AL9g6NO%2FElectron_Software_Framework_Logo.svg%20(1).png?alt=media&token=325f86f6-2e2a-4d0f-a8c7-b28d4eea56a4" />
+        </div>
+        <h3>ElectronJS</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='./reactjs/'">
+        <div class="image-container">
+          <img src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png" />
+        </div>
+        <h3>ReactJS</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='./gmail/'">
+        <div class="image-container">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/013/948/544/original/gmail-logo-on-transparent-white-background-free-vector.jpg" />
+        </div>
+        <h3>Gmail Remake</h3>
+      </div>
+      <div class="game-card" onclick="window.location.href='./md/'">
+        <div class="image-container">
+          <img src="https://macdown.uranusjr.com/static/images/logo.png" />
+        </div>
+        <h3>Markdown Platformer</h3>
+      </div>
     </div>
-    <script src="/js/sw.js"></script>
-    <script src="/js/editor.js"></script>
-  </body>
+    <!--note to myself: The div below is for the TOS don't touch it!-->
+  </div>
+  <script src="/js/sw.js"></script>
+  <script src="/js/editor.js"></script>
+</body>
+
 </html>

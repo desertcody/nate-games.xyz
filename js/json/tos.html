@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="/0/assets/css/tos.css">
 </head>
+
 <body onload="checkTOS()">
   <div id="tos-overlay">
     <div id="tos-box">
       <h2 id="tos-title">Terms of Service</h2>
-      <br>
-      <div id="tos-content">
-      </div>
-      <p><a style="text-decoration: none;" href="javascript:void(0);" onclick="window.location.href='/0/privacy-policy.html'">Privacy Policy</a> &bull; <a href="javascript:void(0);" onclick="window.open('https://github.com/nate-games/nate-games.xyz/releases/latest', '_blank'); return false;" style="text-decoration: none;" target="_blank">Latest</a></p>
-      <button onclick="acceptTOS()" class="bn5" style="margin-top: 25px;">I Accept</button>
+      <br />
+      <div id="tos-content"></div>
+      <p>
+        <a style="text-decoration: none" href="/0/copyright-statement.html">LICENSE</a>
+        &bull;
+        <a href="https://github.com/nate-games/nate-games.xyz/releases/latest" target="_blank"
+          style="text-decoration: none" target="_blank">Latest Release</a>
+        &bull;
+        <a style="text-decoration: none" href="/en-us/account/">Create Account</a>
+      </p>
+      <button onclick="acceptTOS()" class="bn5" style="margin-top: 25px">
+        I Accept
+      </button>
     </div>
   </div>
   <div id="content">
@@ -21,13 +31,13 @@
       const tosOverlay = document.getElementById('tos-overlay');
       tosOverlay.style.display = 'flex';
     }
-  
+
     function acceptTOS() {
       const tosOverlay = document.getElementById('tos-overlay');
       tosOverlay.style.display = 'none';
       localStorage.setItem('acceptedTOS', 'true');
     }
-  
+
     function checkTOS() {
       if (!localStorage.getItem('acceptedTOS')) {
         showTOS();
@@ -51,4 +61,5 @@
     }
   </script>
 </body>
+
 </html>

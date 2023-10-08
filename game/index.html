@@ -94,8 +94,9 @@
           <div class="image-content">
             <img src="" id="game-img" draggable="false">
           </div>
-          <h3 id="game-h3">Fetching...</h3>
-          <div class="divider"></div>
+          <div class="divider-container" style="width: 200px;">
+            <h3 id="game-h3" class="divider">Fetching...</h3>
+          </div>
           <p id="game-description"></p>
           <button class="arrow-button" id="play-button">Play<span class="arrow"></span></button>
         </div>
@@ -115,7 +116,8 @@
               <!--https://www.w3schools.com/html/mov_bbb.mp4-->
             </video><a class="skip_ad" title="Skip Ad" id="skipButton">
               <span id="skip_count-container" style="display: inline-block; width: 119.2px; height: 42px;">
-                <span id="skipCount" style="padding: 0; margin-left: calc(15% - 7.5%); left: 0; top: 25%; position: absolute;">3</span>
+                <span id="skipCount"
+                  style="padding: 0; margin-left: calc(15% - 7.5%); left: 0; top: 25%; position: absolute;">3</span>
                 <img src="" id="ad_game-thumb" draggable="false"
                   style="height:100%; width: 75%; right: 0; bottom: 0; position: absolute;">
               </span>
@@ -212,16 +214,25 @@
   <footer>
     <div class="footer-content">
       <p>
-        &copy; 2023 nate-games, <br> Made with <i class="fa-solid fa-heart" id="red-filler"></i> by our helpful
-        developers!
-        <br><br>
+        &copy; 2023 nate-games, <br />
+        Made with <i class="fa-solid fa-heart" id="red-filler"></i> by our
+        helpful community! <br /><br />
         <a href="//github.com/nate-games/nate-games.xyz">GitHub <i class="fa-brands fa-github"></i></a>,
         <a href="https://discord.gg/9mJcqwZ2a5">Discord <i class="fa-brands fa-discord"></i></a>,
         <a href="/en-us/contact/">Contact <i class="fa-solid fa-envelope"></i></a>,
         <a href="https://cdn.nate-games.xyz">CDN <i class="fa-solid fa-cloud"></i></a>,
-        <a href="/0/g/?kids">Kids <i class="fa-solid fa-child"></i></a><br><br>
-        <small><span style="color: #4287f5;"><i class="fa-solid fa-circle-info"></i> Fun fact: </span>
-          Did you know nate-games used to be called pixelbit?</small>
+        <a href="/0/g/?kids">Kids <i class="fa-solid fa-child"></i></a>,<br />
+      <div class="divider-container">
+        <p class="divider">Legal Documents <i class="fa-solid fa-newspaper"></i>
+        </p>
+      </div><br>
+      <a href="/en-us/legal/terms-of-service">Terms of Service <i class="fa-solid fa-book-bookmark"></i></a>,
+      <a href="/en-us/legal/privacy-policy">Privacy Policy <i class="fa-solid fa-address-book"></i></a>,
+      <a href="/en-us/legal/copyright-statement">Copyright Statement <i
+          class="fa-solid fa-copyright"></i></a><br /><br />
+      <small><span style="color: #4287f5"><i class="fa-solid fa-circle-info"></i> Fun fact:
+        </span>
+        Did you know nate-games used to be called pixelbit?</small>
       </p>
     </div>
   </footer>

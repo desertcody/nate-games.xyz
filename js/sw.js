@@ -24,7 +24,6 @@ if (allowedDomains.indexOf(currentDomain) === -1) {
 
 var password = "i\x20am\x20him";
 
-
 let msg = "%c Brought to you by http://nate-games.xyz";
 let styles = [
   "font-size: 12px",
@@ -33,6 +32,6 @@ let styles = [
   "color: #4287f5",
   "padding: 8px 19px",
   "border: 1px dashed #fff",
-  "background-image: linear-gradient(to bottom, #333, #000);"
+  "background-image: linear-gradient(to bottom, #333, #000);",
 ].join(";");
 console.log(msg, styles);

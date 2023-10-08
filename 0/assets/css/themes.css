@@ -1,28 +1,28 @@
 header.light-mode {
-    background-color: #f0f0f0;
-    color: #000;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: calc(9997);
-    box-shadow: 0px 0px 7px #fff;
+  background-color: #f0f0f0;
+  color: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: calc(9997);
+  box-shadow: 0px 0px 7px #fff;
 }
 
 body.light-mode {
-    background-color: #717171;
-    color: black;
+  background-color: #717171;
+  color: black;
 }
 
 header.light-mode button {
-    color: #000;
+  color: #000;
 }
 header.light-mode i {
-    color: #000;
+  color: #000;
 }
 header.light-mode .menu-item:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
