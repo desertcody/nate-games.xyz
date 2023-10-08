@@ -8,7 +8,7 @@
         "type": "image/png"
     }],
     "start_url": "/",
-    "background_color": "#ffffff",
+    "background_color": "#111",
     "display": "standalone",
     "orientation": "landscape",
     "lang": "en-US"
