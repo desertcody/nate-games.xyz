@@ -3,7 +3,7 @@
     "short_name": "nate-games",
     "description": "Your Ultimate Hub for Unblocked HTML5, Flash, WebGL, and More!",
     "icons": [{
-        "src": "/0/assets/img/favicon.png",
+        "src": "/img/favicon.png",
         "sizes": "512x512",
         "type": "image/png"
     }],
