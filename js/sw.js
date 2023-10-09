@@ -9,8 +9,7 @@ document.addEventListener("keydown", handleKeyPress);
 var allowedDomains = [
   "https://nate-games.xyz",
   "https://nate-games.xyz.",
-  "https://nate-games.github.io",
-  "https://nates-cdn.pages.dev",
+  "https://nates-cdn.pages.dev", // Hosting provider
   "http://192.168.4.63:8080",
   "http://localhost:8080",
 ];

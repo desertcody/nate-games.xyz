@@ -105,7 +105,7 @@
         "gameTitle": "Plants vs. Zombies; DS"
     },
     "basketball-random": {
-        "pageMapping": "https://cdn-ngs.pages.dev/basketrandom/",
+        "pageMapping": "https://cdn.nate-games.xyz/basketrandom/",
         "imageSrc": "https://play-lh.googleusercontent.com/gP8T5Z1O-ngxIloiwcBZzrzyLPYDp0R_1BDNKUDZboIRPVImeyWI8-7aExvB9gAGNKc",
         "gameTitle": "Basketball Random"
     },
@@ -135,7 +135,7 @@
         "gameTitle": "Tiny Fishing"
     },
     "pizza-tower": {
-        "pageMapping": "https://cdn-ngs.pages.dev/pizzatower/",
+        "pageMapping": "https://cdn.nate-games.xyz/pizzatower/",
         "imageSrc": "/game/img/pizzatower.jpg",
         "gameTitle": "Pizza Tower"
     },
@@ -200,18 +200,18 @@
         "gameTitle": "Candy Crush"
     },
     "cut-the-rope": {
-        "pageMapping": "https://cdn-ngs.pages.dev/cut-the-rope/",
-        "imageSrc": "https://cdn-ngs.pages.dev/cut-the-rope/rope.png",
+        "pageMapping": "https://cdn.nate-games.xyz/cut-the-rope/",
+        "imageSrc": "https://cdn.nate-games.xyz/cut-the-rope/rope.png",
         "gameTitle": "Cut The Rope"
     },
     "cut-the-rope-holiday-gift": {
-        "pageMapping": "https://cdn-ngs.pages.dev/cut-the-rope/holiday-gift/",
-        "imageSrc": "https://cdn-ngs.pages.dev/cut-the-rope/holiday-gift/k9aatx1o.bmp",
+        "pageMapping": "https://cdn.nate-games.xyz/cut-the-rope/holiday-gift/",
+        "imageSrc": "https://cdn.nate-games.xyz/cut-the-rope/holiday-gift/k9aatx1o.bmp",
         "gameTitle": "Cut The Rope: Holiday Gift"
     },
     "cut-the-rope-time-travel": {
-        "pageMapping": "https://cdn-ngs.pages.dev/cut-the-rope/time-travel/",
-        "imageSrc": "https://cdn-ngs.pages.dev/cut-the-rope/time-travel/time.png",
+        "pageMapping": "https://cdn.nate-games.xyz/cut-the-rope/time-travel/",
+        "imageSrc": "https://cdn.nate-games.xyz/cut-the-rope/time-travel/time.png",
         "gameTitle": "Cut The Rope: Time Travel"
     },
     "google-snake": {
@@ -220,48 +220,48 @@
         "gameTitle": "Google Snake"
     },
     "repuls.io": {
-        "pageMapping": "https://cdn-ngs.pages.dev/repuls/",
+        "pageMapping": "https://cdn.nate-games.xyz/repuls/",
         "imageSrc": "/game/img/repuls-io.jpg",
         "gameTitle": "Repuls.io"
     },
     "fnaf-4": {
-        "pageMapping": "https://cdn-ngs.pages.dev/fnaf-4/",
+        "pageMapping": "https://cdn.nate-games.xyz/fnaf-4/",
         "imageSrc": "/game/img/fnaf-4.webp",
         "gameTitle": "FNAF 4"
     },
     "fnf-mid-fight-masses": {
-        "pageMapping": "https://cdn-ngs.pages.dev/fnfmidfight/",
+        "pageMapping": "https://cdn.nate-games.xyz/fnfmidfight/",
         "imageSrc": "/game/img/fnfmidfight.jpg",
         "gameTitle": "FNF Mid-Fight Masses"
     },
     "fnf-vs-whitty": {
-        "pageMapping": "https://cdn-ngs.pages.dev/fnfvswhitty/",
+        "pageMapping": "https://cdn.nate-games.xyz/fnfvswhitty/",
         "imageSrc": "/game/img/fnf-vs-whitty.jpg",
         "gameTitle": "FNF vs. Whitty",
         "description": "Recommended by Joaquin"
     },
     "vex-3": {
-        "pageMapping": "https://cdn-ngs.pages.dev/vex-3/",
+        "pageMapping": "https://cdn.nate-games.xyz/vex-3/",
         "imageSrc": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/87/06/4e/87064e7a-c9fd-7135-6ba3-f321f013e01e/mzl.kqcjsyop.png/512x512bb.jpg",
         "gameTitle": "Vex 3"
     },
     "vex-4": {
-        "pageMapping": "https://cdn-ngs.pages.dev/vex-4/",
+        "pageMapping": "https://cdn.nate-games.xyz/vex-4/",
         "imageSrc": "/game/img/vex-4.jpg",
         "gameTitle": "Vex 4"
     },
     "vex-5": {
-        "pageMapping": "https://cdn-ngs.pages.dev/vex-5/",
+        "pageMapping": "https://cdn.nate-games.xyz/vex-5/",
         "imageSrc": "/game/img/vex-5.jpeg",
         "gameTitle": "Vex 5"
     },
     "vex-6": {
-        "pageMapping": "https://cdn-ngs.pages.dev/vex-6/",
+        "pageMapping": "https://cdn.nate-games.xyz/vex-6/",
         "imageSrc": "/game/img/vex-6.jpeg",
         "gameTitle": "Vex 6"
     },
     "vex-7": {
-        "pageMapping": "https://cdn-ngs.pages.dev/vex-7/",
+        "pageMapping": "https://cdn.nate-games.xyz/vex-7/",
         "imageSrc": "/game/img/vex-7.jpeg",
         "gameTitle": "Vex 7"
     },
@@ -312,7 +312,7 @@
         "gameTitle": "Burnin Rubber 5 XS"
     },
     "burger-and-frights": {
-        "pageMapping": "https://cdn-ngs.pages.dev/burger-frights/",
+        "pageMapping": "https://cdn.nate-games.xyz/burger-frights/",
         "imageSrc": "https://img.itch.zone/aW1nLzY4MDU0NjcucG5n/315x250%23c/Wda88F.png",
         "gameTitle": "Burger and Frights"
     },
@@ -337,27 +337,27 @@
         "gameTitle": "Getaway Shootout"
     },
     "precision-client": {
-        "pageMapping": "https://cdn-ngs.pages.dev/PrecisionClient/game/compiled/web/",
+        "pageMapping": "https://cdn.nate-games.xyz/PrecisionClient/game/compiled/web/",
         "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/PrecisionClient/game/splash.jpg",
         "gameTitle": "Precision Client"
     },
     "fnaf-2-hacks": {
-        "pageMapping": "https://cdn-ngs.pages.dev/fnaf-2hacks/game/",
+        "pageMapping": "https://cdn.nate-games.xyz/fnaf-2hacks/game/",
         "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/fnaf-2hacks/game/splash.png",
         "gameTitle": "FNAF 2 [HACKS]"
     },
     "fnf-mobile": {
-        "pageMapping": "https://cdn-ngs.pages.dev/fnfmobile/game/",
+        "pageMapping": "https://cdn.nate-games.xyz/fnfmobile/game/",
         "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/fnfmobile/game/splash.jpg",
         "gameTitle": "FNF Mobile"
     },
     "undertale": {
-        "pageMapping": "https://cdn-ngs.pages.dev/Undertale/game/",
+        "pageMapping": "https://cdn.nate-games.xyz/Undertale/game/",
         "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/Undertale/game/splash2.jpg",
         "gameTitle": "Undertale Enchanced"
     },
     "fnf": {
-        "pageMapping": "https://cdn-ngs.pages.dev/fnf/game/",
+        "pageMapping": "https://cdn.nate-games.xyz/fnf/game/",
         "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/fnf/game/fnf.avif",
         "gameTitle": "Friday Night Funkin'"
     },
@@ -372,7 +372,7 @@
         "gameTitle": "Valorant"
     },
     "angrybirds": {
-        "pageMapping": "https://cdn-ngs.pages.dev/angrybirds/",
+        "pageMapping": "https://cdn.nate-games.xyz/angrybirds/",
         "imageSrc": "/game/img/angrybirds.png",
         "gameTitle": "Angry Birds",
         "description": "(Opens in CDN)"
