@@ -616,6 +616,12 @@
     "tags": "action, adventure, intense, fps"
   },
   {
+    "url": "/game/?master-chess",
+    "imageSrc": "/game/img/master-chess.avif",
+    "name": "Master Chess",
+    "tags": "kids, point-and-click, html5"
+  },
+  {
     "url": "./elasticman/",
     "imageSrc": "./elasticman/game/elastic-face.jpg",
     "name": "Elastic Man",

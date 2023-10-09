@@ -377,6 +377,16 @@
         "gameTitle": "Angry Birds",
         "description": "(Opens in CDN)"
     },
+    "money-land": {
+        "pageMapping": "https://ubg365.github.io/money-land/",
+        "imageSrc": "/game/img/moneyland.png",
+        "gameTitle": "Money Land"
+    },
+    "master-chess": {
+        "pageMapping": "https://cdn.nate-games.xyz/master-chess/",
+        "imageSrc": "/game/img/master-chess.avif",
+        "gameTitle": "Master Chess"
+    },
     "drift-hunters": {
         "pageMapping": "https://topvazstore.github.io/g/drift-hunters/",
         "imageSrc": "/game/img/drift-hunters.png",
