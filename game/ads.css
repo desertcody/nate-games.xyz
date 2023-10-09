@@ -47,11 +47,11 @@
 }
 #iframe_ad {
   height: 100% !important;
-  width: 25% !important;
+  width: 100% !important;
   z-index: 0;
   position: absolute;
   background-color: transparent;
-  margin-left: 37.5%;
+  background-image: linear-gradient(to bottom left, #000a14, #000);
 }
 
 /* Continue to game button */
