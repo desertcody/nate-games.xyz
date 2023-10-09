@@ -11,8 +11,6 @@
   <link rel="canonical" href="https://nate-games.xyz/en-us/game/">
   <link rel="stylesheet" href="./preloader.css">
   <link rel="icon" href="/favicon.ico">
-  <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
-  <script src="ads.js"></script>
 </head>
 
 <body>
@@ -111,7 +109,28 @@
             <br>
           </center>
         </div>
-        <div id="ad-container"></div>
+        <div id="ad_preloader" style="display: none;">
+          <div id="ad_content" style="display: none;">
+            <div id="ad_container">
+              <iframe id="iframe_ad" src="">
+              </iframe>
+            </div><a class="skip_ad" title="Skip Ad" id="skipButton">
+              <span id="skip_count-container" style="display: inline-block; width: 119.2px; height: 42px;">
+                <span id="skipCount"
+                  style="padding: 0; margin-left: calc(15% - 7.5%); left: 0; top: 25%; position: absolute;">3</span>
+                <img src="" id="ad_game-thumb" draggable="false"
+                  style="height:100%; width: 75%; right: 0; bottom: 0; position: absolute;">
+              </span>
+              <span id="skipAllow" style="display: none;">Skip Ads <i
+                  class="fa-sharp fa-solid fa-forward-step"></i></span>
+            </a>
+          </div>
+          <div id="preload_ad-content">
+            <div class="center-align">
+              <button class="continue_game" id="continueButton">Continue to game</button>
+            </div>
+          </div>
+        </div>
         <iframe src="" id="content" frameborder="0" allowfullscreen style="display: none;"></iframe>
       </div>
       <div class="likes">
