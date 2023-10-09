@@ -387,6 +387,11 @@
         "imageSrc": "/game/img/master-chess.avif",
         "gameTitle": "Master Chess"
     },
+    "stack": {
+        "pageMapping": "/0/g/html/stack/",
+        "imageSrc": "/game/img/stack.png",
+        "gameTitle": "Stack"
+    },
     "drift-hunters": {
         "pageMapping": "https://topvazstore.github.io/g/drift-hunters/",
         "imageSrc": "/game/img/drift-hunters.png",

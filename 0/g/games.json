@@ -483,8 +483,8 @@
     "tags": "point-and-click, kids, html5, action"
   },
   {
-    "url": "./stack/",
-    "imageSrc": "./stack/game/stack.png",
+    "url": "/game/?stack",
+    "imageSrc": "/game/img/stack.png",
     "name": "Stack",
     "tags": "html5, kids, point-and-click, action"
   },
