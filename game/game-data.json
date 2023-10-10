@@ -343,27 +343,27 @@
     },
     "precision-client": {
         "pageMapping": "https://cdn.nate-games.xyz/PrecisionClient/game/compiled/web/",
-        "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/PrecisionClient/game/splash.jpg",
+        "imageSrc": "https://cdn.nate-games.xyz/PrecisionClient/game/splash.jpg",
         "gameTitle": "Precision Client"
     },
     "fnaf-2-hacks": {
         "pageMapping": "https://cdn.nate-games.xyz/fnaf-2hacks/game/",
-        "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/fnaf-2hacks/game/splash.png",
+        "imageSrc": "https://cdn.nate-games.xyz/fnaf-2hacks/game/splash.png",
         "gameTitle": "FNAF 2 [HACKS]"
     },
     "fnf-mobile": {
         "pageMapping": "https://cdn.nate-games.xyz/fnfmobile/game/",
-        "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/fnfmobile/game/splash.jpg",
+        "imageSrc": "https://cdn.nate-games.xyz/fnfmobile/game/splash.jpg",
         "gameTitle": "FNF Mobile"
     },
     "undertale": {
         "pageMapping": "https://cdn.nate-games.xyz/Undertale/game/",
-        "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/Undertale/game/splash2.jpg",
+        "imageSrc": "https://cdn.nate-games.xyz/Undertale/game/splash2.jpg",
         "gameTitle": "Undertale Enchanced"
     },
     "fnf": {
         "pageMapping": "https://cdn.nate-games.xyz/fnf/game/",
-        "imageSrc": "https://raw.githubusercontent.com/nate-games/cdn/main/fnf/game/fnf.avif",
+        "imageSrc": "https://cdn.nate-games.xyz/fnf/game/fnf.avif",
         "gameTitle": "Friday Night Funkin'"
     },
     "zombs-royale": {
@@ -414,12 +414,12 @@
         "gameTitle": "Combat Reloaded"
     },
     "nut-simulator": {
-        "pageMapping": "https://raw.githack.com/nate-games/cdn/main/nutsimulator/index.html",
+        "pageMapping": "https://cdn.nate-games.xyz/nutsimulator/",
         "imageSrc": "/game/img/nutsim.jpg",
         "gameTitle": "Nut Simulator"
     },
     "nut-simulator-hacks": {
-        "pageMapping": "https://raw.githack.com/nate-games/cdn/main/hacked-nutsimulator/index.html",
+        "pageMapping": "https://cdn.nate-games.xyz/hacked-nutsimulator/",
         "imageSrc": "/game/img/nutsim.jpg",
         "gameTitle": "Nut Simulator [Hacked]"
     },
