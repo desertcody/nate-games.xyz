@@ -238,7 +238,7 @@
   },
   {
     "url": "/game/?precision-client",
-    "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/e73fb5c62b95d5fd90e4d21c4e90b805f5037ed6/PrecisionClient/game/splash.jpg",
+    "imageSrc": "https://cdn.nate-games.xyz/PrecisionClient/game/splash.jpg",
     "name": "Precision Client (MC)",
     "tags": "html5, kids, action"
   },
@@ -334,19 +334,19 @@
   },
   {
     "url": "/game/?fnf",
-    "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnf/game/fnf.avif",
+    "imageSrc": "https://cdn.nate-games.xyz/fnf/game/fnf.avif",
     "name": "Friday Night Funkin'",
     "tags": "html5, intense, singleplayer, action, fnf"
   },
   {
     "url": "/game/?fnf-mobile",
-    "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnfmobile/game/splash.jpg",
+    "imageSrc": "https://https://cdn.nate-games.xyz/fnfmobile/game/splash.jpg",
     "name": "FNF Mobile 📲",
     "tags": "html5, intense, singleplayer, action, fnf"
   },
   {
     "url": "./fnfneo/",
-    "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnfneo/game/splash.png",
+    "imageSrc": "https://https://cdn.nate-games.xyz/fnfneo/game/splash.png",
     "name": "FNF Neo",
     "tags": "html5, intense, singleplayer, action, fnf"
   },
@@ -388,7 +388,7 @@
   },
   {
     "url": "/game/?fnaf-2-hacks",
-    "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnaf-2hacks/game/splash.png",
+    "imageSrc": "https://https://cdn.nate-games.xyz/fnaf-2hacks/game/splash.png",
     "name": "FNAF 2 (HACKS)",
     "tags": "fnaf, html5, horror"
   },
@@ -794,7 +794,7 @@
   },
   {
     "url": "/game/?undertale",
-    "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/702efb7d8e243c74bcb312288bb2ae8de80b2c60/Undertale/game/splash2.jpg",
+    "imageSrc": "https://https://cdn.nate-games.xyz/Undertale/game/splash2.jpg",
     "name": "Undertale"
   },
   {
