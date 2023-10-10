@@ -482,5 +482,10 @@
         "pageMapping": "/0/g/bitlife/",
         "imageSrc": "/game/img/bitlife.png",
         "gameTitle": "BitLife"
+    },
+    "monkeymart": {
+        "pageMapping": "/0/g/monkeymart/",
+        "imageSrc": "/game/img/monkeymart.jpg",
+        "gameTitle": "Monkey Mart"
     }
 }
