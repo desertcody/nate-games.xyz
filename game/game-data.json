@@ -130,7 +130,7 @@
         "gameTitle": "Bottle Flip 3D"
     },
     "tiny-fishing": {
-        "pageMapping": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://361820596-851580422716946014.preview.editmysite.com/uploads/b/139890129-473108247243760926/files/tf.xml",
+        "pageMapping": "https://cdn.nate-games.xyz/tiny-fishing/",
         "imageSrc": "/game/img/tiny-fishing.png",
         "gameTitle": "Tiny Fishing"
     },
@@ -286,6 +286,16 @@
         "imageSrc": "/game/img/stick-defenders.avif",
         "gameTitle": "Stick Defenders"
     },
+    "stick-merge": {
+        "pageMapping": "/0/g/html/stick-merge/",
+        "imageSrc": "/game/img/stickmerge.avif",
+        "gameTitle": "Stick Merge"
+    },
+    "stick-fighter": {
+        "pageMapping": "https://cdn.nate-games.xyz/stick-fighter/",
+        "imageSrc": "https://cdn.nate-games.xyz/stick-fighter/icons/icon-256.png",
+        "gameTitle": "Stick Fighter"
+    },
     "swingo": {
         "pageMapping": "https://topvazstore.github.io/g3/swingo/",
         "imageSrc": "/game/img/swingo.avif",
@@ -320,11 +330,6 @@
         "pageMapping": "https://webglmath.github.io/mad-gunz/",
         "imageSrc": "https://webglmath.github.io/mad-gunz/logo.png",
         "gameTitle": "Mad Gunz"
-    },
-    "stick-merge": {
-        "pageMapping": "/0/g/html/stick-merge/",
-        "imageSrc": "/game/img/stickmerge.avif",
-        "gameTitle": "Stick Merge"
     },
     "gun-spin": {
         "pageMapping": "/0/g/unity/gunspin/",

@@ -592,6 +592,12 @@
     "tags": "adventure, shooting, action, intense, fps" 
   },
   {
+  "url": "/game/?stick-fighter",
+  "imageSrc": "https://cdn.nate-games.xyz/stick-fighter/icons/icon-256.png",
+  "name": "Stick Fighter",
+  "tags": "adventure, fighting, action, intense" 
+},
+  {
     "url": "/game/?gun-spin",
     "imageSrc": "/game/img/gunspin.png",
     "name": "Gun Spin",

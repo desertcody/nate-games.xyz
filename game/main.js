@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       gameLoader.style.display = "none";
     }
   });
-
+  let adSkipped = false;
   function showAd() {
     const IframeAd = document.getElementById("iframe_ad");
     const adContent = document.getElementById("ad_content");
@@ -85,11 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const skipCount = document.getElementById("skipCount");
     const skipAllow = document.getElementById("skipAllow");
     adPreContent.style.display = "none"; // https://www.w3schools.com/tags/av_event_canplaythrough.asp
-    const videoUrls = ["https://cdn.nate-games.xyz/center-ads"];
-    // https://stackoverflow.com/questions/63003226/randomly-changing-video-src-with-js
-    const randomIndex = Math.floor(Math.random() * videoUrls.length);
-    const randomVideoUrl = videoUrls[randomIndex];
-    IframeAd.src = randomVideoUrl;
+    IframeAd.src = "https://cdn.nate-games.xyz/center-ads";
     skipButton.style.padding = "0";
     setTimeout(() => {
       skipButton.addEventListener("click", skipAd);
@@ -104,24 +100,23 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
       skipCount.textContent = "1";
     }, 2000);
-    setTimeout(skipAd, 10000); // https://www.w3schools.com/tags/av_prop_duration.asp
+    if (!adSkipped) {
+      setTimeout(skipAd, 10000); // https://www.w3schools.com/tags/av_prop_duration.asp
+    }
   }
   function skipAd() {
-    const IframeAd = document.getElementById("iframe_ad");
-    const continueButton = document.getElementById("continueButton");
-    const adContent = document.getElementById("ad_content");
-    // const adPreloader = document.getElementById("preload_ad-content")
-    adContent.style.display = "none";
-    // adPreloader.style.display = "block";
-    continueGame(); // Automatic goes to game instead of having to press the btn
-    continueButton.addEventListener("click", continueGame);
-    IframeAd.src = ""; // https://www.w3schools.com/tags/av_met_play.asp
-  }
-
-  function continueGame() {
-    iframe.src = iframeSrc;
-    iframe.style.display = "block";
-    iframe.style.zIndex = "1";
+    if (!adSkipped) {
+      adSkipped = true;
+      const IframeAd = document.getElementById("iframe_ad");
+      const continueButton = document.getElementById("continueButton");
+      const adContent = document.getElementById("ad_content");
+      iframe.src = iframeSrc;
+      iframe.style.display = "block";
+      iframe.style.zIndex = "1";
+      adContent.style.display = "none";
+      continueButton.addEventListener("click", continueGame);
+      IframeAd.src = null;
+    }
   }
 
   function changeText(dynamicText) {
