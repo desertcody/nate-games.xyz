@@ -2,15 +2,21 @@
     background-color: #222;
     color: white;
     display: inline-block;
-    padding: 2px 10px;
+    padding: 8px 10px;
     text-align: middle;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.2s;
     cursor: pointer;
+    font-size: 12px;
 }
 
-.dark:active {
+.dark i {
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+.dark:hover {
     background-color: #111;
     box-shadow: 0px 0px 3px #4287f5;
 }
