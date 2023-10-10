@@ -340,13 +340,13 @@
   },
   {
     "url": "/game/?fnf-mobile",
-    "imageSrc": "https://https://cdn.nate-games.xyz/fnfmobile/game/splash.jpg",
+    "imageSrc": "https://cdn.nate-games.xyz/fnfmobile/game/splash.jpg",
     "name": "FNF Mobile 📲",
     "tags": "html5, intense, singleplayer, action, fnf"
   },
   {
     "url": "./fnfneo/",
-    "imageSrc": "https://https://cdn.nate-games.xyz/fnfneo/game/splash.png",
+    "imageSrc": "https://cdn.nate-games.xyz/fnfneo/game/splash.png",
     "name": "FNF Neo",
     "tags": "html5, intense, singleplayer, action, fnf"
   },
@@ -388,7 +388,7 @@
   },
   {
     "url": "/game/?fnaf-2-hacks",
-    "imageSrc": "https://https://cdn.nate-games.xyz/fnaf-2hacks/game/splash.png",
+    "imageSrc": "https://cdn.nate-games.xyz/fnaf-2hacks/game/splash.png",
     "name": "FNAF 2 (HACKS)",
     "tags": "fnaf, html5, horror"
   },
