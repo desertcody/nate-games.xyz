@@ -477,5 +477,10 @@
         "pageMapping": "https://smartfoloolol.netlify.app/assets/funny-shooter-2/",
         "imageSrc": "/game/img/funnyshooter2.png",
         "gameTitle": "Funny Shooter 2"
+    },
+    "bitlife": {
+        "pageMapping": "/0/g/bitlife/",
+        "imageSrc": "/game/img/bitlife.png",
+        "gameTitle": "BitLife"
     }
 }

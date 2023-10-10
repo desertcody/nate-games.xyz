@@ -908,8 +908,8 @@
     "name": "Cut the Rope: Time Travel"
   },
   {
-    "url": "/0/g/bitlife/",
-    "imageSrc": "./bitlife/game/logo.png",
+    "url": "/game/?bitlife",
+    "imageSrc": "/game/img/bitlife.png",
     "name": "BitLife"
   },
   {
