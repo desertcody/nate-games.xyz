@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const queryString = window.location.search.substring(1);
+  let queryString = window.location.search.substring(1);
+
+  if (queryString.endsWith("=")) {
+    queryString = queryString.slice(0, -1);
+  }
 
   const iframe = document.getElementById("content");
   const playButton = document.getElementById("play-button");
@@ -47,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       setTimeout(() => {
         adPreloader.style.display = "block";
         loading.style.display = "none";
-        showAd()
+        showAd();
       }, 2000);
       setTimeout(() => {
         loadingText.textContent = "Preparing your game...";
