@@ -487,5 +487,10 @@
         "pageMapping": "/0/g/monkeymart/",
         "imageSrc": "/game/img/monkeymart.jpg",
         "gameTitle": "Monkey Mart"
+    },
+    "big-neon-tower-vs-tiny-square": {
+        "pageMapping": "https://cdn.nate-games.xyz/big-neon-tower-vs-tiny-square/",
+        "imageSrc": "/game/img/big-neon-tower.jpg",
+        "gameTitle": "Big neon tower vs. Tiny Square"
     }
 }
