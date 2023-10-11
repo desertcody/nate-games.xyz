@@ -12,7 +12,7 @@ const savedAvatarUrl = localStorage.getItem("avatarUrl");
 if (savedAvatarUrl) {
   userAvatar.src = savedAvatarUrl;
 } else {
-  window.location.href = "/en-us/signup/";
+  window.location.href = "/en-us/logout/error";
 }
 
 document
