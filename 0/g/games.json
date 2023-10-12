@@ -47,7 +47,8 @@
     "url": "/game/?cluster-rush",
     "imageSrc": "https://raw.githubusercontent.com/OutRed/outred-assets-cdn.outred.org/main/cluster-rush/splash.png",
     "name": "Cluster Rush",
-    "tags": "kids, fun, adventure, action, unity, singleplayer"
+    "tags": "kids, fun, adventure, action, unity, singleplayer",
+    "hotGame": true
   },
   {
     "url": "/game/?flash-sonic",
@@ -72,7 +73,8 @@
     "url": "/game/?subway-surfers",
     "imageSrc": "/game/img/subway-surfers.jpg",
     "name": "Subway Surfers",
-    "tags": "kids, action, unity"
+    "tags": "kids, action, unity",
+    "hotGame": true
   },
   {
     "url": "/game/?game-inside-a-game",
@@ -84,7 +86,8 @@
     "url": "/game/?idle-startup-tycoon",
     "imageSrc": "/game/img/idle-startup-tycoon.avif",
     "name": "Idle Startup Tycoon",
-    "tags": "tycoon, kids, singleplayer"
+    "tags": "tycoon, kids, singleplayer",
+    "hotGame": true
   },
   {
     "url": "/game/?tanuki-sunset",
@@ -96,7 +99,8 @@
     "url": "/game/?bottle-flip-3d",
     "imageSrc": "https://play-lh.googleusercontent.com/sMpJpTPMtTMr9tfusBtbWIz_h2UdX3iwx8Ea4w6vJ-0vyFILvpIMj_JvwVSeS6Xq0bg",
     "name": "Bottle Flip 3D",
-    "tags": "unity, fun, kids, adventure, action"
+    "tags": "unity, fun, kids, adventure, action",
+    "hotGame": true
   },
   {
     "url": "/game/?tiny-fishing",
@@ -126,7 +130,8 @@
     "url": "/game/?slope-game",
     "imageSrc": "/game/img/slope.jpg",
     "name": "Slope",
-    "tags": "unity, kids, action"
+    "tags": "unity, kids, action",
+    "hotGame": true
   },
   {
     "url": "/game/?slope-2",
@@ -800,7 +805,8 @@
   {
     "url": "/game/?geometry-dash",
     "imageSrc": "/game/img/geometrydash.svg",
-    "name": "Geometry Dash"
+    "name": "Geometry Dash",
+    "hotGame": true
   },
   {
     "url": "/0/g/geodashscratch/",

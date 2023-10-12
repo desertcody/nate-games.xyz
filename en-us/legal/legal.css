@@ -6,7 +6,7 @@ html,
 body {
   font-family: "Roboto", "Lato", Arial, Helvetica, sans-serif;
   user-select: none;
-  color: #000;
+  color: #494949;
   background-color: #fff;
   font-size: 12.5px;
   letter-spacing: 0.25px;
@@ -17,7 +17,7 @@ body {
 }
 
 .divider {
-  border-bottom: #222 solid 2px;
+  border-bottom: #494949 solid 2px;
   width: 100%;
 }
 .center {
@@ -37,4 +37,8 @@ footer {
   bottom: 0;
   position: absolute;
   width: 100%;
+}
+
+.footer-content {
+  background-color: #222;
 }

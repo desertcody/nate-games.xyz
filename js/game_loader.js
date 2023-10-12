@@ -85,6 +85,11 @@ function createGameCard(game, container) {
       }
     }
   });
+  if (game.hotGame) {
+    const hotLabel = document.createElement("label");
+    hotLabel.setAttribute("id", "hot_game");
+    imageContainer.appendChild(hotLabel);
+  }
   if (game.target === "_blank") {
     gameUrl.addEventListener("click", function (e) {
       e.preventDefault();
