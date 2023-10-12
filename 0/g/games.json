@@ -15,7 +15,7 @@
   },
   {
     "url": "/game/?1v1.lol",
-    "imageSrc": "./1v1lol/1v1lol.jpg",
+    "imageSrc": "/game/img/1v1lol.jpg",
     "name": "1v1.LOL",
     "tags": "action, shooting, unity"
   },
@@ -27,7 +27,7 @@
   },
   {
     "url": "/game/?justfall.lol",
-    "imageSrc": "./just-fall/unnamed.png",
+    "imageSrc": "/game/img/justfall.png",
     "name": "JustFall.LOL",
     "tags": "kids, fun, unity, action"
   },

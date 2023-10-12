@@ -177,32 +177,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   linkElement.href += currentURL;
 
-  function hidebar() {
-    const Likes = document.querySelector(".likes");
-    const bar = document.querySelector(".bar");
-    const iframe = document.querySelector("#content");
-    const showbarButton = document.querySelector(".show-bar");
-    const fullscreenbutton = document.querySelector("#fullscreen-button");
-    fullscreenbutton.style.display = "none";
-    bar.style.display = "none";
-    iframe.style.height = "100%";
-    showbarButton.style.display = "block";
-    Likes.style.display = "none";
-  }
-
-  function showbar() {
-    const Likes = document.querySelector(".likes");
-    const showbarButton = document.querySelector(".show-bar");
-    const bar = document.querySelector(".bar");
-    const iframe = document.querySelector("#content");
-    const fullscreenbutton = document.querySelector("#fullscreen-button");
-    iframe.style.height = "calc(100% - 50px)";
-    bar.style.display = "block";
-    Likes.style.display = "block";
-    fullscreenbutton.style.display = "block";
-    showbarButton.style.display = "none";
-  }
-
   function setSessionCookie(name, value) {
     const urlParams = new URLSearchParams(window.location.search);
     const key = `${name}_${urlParams.toString()}`;
@@ -258,3 +232,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+function hidebar() {
+  const Likes = document.querySelector(".likes");
+  const bar = document.querySelector(".bar");
+  const iframe = document.querySelector("#content");
+  const showbarButton = document.querySelector(".show-bar");
+  const fullscreenbutton = document.querySelector("#fullscreen-button");
+  fullscreenbutton.style.display = "none";
+  bar.style.display = "none";
+  iframe.style.height = "100%";
+  showbarButton.style.display = "block";
+  Likes.style.display = "none";
+}
+
+function showbar() {
+  const Likes = document.querySelector(".likes");
+  const showbarButton = document.querySelector(".show-bar");
+  const bar = document.querySelector(".bar");
+  const iframe = document.querySelector("#content");
+  const fullscreenbutton = document.querySelector("#fullscreen-button");
+  iframe.style.height = "calc(100% - 50px)";
+  bar.style.display = "block";
+  Likes.style.display = "block";
+  fullscreenbutton.style.display = "block";
+  showbarButton.style.display = "none";
+}

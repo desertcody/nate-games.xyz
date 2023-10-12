@@ -1,17 +1,17 @@
 {
     "1v1.lol": {
-        "pageMapping": "/0/g/1v1lol/",
+        "pageMapping": "https://cdn.nate-games.xyz/1v1lol/",
         "gameTitle": "1v1.LOL",
-        "imageSrc": "/0/g/1v1lol/1v1lol.jpg"
+        "imageSrc": "/game/img/1v1lol.jpg"
     },
     "1v1.lol-method-2": {
-        "pageMapping": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/ko1ov/edit@main/d3hjf73j2e92ge4y.xml",
+        "pageMapping": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/ko1ov/get@fb7ed29a4db54f84f6b67f4fa15ad280e4863d28/main.xml",
         "imageSrc": "/game/img/1v1lol2.bmp",
         "gameTitle": "1v1.LOL [Method 2]"
     },
     "justfall.lol": {
-        "pageMapping": "/0/g/just-fall/",
-        "imageSrc": "/0/g/just-fall/unnamed.png",
+        "pageMapping": "https://cdn.nate-games.xyz/just-fall/",
+        "imageSrc": "/game/img/justfall.png",
         "gameTitle": "JustFall.LOL"
     },
     "cluster-rush": {
