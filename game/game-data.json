@@ -160,7 +160,7 @@
         "gameTitle": "Dumb ways to die"
     },
     "geometry-dash": {
-        "pageMapping": "https://ng-geodash.pages.dev/",
+        "pageMapping": "https://cdn.nate-games.xyz/gdash/",
         "imageSrc": "/game/img/geometrydash.svg",
         "gameTitle": "Geometry Dash"
     },
