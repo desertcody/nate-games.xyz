@@ -99,15 +99,44 @@ body {
     background-color: #bbb;
   }
 
-  input {
-    padding: 10px 20px;
-    font-family: 'Lato', 'Roboto', Arial, Helvetica, sans-serif;
-    color: #333;
-    font-size: 12px;
-    text-align: center;
+  .group {
+    display: flex;
+    line-height: 30px;
+    align-items: center;
+    position: relative;
+    max-width: 200px;
   }
-  input::placeholder {
+  
+  .input {
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 3rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f8fafc;
+    color: #0d0c22;
+    transition: .5s ease;
+  }
+  
+  .input::placeholder {
+    color: #788597;
     opacity: 1;
+  }
+  
+  .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(129, 140, 248);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1rem;
+    fill: none;
+    width: 1rem;
+    height: 1rem;
   }
 
   #passwordInput {

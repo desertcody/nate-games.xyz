@@ -93,18 +93,28 @@
         <a class="dark" id="GithubSignUp">Sign in with GitHub <i class="fa-brands fa-github"></i></a><br><br>
         <span id="GithubAuth" style="display: none;">
           <p>1. Go to
-            <span class="tooltip fade" data-title="(Opens in new tab)"><a
-                href="https://github.com/settings/tokens/new?description=Login%20to%20nate-games&scopes=read:users"
-                class="link" target="_blank">GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span class="tooltip">
+              <a href="https://github.com/settings/tokens/new?description=Login%20to%20nate-games&scopes=read:users"
+                class="tooltip-link" target="_blank" data-tooltip="(Opens in new tab)">GitHub <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </span>
             <br>
             2. Set the expiration to "No Expiration" <br>
             3. Click "Generate token" <br>
             4. Paste the generated PAT below. <br>
           </p>
-          <input type="text" id="token-input" placeholder="Personal Access Token">
-          <button id="login-button" class="buttons">Login</button>
-          <br>Confused? Watch a <a id="open-popup" href="#" class="link">Tutorial</a><br>
+          <hr>
+          <div class="group">
+            <svg stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+              class="icon">
+              <path
+                d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                stroke-linejoin="round" stroke-linecap="round"></path>
+            </svg>
+            <input class="input" id="token-input" type="password" placeholder="Personal Access Token">
+          </div>
+          <p>
+            Confused? Watch a <a id="open-popup" href="#" class="link">Tutorial</a></p>
 
           <div id="video-popup" class="video-popup">
             <div class="video-container">

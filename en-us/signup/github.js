@@ -1,12 +1,12 @@
 const tokenInput = document.getElementById("token-input");
-const Login = document.getElementById("login-button");
 const usernameContainer = document.getElementById("username-container");
 const usernameElement = document.getElementById("username");
 const userAvatar = document.getElementById("user-avatar");
 const githubButton = document.querySelector("#GithubSignUp");
 const githubAuth = document.querySelector("#GithubAuth");
 
-Login.addEventListener("click", () => {
+tokenInput.addEventListener("keypress", () => {
+  if (event.key === "Enter") {
   const accessToken = tokenInput.value.trim();
 
   if (!accessToken) {
@@ -46,11 +46,12 @@ Login.addEventListener("click", () => {
       alert("Please check your Personal Access Token.");
       console.error(error);
     });
+  }
 });
 
 
 githubButton.addEventListener("click", function () {
-  if (githubButton.style.display === "block") {
+  if (githubAuth.style.display === "block") {
     githubAuth.style.display = "none";
   } else {
     githubAuth.style.display = "block";
