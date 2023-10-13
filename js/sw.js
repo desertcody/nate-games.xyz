@@ -35,3 +35,11 @@ let styles = [
   "background-image: linear-gradient(to bottom, #333, #000);",
 ].join(";");
 console.log(msg, styles);
+
+
+// https://codingbeautydev.com/blog/javascript-create-script-element/
+const script = document.createElement('script');
+script.src =
+'https://arc.io/widget.js';
+
+document.body.appendChild(script);
