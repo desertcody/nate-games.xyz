@@ -1,54 +1,43 @@
 const tokenInput = document.getElementById("token-input");
-const usernameContainer = document.getElementById("username-container");
-const usernameElement = document.getElementById("username");
-const userAvatar = document.getElementById("user-avatar");
 const githubButton = document.querySelector("#GithubSignUp");
 const githubAuth = document.querySelector("#GithubAuth");
 
 tokenInput.addEventListener("keypress", () => {
   if (event.key === "Enter") {
-  const accessToken = tokenInput.value.trim();
+    const accessToken = tokenInput.value.trim();
 
-  if (!accessToken) {
-    alert("Please enter your GitHub Personal Access Token.");
-    return;
-  }
+    if (!accessToken) {
+      alert("Please enter your GitHub Personal Access Token.");
+      return;
+    }
 
-  fetch("https://api.github.com/user", {
-    headers: {
-      Authorization: `token ${accessToken}`,
-    },
-  })
-    .then((response) => {
-      if (response.status === 200) {
-        return response.json();
-      } else {
-        throw new Error("Invalid Personal Access Token");
-      }
+    fetch("https://api.github.com/user", {
+      headers: {
+        Authorization: `token ${accessToken}`,
+      },
     })
-    .then((user) => {
-      usernameElement.textContent = user.login;
+      .then((response) => {
+        if (response.status === 200) {
+          return response.json();
+        } else {
+          throw new Error("Invalid Personal Access Token");
+        }
+      })
+      .then((user) => {
+        localStorage.setItem("accountSaved", "true");
+        localStorage.setItem("username", user.login);
+        localStorage.setItem("avatarUrl", user.avatar_url);
 
-      const avatarUrl = user.avatar_url;
-      userAvatar.src = avatarUrl;
-
-      usernameContainer.style.display = "block";
-
-      localStorage.setItem("accountSaved", "true");
-      localStorage.setItem("username", user.login);
-      localStorage.setItem("avatarUrl", avatarUrl);
-
-      if (localStorage.getItem("accountSaved") === "true") {
-        window.location.href = "/en-us/account/";
-      }
-    })
-    .catch((error) => {
-      alert("Please check your Personal Access Token.");
-      console.error(error);
-    });
+        if (localStorage.getItem("accountSaved") === "true") {
+          window.location.href = "/en-us/account/";
+        }
+      })
+      .catch((error) => {
+        alert("Please check your Personal Access Token.");
+        console.error(error);
+      });
   }
 });
-
 
 githubButton.addEventListener("click", function () {
   if (githubAuth.style.display === "block") {
@@ -57,3 +46,11 @@ githubButton.addEventListener("click", function () {
     githubAuth.style.display = "block";
   }
 });
+
+document.body.onload = isAccountSaved();
+
+function isAccountSaved() {
+  if (localStorage.getItem("accountSaved") === "true") {
+    window.location.href = "/en-us/account/";
+  }
+}
