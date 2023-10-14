@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let iframeSrc = null;
 
-  fetch("game-data.json")
+  fetch("/js/json/game-data.json")
     .then((response) => response.json())
     .then((data) => {
       const queryParamsData = data[queryString];
@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const gameThumb = document.getElementById("ad_game-thumb");
     const skipcountContainer = document.getElementById("skip_count-container");
     gameThumb.src = gameImg;
+    gameThumb.style.objectFit = "cover";
     adContent.style.display = "block";
     const skipButton = document.getElementById("skipButton");
     const skipCount = document.getElementById("skipCount");

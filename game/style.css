@@ -182,10 +182,19 @@ center:hover .show-bar {
   position: absolute;
 }
 
+.image-content #game-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: none;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 1));
+}
+
 .thumbnail img {
   height: 100%;
   width: 100%;
   vertical-align: middle;
+  object-fit: cover;
   position: relative;
 }
 
@@ -196,6 +205,7 @@ center:hover .show-bar {
   left: 0;
   z-index: 9999;
   position: absolute;
+  object-fit: cover;
   font-size: 15px;
   margin-left: 20px;
 }

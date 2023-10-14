@@ -1,4 +1,10 @@
 {
+    "cdn_loader": {
+        "pageMapping": "/cdn_loader",
+        "gameTitle": "developer-access app",
+        "imageSrc": "/game/dev_referer.png",
+        "description": "Secretly access nate-games in developer mode! 🔓"
+    },
     "1v1.lol": {
         "pageMapping": "https://cdn.nate-games.xyz/1v1lol/",
         "gameTitle": "1v1.LOL",

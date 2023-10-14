@@ -13,7 +13,7 @@ centerAlign.appendChild(loadingMessage);
 loadingMessage.appendChild(createLinebreak);
 loadingMessage.appendChild(imageElement);
 
-fetch("games.json")
+fetch("/js/json/games.json")
   .then((response) => response.json())
   .then((data) => {
     setTimeout(() => {
