@@ -38,10 +38,11 @@
     "tags": "kids, fun, adventure"
   },
   {
-    "url": "/0/g/Roblox-Offline/",
-    "imageSrc": "./Roblox-Offline/splash.svg",
-    "name": "Roblox (WebGL)",
-    "tags": "kids, fun, adventure, singleplayer, unity"
+    "url": "/game/?reblox-client",
+    "imageSrc": "/game/img/reblox-client.jpg",
+    "name": "Reblox Client",
+    "tags": "kids, fun, adventure, multiplayer, unity",
+    "newGame": true
   },
   {
     "url": "/game/?cluster-rush",

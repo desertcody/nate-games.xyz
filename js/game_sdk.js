@@ -109,13 +109,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!adSkipped) {
       adSkipped = true;
       const IframeAd = document.getElementById("iframe_ad");
-      const continueButton = document.getElementById("continueButton");
       const adContent = document.getElementById("ad_content");
       iframe.src = iframeSrc;
       iframe.style.display = "block";
       iframe.style.zIndex = "1";
       adContent.style.display = "none";
-      continueButton.addEventListener("click", continueGame);
       IframeAd.src = null;
     }
   }

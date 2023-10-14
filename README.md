@@ -10,13 +10,13 @@
 <p align="center">Comments powered by giscus</p>
 
 > **Note**
-> **No in game ads, powered by Google adsense!**
+> **Bye bye no ads, welcome in advertisements**
 
 Website blocked? View [links](https://github.com/nate-games/nate-games.xyz/wiki/URLS)
 
 
 # Features
-- 225+ games & apps
+- 230+ games & apps
 - Search bar
 - Adobe Flash
 - HTML5 Games

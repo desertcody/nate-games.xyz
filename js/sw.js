@@ -22,8 +22,6 @@ if (allowedDomains.indexOf(currentDomain) === -1) {
   window.top.location.href = "https://nate-games.xyz/en-us/sitelock";
 }
 
-var password = "i\x20am\x20him";
-
 let msg = "%c Brought to you by http://nate-games.xyz";
 let styles = [
   "font-size: 12px",
@@ -35,11 +33,3 @@ let styles = [
   "background-image: linear-gradient(to bottom, #333, #000);",
 ].join(";");
 console.log(msg, styles);
-
-
-// https://codingbeautydev.com/blog/javascript-create-script-element/
-const script = document.createElement('script');
-script.src =
-'https://arc.io/widget.js';
-
-document.body.appendChild(script);

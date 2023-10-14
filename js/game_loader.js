@@ -90,6 +90,11 @@ function createGameCard(game, container) {
     hotLabel.setAttribute("id", "hot_game");
     imageContainer.appendChild(hotLabel);
   }
+  if (game.newGame) {
+    const newLabel = document.createElement("label");
+    newLabel.setAttribute("id", "new_game");
+    imageContainer.appendChild(newLabel);
+  }
   if (game.target === "_blank") {
     gameUrl.addEventListener("click", function (e) {
       e.preventDefault();

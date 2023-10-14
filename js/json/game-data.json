@@ -50,6 +50,12 @@
         "imageSrc": "/0/g/Roblox/splash.png",
         "gameTitle": "ROBLOX"
     },
+    "reblox-client": {
+        "pageMapping": "https://cdn.nate-games.xyz/reblox-client/",
+        "imageSrc": "/game/img/reblox-client.jpg",
+        "gameTitle": "Reblox Client",
+        "description": "Only OG nate-gamers remember the original version"
+    },
     "gacha-club": {
         "pageMapping": "/0/g/gacha-club/",
         "imageSrc": "/0/g/gacha-club/5yoczcli.bmp",
