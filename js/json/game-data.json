@@ -313,6 +313,11 @@
         "imageSrc": "/game/img/swingo.avif",
         "gameTitle": "Swingo"
     },
+    "neon-swing": {
+        "pageMapping": "https://cdn.nate-games.xyz/neonswing/",
+        "imageSrc": "https://play-lh.googleusercontent.com/aUUqrS7i6UFtiG7oQdrfRdyCWN2XXV13DVeJTHmYub7Qdz7lQ6XyGJpB7RaeNlyXPw",
+        "gameTitle": "Neon Swing"
+    },
     "temple-of-boom": {
         "pageMapping": "https://topvazstore.github.io/g3/temple-of-boom/",
         "imageSrc": "/game/img/templeofboom.avif",
@@ -369,9 +374,19 @@
         "gameTitle": "FNF Mobile"
     },
     "undertale": {
-        "pageMapping": "https://cdn.nate-games.xyz/Undertale/game/",
-        "imageSrc": "https://cdn.nate-games.xyz/Undertale/game/splash2.jpg",
+        "pageMapping": "https://cdn.nate-games.xyz/Undertale/",
+        "imageSrc": "https://cdn.nate-games.xyz/Undertale/splash2.jpg",
         "gameTitle": "Undertale Enchanced"
+    },
+    "sans-fight": {
+        "pageMapping": "https://cdn.nate-games.xyz/sans-fight/",
+        "imageSrc": "/game/img/sans-fight.jpg",
+        "gameTitle": "Sans Fight"
+    },
+    "deepest-sword": {
+        "pageMapping": "https://cdn.nate-games.xyz/deepest-sword/",
+        "imageSrc": "https://cdn.nate-games.xyz/deepest-sword/deepest-sword.webp",
+        "gameTitle": "Deepest Sword"
     },
     "fnf": {
         "pageMapping": "https://cdn.nate-games.xyz/fnf/game/",

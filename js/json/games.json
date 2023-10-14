@@ -513,10 +513,11 @@
     "tags": "html5, intense, singleplayer, action, point-and-click"
   },
   {
-    "url": "neonswing/",
+    "url": "/game/?neon-swing",
     "imageSrc": "https://play-lh.googleusercontent.com/aUUqrS7i6UFtiG7oQdrfRdyCWN2XXV13DVeJTHmYub7Qdz7lQ6XyGJpB7RaeNlyXPw",
     "name": "Neon Swing",
-    "tags": "html5, intense, singleplayer, action, point-and-click"
+    "tags": "html5, intense, singleplayer, action, point-and-click",
+    "hotGame": true
   },
   {
     "url": "./pooreddie/",
@@ -812,8 +813,20 @@
   },
   {
     "url": "/game/?undertale",
-    "imageSrc": "https://https://cdn.nate-games.xyz/Undertale/game/splash2.jpg",
+    "imageSrc": "https://cdn.nate-games.xyz/Undertale/splash2.jpg",
     "name": "Undertale"
+  },
+  {
+    "url": "/game/?sans-fight",
+    "imageSrc": "/game/img/sans-fight.jpg",
+    "name": "Sans Fight",
+    "newGame": true
+  },
+  {
+    "url": "/game/?deepest-sword",
+    "imageSrc": "https://cdn.nate-games.xyz/deepest-sword/deepest-sword.webp",
+    "name": "Deepest Sword",
+    "newGame": true
   },
   {
     "url": "/game/?geometry-dash",
