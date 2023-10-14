@@ -1146,32 +1146,32 @@
   },
   {
     "name": "Henry Stickmin",
-    "imageSrc": "/0/g/hs/splash.bmp",
-    "url": "/0/g/hs/",
+    "imageSrc": "/game/img/hs.bmp",
+    "url": "/game/?henry-stickmin",
     "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin 2",
-    "imageSrc": "/0/g/hs2/splash.bmp",
-    "url": "/0/g/hs2/",
+    "imageSrc": "/game/img/hs2.bmp",
+    "url": "/game/?henry-stickmin-2",
     "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin 3",
-    "imageSrc": "/0/g/hs3/splash.bmp",
-    "url": "/0/g/hs3/",
+    "imageSrc": "/game/img/hs3.bmp",
+    "url": "/game/?henry-stickmin-3",
     "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin 4",
-    "imageSrc": "/0/g/hs4/splash.bmp",
-    "url": "/0/g/hs4/",
+    "imageSrc": "/game/img/hs4.bmp",
+    "url": "/game/?henry-stickmin-4",
     "tags": "adventure, action, shooting, point-and-click"
   },
   {
     "name": "Henry Stickmin 5",
-    "imageSrc": "/0/g/hs5/splash.bmp",
-    "url": "/0/g/hs5/",
+    "imageSrc": "/game/img/hs5.bmp",
+    "url": "/game/?henry-stickmin-5",
     "tags": "adventure, action, shooting, point-and-click"
   },
   {

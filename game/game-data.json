@@ -448,6 +448,31 @@
         "imageSrc": "https://play-lh.googleusercontent.com/za2Nu_qjMw5GzWfbzet4zeiZT1xvJlTRi4NJzGpJWX9grxFAAko5dGBwe7qeqK01THw",
         "gameTitle": "Tetris"
     },
+    "henry-stickmin": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/henry-stickmin1.swf",
+        "imageSrc": "/game/img/hs.bmp",
+        "gameTitle": "Henry Stickmin"
+    },
+    "henry-stickmin-2": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/henry-stickmin2.swf",
+        "imageSrc": "/game/img/hs2.bmp",
+        "gameTitle": "Henry Stickmin 2"
+    },
+    "henry-stickmin-3": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=URL",
+        "imageSrc": "/game/img/hs3.bmp",
+        "gameTitle": "Henry Stickmin 3"
+    },
+    "henry-stickmin-4": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=https://coolgames4life.weebly.com/uploads/2/6/6/2/26620269/infiltratingtheairshipgame.swf",
+        "imageSrc": "/game/img/hs4.bmp",
+        "gameTitle": "Henry Stickmin 4"
+    },
+    "henry-stickmin-5": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=https://the-sour-patch-kids.github.io/our-website/assets/gfiles/Henry%20Stickmin%20-%20Breaking%20the%20Bank.swf",
+        "imageSrc": "/game/img/hs5.bmp",
+        "gameTitle": "Henry Stickmin 5"
+    },
     "paperio-2": {
         "pageMapping": "/0/g/paperio2/",
         "imageSrc": "/game/img/paperio-2.avif",
