@@ -46,6 +46,7 @@
 }
 
 .buttons {
+  cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
   background-color: #ddd;
@@ -63,4 +64,22 @@
   background-color: #111;
   box-shadow: 0px 0px 3px #4287f5;
   color: white;
+}
+#fullscreen-flash {
+  color: white;
+  font-size: 15px;
+  z-index: 9999;
+  max-height: 50px;
+  overflow: hidden;
+  border: none;
+  background-color: #111;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 0;
+}
+
+#fullscreen-flash:hover {
+  background-color: #222;
+  color: #4287f5;
 }

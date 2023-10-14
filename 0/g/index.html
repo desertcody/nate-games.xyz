@@ -110,13 +110,15 @@
         id="join-discord">Your
         browser doesn't support iframes.</iframe>
       <div class="flash-opener" id="flash-opener">
-        <div id="flash-container"></div>
+        <div id="fullscreen-container">
+          <div id="flash-container"></div>
+        </div>
         <div class="button-container">
-          <button for="file-input" class="buttons"><label for="file-input" class="file-input-button">Select
-              File</label></button>
+          <button class="buttons" onclick="openFileInput()">Select File</button>
           <input type="file" id="file-input" style="display: none;" onchange="handleFileChange(event)"
             accept=".swf, .spl">
           <button onclick="loadFlash()" class="buttons">Load Flash</button>
+          <button onclick="fullscreenFlash()" id="fullscreen-flash" style="display: none;"><i class="fa-solid fa-expand"></i></button>
         </div>
         <div id="file-name"></div>
       </div>
