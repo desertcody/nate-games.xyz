@@ -21,6 +21,9 @@
             container.appendChild(player);
             const urlParams = new URLSearchParams(window.location.search);
             const swfFilePath = urlParams.get("swf");
+            if (!swfFilePath) {
+                player.load("logo-anim.swf");
+            }
             if (swfFilePath) {
                 player.load(swfFilePath).then(() => {
                     console.info("Ruffle successfully loaded the file");
@@ -29,6 +32,14 @@
                 });
             }
         });
+        window.RufflePlayer.config = {
+            "autoplay": "on",
+            "unmuteOverlay": "hidden",
+            "contextMenu": false,
+            "preloader": false,
+            "warnOnUnsupportedContent": false,
+            "upgradeToHttps": window.location.protocol === "https:"
+        };
         // From nondynamic loader modified by nate-games
     </script>
 </body>

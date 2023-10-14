@@ -127,6 +127,18 @@
     "tags": "kids, flash"
   },
   {
+    "url": "/game/?the-impossible-quiz",
+    "imageSrc": "/game/img/the-impossible-quiz.avif",
+    "name": "The Impossible Quiz",
+    "tags": "kids, flash"
+  },
+  {
+    "url": "/game/?dad-n-me",
+    "imageSrc": "/game/img/dad-n-me.webp",
+    "name": "Dad 'n Me",
+    "tags": "flash"
+  },
+  {
     "url": "/game/?slope-game",
     "imageSrc": "/game/img/slope.jpg",
     "name": "Slope",

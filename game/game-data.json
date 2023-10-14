@@ -473,6 +473,16 @@
         "imageSrc": "/game/img/hs5.bmp",
         "gameTitle": "Henry Stickmin 5"
     },
+    "the-impossible-quiz": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/the_impossible_quiz.swf",
+        "imageSrc": "/game/img/the-impossible-quiz.avif",
+        "gameTitle": "The Impossible Quiz"
+    },
+    "dad-n-me": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/dad-n-me.swf",
+        "imageSrc": "/game/img/dad-n-me.webp",
+        "gameTitle": "Dad 'n Me"
+    },
     "paperio-2": {
         "pageMapping": "/0/g/paperio2/",
         "imageSrc": "/game/img/paperio-2.avif",
