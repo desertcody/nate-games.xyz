@@ -1,6 +1,6 @@
 // Only works on a 404 page
 const urlMappings = {
-  "/cdn_loader": "https://cdn.nate-games.xyz/developer-access" // Log if isDeveloper access
+  "/cdn_loader": "https://cdn.nate-games.xyz" // Log if isDeveloper access
 };
 
 function changeIframeSource() {
@@ -8,10 +8,10 @@ function changeIframeSource() {
   const currentURL = window.location.pathname;
   const referrer = document.referrer;
 
-  if (referrer === "https://nate-games.xyz/game/") {
+  if (referrer.startsWith("http://localhost:8080/game/")) {
     if (urlMappings[currentURL]) {
       iframe.src = urlMappings[currentURL];
-      iframe.target = "_top";
+      iframe.style.display = "block";
       document.title = "Classes";
       changeFavicon("/game/class.png");
     } else {

@@ -30,6 +30,11 @@
         "imageSrc": "/game/img/doodle-jump.png",
         "gameTitle": "Doodle Jump"
     },
+    "octocat-jump": {
+        "pageMapping": "https://cdn.nate-games.xyz/octocat-jump/",
+        "imageSrc": "/game/img/octocat-jump.png",
+        "gameTitle": "Octocat Jump"
+    },
     "1": {
         "pageMapping": "/0/g/1/",
         "imageSrc": "/0/g/1/meta/apple-touch-icon.png",
@@ -140,6 +145,16 @@
         "pageMapping": "/0/g/bf3d/",
         "imageSrc": "https://play-lh.googleusercontent.com/sMpJpTPMtTMr9tfusBtbWIz_h2UdX3iwx8Ea4w6vJ-0vyFILvpIMj_JvwVSeS6Xq0bg",
         "gameTitle": "Bottle Flip 3D"
+    },
+    "3d-city": {
+        "pageMapping": "https://cdn.nate-games.xyz/3d-city/",
+        "imageSrc": "/game/img/3d-city.jpg",
+        "gameTitle": "3D.City"
+    },
+    "duck-hunt": {
+        "pageMapping": "https://cdn.nate-games.xyz/duckhunt/",
+        "imageSrc": "/game/img/duckhunt.png",
+        "gameTitle": "Duck Hunt"
     },
     "tiny-fishing": {
         "pageMapping": "https://cdn.nate-games.xyz/tiny-fishing/",
