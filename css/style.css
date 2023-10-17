@@ -1,1 +1,28 @@
 @import url("./imports.css");
+
+input {
+  padding: 10px;
+  background: #222;
+  border: 1px solid rgb(60, 63, 68);
+  border-radius: 4px;
+  font-size: 13px;
+  color: rgb(247, 248, 248);
+  appearance: none;
+  transition: border 0.15s ease 0s;
+}
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: rgb(100, 153, 255);
+}
+
+select {
+  padding: 10px 5px;
+  font-size: 11px;
+  font-family: "Lato", "Roboto";
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+  border: 0;
+  outline: none;
+}
