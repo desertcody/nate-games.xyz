@@ -33,3 +33,19 @@ let styles = [
   "background-image: linear-gradient(to bottom, #333, #000);",
 ].join(";");
 console.log(msg, styles);
+
+function addScript(src, callback) {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = src;
+  script.onload = callback;
+  document.head.appendChild(script);
+}
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+}
+
+addScript('//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit', function() {
+  googleTranslateElementInit();
+});
