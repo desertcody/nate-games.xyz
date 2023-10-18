@@ -41,8 +41,7 @@
     "url": "/game/?reblox-client",
     "imageSrc": "/game/img/reblox-client.jpg",
     "name": "Reblox Client",
-    "tags": "kids, fun, adventure, multiplayer, unity",
-    "newGame": true
+    "tags": "kids, fun, adventure, multiplayer, unity"
   },
   {
     "url": "/game/?cluster-rush",
@@ -387,6 +386,13 @@
     "tags": "fnf, html5, intense, singleplayer, action"
   },
   {
+    "url": "/game/?rocket-buddy",
+    "imageSrc": "/game/img/rocketbuddy.png",
+    "name": "Rocket Buddy",
+    "tags": "construct",
+    "newGame": true
+  },
+  {
     "url": "./fnaf/",
     "imageSrc": "./fnaf/game/splash.jpg",
     "name": "FNAF",
@@ -608,14 +614,14 @@
     "url": "/game/?stick-merge",
     "imageSrc": "/game/img/stickmerge.avif",
     "name": "Stick Merge",
-    "tags": "adventure, shooting, action, intense, fps" 
+    "tags": "adventure, shooting, action, intense, fps"
   },
   {
-  "url": "/game/?stick-fighter",
-  "imageSrc": "https://cdn.nate-games.xyz/stick-fighter/icons/icon-256.png",
-  "name": "Stick Fighter",
-  "tags": "adventure, fighting, action, intense" 
-},
+    "url": "/game/?stick-fighter",
+    "imageSrc": "https://cdn.nate-games.xyz/stick-fighter/icons/icon-256.png",
+    "name": "Stick Fighter",
+    "tags": "adventure, fighting, action, intense"
+  },
   {
     "url": "/game/?gun-spin",
     "imageSrc": "/game/img/gunspin.png",
@@ -633,6 +639,13 @@
     "imageSrc": "/game/img/doodle-jump.png",
     "name": "Doodle Jump",
     "tags": "fun, kids, doodle, scribble, drawing, action, adventure, intense"
+  },
+  {
+    "url": "/game/?octocat-jump",
+    "imageSrc": "/game/img/octocat-jump.png",
+    "name": "Octocat Jump",
+    "tags": "kids",
+    "newGame": true
   },
   {
     "url": "/game/?combat-reloaded",
@@ -657,6 +670,20 @@
     "imageSrc": "/game/img/electricman.png",
     "name": "Electric Man 2 HS",
     "tags": "flash, electricman, electric-man, intense, singleplayer"
+  },
+  {
+    "url": "/game/?gimme-the-airpod",
+    "imageSrc": "/game/img/gimme-airpod.png",
+    "name": "Gimme the airpod",
+    "tags": "unity",
+    "newGame": true
+  },
+  {
+    "url": "/game/?tag",
+    "imageSrc": "/game/img/tag.avif",
+    "name": "TAG",
+    "tags": "construct",
+    "newGame": true
   },
   {
     "url": "pvz/",
@@ -819,14 +846,12 @@
   {
     "url": "/game/?sans-fight",
     "imageSrc": "/game/img/sans-fight.jpg",
-    "name": "Sans Fight",
-    "newGame": true
+    "name": "Sans Fight"
   },
   {
     "url": "/game/?deepest-sword",
     "imageSrc": "https://cdn.nate-games.xyz/deepest-sword/deepest-sword.webp",
-    "name": "Deepest Sword",
-    "newGame": true
+    "name": "Deepest Sword"
   },
   {
     "url": "/game/?geometry-dash",
@@ -1163,6 +1188,12 @@
     "name": "Duck Life",
     "imageSrc": "https://play-lh.googleusercontent.com/AUGkRrKMtUCLVE9vCvlfMY9Ny9EBqzx17yejVtEEhvpkw-H6lJlvBHgCMqPJm8HV_tM",
     "url": "/0/g/duck-life/"
+  },
+  {
+    "name": "Duck Hunt",
+    "imageSrc": "/game/img/duckhunt.png",
+    "url": "/game/?duck-hunt",
+    "newGame": true
   },
   {
     "name": "Stick Defenders",

@@ -81,6 +81,21 @@
         "imageSrc": "/0/g/papas-pancakeria/unnamed.png",
         "gameTitle": "Papa's Pancakeria"
     },
+    "gimme-the-airpod": {
+        "pageMapping": "https://cdn.nate-games.xyz/gimme-the-airpod/",
+        "imageSrc": "/game/img/gimme-airpod.png",
+        "gameTitle": "Gimme the Airpod"
+    },
+    "rocket-buddy": {
+        "pageMapping": "https://cdn.nate-games.xyz/rocket-buddy/",
+        "imageSrc": "/game/img/rocketbuddy.png",
+        "gameTitle": "Rocket Buddy"
+    },
+    "tag": {
+        "pageMapping": "https://cdn.nate-games.xyz/tag/",
+        "imageSrc": "/game/img/tag.avif",
+        "gameTitle": "Tag"
+    },
     "papas-scooperia": {
         "pageMapping": "/0/g/papas-scooperia/",
         "imageSrc": "https://m.media-amazon.com/images/I/81BoBmWngJL.png",
