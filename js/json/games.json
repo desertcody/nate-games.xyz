@@ -58,7 +58,7 @@
   },
   {
     "url": "/game/?sonic-revert",
-    "imageSrc": "https://static.wikia.nocookie.net/fcoc-vs-battles/images/a/aa/Sonic_transparent.png",
+    "imageSrc": "/game/img/sonic-revert.png",
     "name": "Sonic Revert",
     "tags": "kids, fun, unity"
   },

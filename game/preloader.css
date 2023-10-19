@@ -59,7 +59,7 @@ iframe {
 .arrow-button {
   display: flex;
   color: #fff;
-  background-color: #00a8fc;
+  background-color: #ff8c33; /*00a8fc */
   padding: 10px 16px;
   border-radius: 12px;
   transition: all 0.2s ease;
@@ -106,6 +106,6 @@ iframe {
 }
 
 .arrow-button:hover {
-  background-color: #009fef;
+  background-color: #ff7a33; /* 009fef */
   transform: scale(1.05);
 }

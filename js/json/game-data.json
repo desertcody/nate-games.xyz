@@ -113,7 +113,7 @@
     },
     "sonic-revert": {
         "pageMapping": "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@c14b72fdb88d7c697da0f38ed0e9cd0acb3fc4bf/Sonic_Revert.xml",
-        "imageSrc": "https://static.wikia.nocookie.net/fcoc-vs-battles/images/a/aa/Sonic_transparent.png",
+        "imageSrc": "/game/img/sonic-revert.png",
         "gameTitle": "Sonic Revert"
     },
     "subway-surfers": {
