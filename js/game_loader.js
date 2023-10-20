@@ -85,6 +85,12 @@ function createGameCard(game, container) {
       }
     }
   });
+  {
+    const gameCard = document.querySelectorAll(".game-card");
+    const counter = document.getElementById("game-count");
+    counter.textContent = gameCard.length + " games";
+    counter.onclick = function(){alert('Total game count!')};
+  }
   if (game.hotGame) {
     const hotLabel = document.createElement("label");
     hotLabel.setAttribute("id", "hot_game");

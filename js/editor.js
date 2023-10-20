@@ -58,6 +58,16 @@ if (tabData.title) {
 if (tabData.icon) {
   setFavicon(tabData.icon);
 }
+const blankSwitch = document.getElementById("open_blank");
+
+if (blankSwitch) {
+  blankSwitch.addEventListener("change", function () {
+    if (blankSwitch.checked) {
+      openBlank();
+    }
+  });
+}
+
 function openBlank() {
   var win = window.open();
   var url = window.origin;
@@ -70,3 +80,20 @@ function openBlank() {
   iframe.src = url;
   win.document.body.appendChild(iframe);
 }
+
+const switches = document.getElementById("stickyNavigation_switch");
+
+if (window.localStorage.getItem("stickyNavbar") != "") {
+  if (window.localStorage.getItem("stickyNavbar") == "true") {
+    switches.checked = true;
+  } else {
+    switches.checked = false;
+  }
+}
+switches.addEventListener("change", (event) => {
+  if (event.currentTarget.checked) {
+    window.localStorage.setItem("stickyNavbar", "true");
+  } else {
+    window.localStorage.setItem("stickyNavbar", "false");
+  }
+});

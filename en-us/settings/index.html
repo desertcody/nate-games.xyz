@@ -116,10 +116,31 @@
     <div class="cards">
       <h3>Website Language
       </h3>
-      <p>Dynamically change the website's language globally. (Beta)</p>
+      <p>Dynamically change the website's language globally.</p>
 
       <div id="google_translate_element"></div>
     </div>
+
+    <div class="cards">
+      <h3>Sticky navigation
+      </h3>
+      <p>Make the navigation bar stick to the top of the screen.</p>
+      <div class="cl-toggle-switch">
+        <label class="cl-switch">
+          <input type="checkbox" id="stickyNavigation_switch">
+          <span></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="cards">
+      <h3>Panic Key (Coming soon)</h3>
+      <p>In class or realized you're off-topic? Set a website to go to using your <b>Panic Key</b>.</p>
+      <input class="input" id="panic-key-input" placeholder="Panic Key">
+      <input class="input" id="url-input" placeholder="URL">
+      <a class="visit-button" style="cursor: pointer;" onclick="savePanicKeyAndURL()">Save</a>
+    </div>
+
 
     <div class="cards">
       <h3>about:blank Preview
@@ -127,7 +148,7 @@
       <p>Open the website in about:blank</p>
       <div class="cl-toggle-switch">
         <label class="cl-switch">
-          <input type="checkbox" onchange="openBlank()">
+          <input type="checkbox" id="open_blank">
           <span></span>
         </label>
       </div>
@@ -135,13 +156,7 @@
 
   </div>
   <script src="/js/editor.js"></script>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    }
-  </script>
-  <script type="text/javascript"
-    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="/js/sw.js"></script>
 </body>
 
 </html>

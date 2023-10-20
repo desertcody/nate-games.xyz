@@ -5,6 +5,7 @@
 .cl-switch {
   position: relative;
   display: inline-block;
+  cursor: pointer;
 }
 /* Input */
 .cl-switch > input {
