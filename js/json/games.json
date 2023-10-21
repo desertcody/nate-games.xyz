@@ -389,8 +389,7 @@
     "url": "/game/?rocket-buddy",
     "imageSrc": "/game/img/rocketbuddy.png",
     "name": "Rocket Buddy",
-    "tags": "construct",
-    "newGame": true
+    "tags": "construct"
   },
   {
     "url": "./fnaf/",
@@ -644,8 +643,7 @@
     "url": "/game/?octocat-jump",
     "imageSrc": "/game/img/octocat-jump.png",
     "name": "Octocat Jump",
-    "tags": "kids",
-    "newGame": true
+    "tags": "kids"
   },
   {
     "url": "/game/?combat-reloaded",
@@ -675,15 +673,13 @@
     "url": "/game/?gimme-the-airpod",
     "imageSrc": "/game/img/gimme-airpod.png",
     "name": "Gimme the airpod",
-    "tags": "unity",
-    "newGame": true
+    "tags": "unity"
   },
   {
     "url": "/game/?tag",
     "imageSrc": "/game/img/tag.avif",
     "name": "TAG",
-    "tags": "construct",
-    "newGame": true
+    "tags": "construct"
   },
   {
     "url": "pvz/",
@@ -1192,7 +1188,13 @@
   {
     "name": "Duck Hunt",
     "imageSrc": "/game/img/duckhunt.png",
-    "url": "/game/?duck-hunt",
+    "url": "/game/?duck-hunt"
+  },
+  {
+    "url": "/game/?tiny-yurts",
+    "imageSrc": "/game/img/tiny-yurts.webp",
+    "name": "Tiny Yurts",
+    "tags": "tycoon, kids, singleplayer",
     "newGame": true
   },
   {

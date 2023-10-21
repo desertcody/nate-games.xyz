@@ -96,6 +96,11 @@
         "imageSrc": "/game/img/tag.avif",
         "gameTitle": "Tag"
     },
+    "tiny-yurts": {
+        "pageMapping": "https://cdn.nate-games.xyz/js13k/?tiny-yurts",
+        "imageSrc": "/game/img/tiny-yurts.webp",
+        "gameTitle": "Tiny Yurts"
+    },
     "papas-scooperia": {
         "pageMapping": "/0/g/papas-scooperia/",
         "imageSrc": "https://m.media-amazon.com/images/I/81BoBmWngJL.png",

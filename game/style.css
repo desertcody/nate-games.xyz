@@ -192,6 +192,7 @@ center:hover .show-bar {
 
 .thumbnail img {
   height: 100%;
+  border-radius: 5px;
   width: 100%;
   vertical-align: middle;
   object-fit: cover;
@@ -206,7 +207,6 @@ center:hover .show-bar {
   z-index: 9999;
   position: absolute;
   object-fit: cover;
-  font-size: 15px;
   margin-left: 20px;
 }
 
