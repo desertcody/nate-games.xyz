@@ -1,6 +1,4 @@
-@import url("image-container.css");
-@import url("mobile.css");
-@import url("keys.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
@@ -475,7 +473,7 @@ footer a:hover::after {
   margin: 1em;
   display: inline-block;
   cursor: pointer;
-  transition: .3s, .5s ease-in-out;
+  transition: 0.3s, 0.5s ease-in-out;
 }
 
 #game-count:hover {
@@ -484,4 +482,62 @@ footer a:hover::after {
 
 #game-count:active {
   transform: rotate3d(1, 1, 1, 360deg);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 31.5px; /*= 18%*/
+  height: 175px;
+  width: 175px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.image-container #hot_game::before {
+  content: "HOT";
+  position: absolute;
+  display: inline-block;
+  height: 15px;
+  padding: 2px 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  background: linear-gradient(to top right, #ff5733, #ff9033);
+  border-radius: 5px;
+  text-transform: uppercase;
+  top: 0;
+  right: 15px;
+  z-index: 9996;
+}
+
+.image-container #new_game::before {
+  content: "NEW!";
+  position: absolute;
+  display: inline-block;
+  height: 15px;
+  padding: 2px 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  background: linear-gradient(to top right, #337dff, #33a8ff);
+  border-radius: 5px;
+  text-transform: uppercase;
+  top: 0;
+  right: 15px;
+  z-index: 9996;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+  background-color: #1b1b1b;
+}
+
+.game-card:hover .image-container img {
+  transform: scale(1.1);
 }

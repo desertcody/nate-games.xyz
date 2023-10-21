@@ -2,311 +2,312 @@
 <html>
 
 <head>
-    <title>nate-games | EmulatorJS</title>
-    <link rel="stylesheet" href="/0/assets/css/games.css">
-    <link rel="icon" href="/favicon.ico">
+  <title>nate-games | EmulatorJS</title>
+  <link rel="stylesheet" href="/css/main/games.css">
+  <link rel="icon" href="/favicon.ico">
 
-    <style>
-        body,
-        html {
-            height: 100%;
-            overflow: hidden;
-        }
+  <style>
+    body,
+    html {
+      height: 100%;
+      overflow: hidden;
+    }
 
-        .box-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            height: 100%;
-            width: 100%;
-            font-family: monospace;
-            font-weight: bold;
-            font-size: 20px;
-            margin: 0;
-            overflow: hidden;
-            background-color: #222;
-        }
+    .box-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0;
+      overflow: hidden;
+      background-color: #222;
+    }
 
-        #box {
-            color: #aaa;
-            height: 20em;
-            width: 30em;
-            max-width: 80%;
-            max-height: 80%;
-            background-color: #333;
-            border-radius: 0.4em;
-            border: 2px solid #555;
-            position: relative;
-            flex-direction: column;
-            transition-duration: 0.2s;
-            overflow: hidden
-        }
+    #box {
+      color: #aaa;
+      height: 20em;
+      width: 30em;
+      max-width: 80%;
+      max-height: 80%;
+      background-color: #333;
+      border-radius: 0.4em;
+      border: 2px solid #555;
+      position: relative;
+      flex-direction: column;
+      transition-duration: 0.2s;
+      overflow: hidden
+    }
 
-        #box p {
-            margin-top: 30%;
-        }
+    #box p {
+      margin-top: 30%;
+    }
 
-        #box:hover,
-        #box[drag] {
-            border-color: #38f;
-            color: #ddd
-        }
+    #box:hover,
+    #box[drag] {
+      border-color: #38f;
+      color: #ddd
+    }
 
-        #input {
-            cursor: pointer;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0
-        }
+    #input {
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0
+    }
 
-        #display {
-            width: 100%;
-            height: 100%
-        }
+    #display {
+      width: 100%;
+      height: 100%
+    }
 
-        .emu-select,
-        .emu-button {
-            padding: 0.6em 0.4em;
-            margin: 0.5em;
-            width: 15em;
-            max-width: 100%;
-            font-family: monospace;
-            font-weight: bold;
-            font-size: 16px;
-            background-color: #444;
-            color: #aaa;
-            border-radius: 0.4em;
-            border: 1px solid #555;
-            cursor: pointer;
-            transition-duration: 0.2s
-        }
+    .emu-select,
+    .emu-button {
+      padding: 0.6em 0.4em;
+      margin: 0.5em;
+      width: 15em;
+      max-width: 100%;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 16px;
+      background-color: #444;
+      color: #aaa;
+      border-radius: 0.4em;
+      border: 1px solid #555;
+      cursor: pointer;
+      transition-duration: 0.2s
+    }
 
-        .emu-select:hover,
-        .emu-button:hover {
-            background-color: #666;
-            color: #ddd
-        }
-    </style>
+    .emu-select:hover,
+    .emu-button:hover {
+      background-color: #666;
+      color: #ddd
+    }
+  </style>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-          <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
-            <img src="/favicon.ico" class="nav-icon" />
-            <strong>nate-games</strong>
-          </button>
-        </div>
-        <nav class="menu">
-          <a href="/en-us/settings/">
-            <button class="menu-item">
-              <i class="fa-solid fa-gear"></i> Settings
-            </button>
-          </a>
-          <a href="/en-us/signup/">
-            <button class="menu-item">
-              <i class="fa-solid fa-user"></i> Account
-            </button>
-          </a>
-          <div class="dropdown">
-            <button class="menu-item dropbtn">
-              <i class="fa-solid fa-dragon"></i>Categories
-            </button>
-            <div class="dropdown-content">
-              <a href="/0/g/?search=">ALL | 💯+</a>
-              <a href="/0/g/#clicker">Clicker |
-                <img src="/0/assets/img/tags/pc-mice.svg" style="vertical-align: middle; height: 20px" /></a>
-              <a href="/0/g/#shooting">Shooting |
-                <img src="/0/assets/img/tags/crosshair.svg" style="vertical-align: middle" /></a>
-              <a href="/0/g/#point-and-click">Point & Click | 🖱️</a>
-              <a href="/0/g/#action">Action | 💥</a>
-              <a href="/0/g/#kids">Kids | 👨🏿‍🌾</a>
-              <span style="
-                    border-top: 2px solid #222;
-                    border-bottom: 2px solid #222;
-                    border-radius: 0;
-                  "><b>Game engines</b></span>
-              <a href="/0/g/#html5">HTML5 |
-                <img src="/0/assets/img/misc/html5.svg" style="vertical-align: middle; height: 14px" /></a>
-              <a href="/0/g/#unity">Unity |
-                <img src="/0/assets/img/misc/unity.svg" style="vertical-align: middle; height: 14px" /></a>
-              <a href="/0/g/#flash">Flash |
-                <img src="/0/assets/img/misc/adobe-flash.svg" style="vertical-align: middle; height: 14px" /></a>
-              <a href="/0/g/#scratch">Scratch |
-                <img src="/0/assets/img/misc/scratch.svg" style="vertical-align: middle; height: 14px" /></a>
-            </div>
-          </div>
-          <a href="/0/g/">
-            <button class="menu-item">
-              <i class="fa-solid fa-gamepad"></i> Games
-            </button>
-          </a>
-          <a href="/en-us/emu/">
-            <button class="menu-item">
-              <i class="fa-solid fa-dice-d6"></i> Emulator
-            </button>
-          </a>
-          <a href="/en-us/projects/">
-            <button class="menu-item">
-              <i class="fa-solid fa-paper-plane"></i> Projects
-            </button>
-          </a>
-          <a href="https://docs.nate-games.xyz/">
-            <button class="menu-item">
-              <i class="fa-solid fa-book"></i> Docs
-            </button>
-          </a>
-          <div class="dropdown">
-            <button class="menu-item dropbtn">
-              <i class="fa-solid fa-caret-down"></i> More
-            </button>
-            <div class="dropdown-content" style="right: 0; min-width: 180px">
-              <a href="https://discord.gg/9mJcqwZ2a5" target="_blank">Join the Discord | 💬</a>
-              <a href="/en-us/contact" target="_blank">Contact | 📝</a>
-              <a href="https://github.com/nate-games/nate-games.xyz" target="_blank">GitHub |
-                <img src="/0/assets/img/misc/github.svg" style="vertical-align: middle; height: 25px" /></a>
-              <a href="https://github.com/nate-games/nate-games.xyz" target="_blank">Sponsor |
-                <img src="/0/assets/img/misc/sponsor.svg" class="sponsor" /></a>
-            </div>
-          </div>
-        </nav>
-      </header>
-    <div class="box-container">
-        <div id=box>
-            <input type=file id=input>
-            <p>Drag ROM file or click here</p>
-        </div>
+  <header class="header">
+    <div class="logo">
+      <button class="home-menu-item btn41-43 btn-41" onclick="window.location.href='/'" class="title">
+        <img src="/favicon.ico" class="nav-icon" />
+        <strong>nate-games</strong>
+      </button>
     </div>
+    <nav class="menu">
+      <a href="/en-us/settings/">
+        <button class="menu-item">
+          <i class="fa-solid fa-gear"></i> Settings
+        </button>
+      </a>
+      <a href="/en-us/signup/">
+        <button class="menu-item">
+          <i class="fa-solid fa-user"></i> Account
+        </button>
+      </a>
+      <div class="dropdown">
+        <button class="menu-item dropbtn">
+          <i class="fa-solid fa-dragon"></i>Categories
+        </button>
+        <div class="dropdown-content">
+          <a href="/0/g/?search=">ALL | 💯+</a>
+          <a href="/0/g/#clicker">Clicker |
+            <img src="/img/svg/pc-mice.svg" style="vertical-align: middle; height: 20px" /></a>
+          <a href="/0/g/#shooting">Shooting |
+            <img src="/img/svg/crosshair.svg" style="vertical-align: middle" /></a>
+          <a href="/0/g/#point-and-click">Point & Click | 🖱️</a>
+          <a href="/0/g/#action">Action | 💥</a>
+          <a href="/0/g/#kids">Kids | 👨🏿‍🌾</a>
+          <span style="
+                  border-top: 2px solid #222;
+                  border-bottom: 2px solid #222;
+                  border-radius: 0;
+                "><b>Game engines</b></span>
+          <a href="/0/g/#html5">HTML5 |
+            <img src="/img/svg/html5.svg" style="vertical-align: middle; height: 14px" /></a>
+          <a href="/0/g/#unity">Unity |
+            <img src="/img/svg/unity.svg" style="vertical-align: middle; height: 14px" /></a>
+          <a href="/0/g/#flash">Flash |
+            <img src="/img/svg/adobe-flash.svg" style="vertical-align: middle; height: 14px" /></a>
+          <a href="/0/g/#scratch">Scratch |
+            <img src="/img/svg/scratch.svg" style="vertical-align: middle; height: 14px" /></a>
+        </div>
+      </div>
+      <a href="/0/g/">
+        <button class="menu-item">
+          <i class="fa-solid fa-gamepad"></i> Games
+        </button>
+      </a>
+      <a href="/en-us/emu/">
+        <button class="menu-item">
+          <i class="fa-solid fa-dice-d6"></i> Emulator
+        </button>
+      </a>
+      <a href="/en-us/projects/">
+        <button class="menu-item">
+          <i class="fa-solid fa-paper-plane"></i> Projects
+        </button>
+      </a>
+      <a href="https://docs.nate-games.xyz/">
+        <button class="menu-item">
+          <i class="fa-solid fa-book"></i> Docs
+        </button>
+      </a>
+      <div class="dropdown">
+        <button class="menu-item dropbtn">
+          <i class="fa-solid fa-caret-down"></i> More
+        </button>
+        <div class="dropdown-content" style="right: 0; min-width: 180px">
+          <a href="https://discord.gg/9mJcqwZ2a5" target="_blank">Join the Discord | 💬</a>
+          <a href="/en-us/contact" target="_blank">Contact | 📝</a>
+          <a href="https://github.com/nate-games/nate-games.xyz" target="_blank">GitHub |
+            <img src="/img/svg/github.svg" style="vertical-align: middle; height: 25px" /></a>
+          <a href="https://github.com/nate-games/nate-games.xyz" target="_blank">Sponsor |
+            <img src="/img/svg/sponsor.svg" class="sponsor" /></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="box-container">
+    <div id=box>
+      <input type=file id=input>
+      <p>Drag ROM file or click here</p>
+    </div>
+  </div>
 
-    <script>
-        input.onchange = async () => {
-            const url = new Blob([input.files[0]])
-            const parts = input.files[0].name.split(".")
+  <script>
+    input.onchange = async () => {
+      const url = new Blob([input.files[0]])
+      const parts = input.files[0].name.split(".")
 
-            const core = await (async (ext) => {
-                if (["fds", "nes", "unif", "unf"].includes(ext))
-                    return "nes"
+      const core = await (async (ext) => {
+        if (["fds", "nes", "unif", "unf"].includes(ext))
+          return "nes"
 
-                if (["smc", "fig", "sfc", "gd3", "gd7", "dx2", "bsx", "swc"].includes(ext))
-                    return "snes"
+        if (["smc", "fig", "sfc", "gd3", "gd7", "dx2", "bsx", "swc"].includes(ext))
+          return "snes"
 
-                if (["z64", "n64"].includes(ext))
-                    return "n64"
+        if (["z64", "n64"].includes(ext))
+          return "n64"
 
-                if (["pce"].includes(ext))
-                    return "pce"
+        if (["pce"].includes(ext))
+          return "pce"
 
-                if (["ngp", "ngc"].includes(ext))
-                    return "ngp"
+        if (["ngp", "ngc"].includes(ext))
+          return "ngp"
 
-                if (["ws", "wsc"].includes(ext))
-                    return "ws"
+        if (["ws", "wsc"].includes(ext))
+          return "ws"
 
-                if (["col", "cv"].includes(ext))
-                    return "coleco"
+        if (["col", "cv"].includes(ext))
+          return "coleco"
 
-                if (["nds", "gba", "gb", "z64", "n64"].includes(ext))
-                    return ext
+        if (["nds", "gba", "gb", "z64", "n64"].includes(ext))
+          return ext
 
-                return await new Promise(resolve => {
-                    const cores = {
-                        "Nintendo 64": "n64",
-                        "Nintendo Game Boy": "gb",
-                        "Nintendo Game Boy Advance": "gba",
-                        "Nintendo DS": "nds",
-                        "Nintendo Entertainment System": "nes",
-                        "Super Nintendo Entertainment System": "snes",
-                        "PlayStation": "psx",
-                        "Virtual Boy": "vb",
-                        "Sega Mega Drive": "segaMD",
-                        "Sega Master System": "segaMS",
-                        "Sega CD": "segaCD",
-                        "Atari Lynx": "lynx",
-                        "Sega 32X": "sega32x",
-                        "Atari Jaguar": "jaguar",
-                        "Sega Game Gear": "segaGG",
-                        "Sega Saturn": "segaSaturn",
-                        "Atari 7800": "atari7800",
-                        "Atari 2600": "atari2600",
-                        "NEC TurboGrafx-16/SuperGrafx/PC Engine": "pce",
-                        "NEC PC-FX": "pcfx",
-                        "SNK NeoGeo Pocket (Color)": "ngp",
-                        "Bandai WonderSwan (Color)": "ws",
-                        "ColecoVision": "coleco"
-                    }
+        return await new Promise(resolve => {
+          const cores = {
+            "Nintendo 64": "n64",
+            "Nintendo Game Boy": "gb",
+            "Nintendo Game Boy Advance": "gba",
+            "Nintendo DS": "nds",
+            "Nintendo Entertainment System": "nes",
+            "Super Nintendo Entertainment System": "snes",
+            "PlayStation": "psx",
+            "Virtual Boy": "vb",
+            "Sega Mega Drive": "segaMD",
+            "Sega Master System": "segaMS",
+            "Sega CD": "segaCD",
+            "Atari Lynx": "lynx",
+            "Sega 32X": "sega32x",
+            "Atari Jaguar": "jaguar",
+            "Sega Game Gear": "segaGG",
+            "Sega Saturn": "segaSaturn",
+            "Atari 7800": "atari7800",
+            "Atari 2600": "atari2600",
+            "NEC TurboGrafx-16/SuperGrafx/PC Engine": "pce",
+            "NEC PC-FX": "pcfx",
+            "SNK NeoGeo Pocket (Color)": "ngp",
+            "Bandai WonderSwan (Color)": "ws",
+            "ColecoVision": "coleco"
+          }
 
-                    const button = document.createElement("button");
-                    button.classList.add("emu-button");
+          const button = document.createElement("button");
+          button.classList.add("emu-button");
 
-                    const select = document.createElement("select");
-                    select.classList.add("emu-select");
+          const select = document.createElement("select");
+          select.classList.add("emu-select");
 
 
-                    for (const type in cores) {
-                        const option = document.createElement("option")
+          for (const type in cores) {
+            const option = document.createElement("option")
 
-                        option.value = cores[type]
-                        option.textContent = type
-                        select.appendChild(option)
-                    }
+            option.value = cores[type]
+            option.textContent = type
+            select.appendChild(option)
+          }
 
-                    button.onclick = () => resolve(select[select.selectedIndex].value)
-                    button.textContent = "Load game"
-                    box.innerHTML = ""
+          button.onclick = () => resolve(select[select.selectedIndex].value)
+          button.textContent = "Load game"
+          box.innerHTML = ""
 
-                    box.appendChild(select)
-                    box.appendChild(button)
-                })
-            })(parts.pop())
+          box.appendChild(select)
+          box.appendChild(button)
+        })
+      })(parts.pop())
 
-            const div = document.createElement("div")
-            const sub = document.createElement("div")
-            const script = document.createElement("script")
+      const div = document.createElement("div")
+      const sub = document.createElement("div")
+      const script = document.createElement("script")
 
-            sub.id = "game"
-            div.id = "display"
+      sub.id = "game"
+      div.id = "display"
 
-            box.remove()
-            div.appendChild(sub)
-            document.body.appendChild(div)
+      box.remove()
+      div.appendChild(sub)
+      document.body.appendChild(div)
 
-            window.EJS_player = "#game";
-            window.EJS_gameName = parts.shift();
-            window.EJS_biosUrl = "";
-            window.EJS_gameUrl = url;
-            window.EJS_core = core;
-            window.EJS_pathtodata = "data/";
-            window.EJS_startOnLoaded = true;
+      window.EJS_player = "#game";
+      window.EJS_gameName = parts.shift();
+      window.EJS_biosUrl = "";
+      window.EJS_gameUrl = url;
+      window.EJS_core = core;
+      window.EJS_pathtodata = "data/";
+      window.EJS_startOnLoaded = true;
 
-            if (window.location.hostname === "nate-games.xyz") { // ads
-                window.EJS_AdUrl = "https://cdn.nate-games.xyz/ads";
-                window.EJS_ready = function () {
-                    detectAdBlock("data:text/html;base64,PGh0bWw+PHN0eWxlPiNhZGJsb2Nre2JhY2tncm91bmQtY29sb3I6cmdiYSgwLDAsMCwuOCk7cG9zaXRpb246Zml4ZWQ7d2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTt0b3A6MDtsZWZ0OjA7ei1pbmRleDoxMDAwO3RleHQtYWxpZ246Y2VudGVyO2NvbG9yOiNmZmZ9Ym9keSxodG1se2JhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnR9PC9zdHlsZT48Ym9keSBzdHlsZT0ibWFyZ2luOjAiPjxkaXYgaWQ9ImFkYmxvY2siPjxoMT5IaSBBZGJsb2NrIFVzZXIhPC9oMT48cD5BZHMgb24gdGhpcyBwYWdlIG1heSBjb21lIGFuZCBnbyBkZXBlbmRpbmcgb24gaG93IG1hbnkgcGVvcGxlIGFyZSBmdW5kaW5nIHRoaXMgcHJvamVjdC48YnI+WW91IGNhbiBoZWxwIGZ1bmQgdGhpcyBwcm9qZWN0IG9uPGEgaHJlZj0iaHR0cHM6Ly9wYXRyZW9uLmNvbS9FbXVsYXRvckpTIj5wYXRyZW9uPC9hPjwvcD48L2Rpdj48L2JvZHk+PC9odG1sPg==");
-                }
-            }
-
-            script.src = "data/loader.js";
-            document.body.appendChild(script);
+      if (window.location.hostname === "nate-games.xyz") { // ads
+        window.EJS_AdUrl = "https://cdn.nate-games.xyz/ads";
+        window.EJS_ready = function () {
+          detectAdBlock("data:text/html;base64,PGh0bWw+PHN0eWxlPiNhZGJsb2Nre2JhY2tncm91bmQtY29sb3I6cmdiYSgwLDAsMCwuOCk7cG9zaXRpb246Zml4ZWQ7d2lkdGg6MTAwJTtoZWlnaHQ6MTAwJTt0b3A6MDtsZWZ0OjA7ei1pbmRleDoxMDAwO3RleHQtYWxpZ246Y2VudGVyO2NvbG9yOiNmZmZ9Ym9keSxodG1se2JhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnR9PC9zdHlsZT48Ym9keSBzdHlsZT0ibWFyZ2luOjAiPjxkaXYgaWQ9ImFkYmxvY2siPjxoMT5IaSBBZGJsb2NrIFVzZXIhPC9oMT48cD5BZHMgb24gdGhpcyBwYWdlIG1heSBjb21lIGFuZCBnbyBkZXBlbmRpbmcgb24gaG93IG1hbnkgcGVvcGxlIGFyZSBmdW5kaW5nIHRoaXMgcHJvamVjdC48YnI+WW91IGNhbiBoZWxwIGZ1bmQgdGhpcyBwcm9qZWN0IG9uPGEgaHJlZj0iaHR0cHM6Ly9wYXRyZW9uLmNvbS9FbXVsYXRvckpTIj5wYXRyZW9uPC9hPjwvcD48L2Rpdj48L2JvZHk+PC9odG1sPg==");
         }
-        function detectAdBlock(url) {
-            let adBlockEnabled = false;
-            try {
-                window.EJS_AdUrl = document.querySelector('iframe[src="' + window.EJS_AdUrl + '"]').src;
-            } catch (e) {
-                adBlockEnabled = true;
-            }
-            if (adBlockEnabled) {
-                window.EJS_adBlocked(url);
-            }
-        }
-        box.ondragover = () => box.setAttribute("drag", true);
-        box.ondragleave = () => box.removeAttribute("drag");
-    </script>
-    <script src="/js/editor.js"></script>
+      }
+
+      script.src = "data/loader.js";
+      document.body.appendChild(script);
+    }
+    function detectAdBlock(url) {
+      let adBlockEnabled = false;
+      try {
+        window.EJS_AdUrl = document.querySelector('iframe[src="' + window.EJS_AdUrl + '"]').src;
+      } catch (e) {
+        adBlockEnabled = true;
+      }
+      if (adBlockEnabled) {
+        window.EJS_adBlocked(url);
+      }
+    }
+    box.ondragover = () => box.setAttribute("drag", true);
+    box.ondragleave = () => box.removeAttribute("drag");
+  </script>
+  <script src="/js/editor.js"></script>
 </body>
 
 </html>

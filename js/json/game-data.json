@@ -36,13 +36,13 @@
         "gameTitle": "Octocat Jump"
     },
     "1": {
-        "pageMapping": "/0/g/1/",
-        "imageSrc": "/0/g/1/meta/apple-touch-icon.png",
+        "pageMapping": "https://cdn.nate-games.xyz/1/",
+        "imageSrc": "/game/img/1.png",
         "gameTitle": "1"
     },
     "2048": {
-        "pageMapping": "/0/g/2048/",
-        "imageSrc": "/0/g/2048/2048.png",
+        "pageMapping": "https://cdn.nate-games.xyz/2048/",
+        "imageSrc": "/game/img/2048.png",
         "gameTitle": "2048"
     },
     "wings.io": {
@@ -67,19 +67,24 @@
         "gameTitle": "Gacha Club"
     },
     "papas-burgeria": {
-        "pageMapping": "/0/g/papas-burgeria/",
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/papasburgeria.swf",
         "imageSrc": "https://play-lh.googleusercontent.com/rHJuY78XSJrhbaW39aYNhViggnzCgR5Zu-xfIx7Sga0Y3Tv3iIuGIIgvEMqfI5Kn",
         "gameTitle": "Papa's Burgeria"
     },
     "papas-doggeria": {
-        "pageMapping": "/0/g/papas-doggeria/",
-        "imageSrc": "/0/g/papas-doggeria/image.png",
+        "pageMapping": "/flash-loader/dynamic-loader?swf=https://cdn.jsdelivr.net/gh/AndreajnRcm4/d4g62dgv5a@f32beddc27cf3b81ecbeac4d6250faa864afd60f/dt/39.swf",
+        "imageSrc": "/game/img/papas-doggeria.png",
         "gameTitle": "Papa's Doggeria"
     },
     "papas-pancakeria": {
-        "pageMapping": "/0/g/papas-pancakeria/",
-        "imageSrc": "/0/g/papas-pancakeria/unnamed.png",
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/papaspancakeria.swf",
+        "imageSrc": "/game/img/papas-pancakeria.png",
         "gameTitle": "Papa's Pancakeria"
+    },
+    "papas-scooperia": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/papasscooperia.swf",
+        "imageSrc": "https://m.media-amazon.com/images/I/81BoBmWngJL.png",
+        "gameTitle": "Papa's Scooperia"
     },
     "gimme-the-airpod": {
         "pageMapping": "https://cdn.nate-games.xyz/gimme-the-airpod/",
@@ -100,11 +105,6 @@
         "pageMapping": "https://cdn.nate-games.xyz/js13k/?tiny-yurts",
         "imageSrc": "/game/img/tiny-yurts.webp",
         "gameTitle": "Tiny Yurts"
-    },
-    "papas-scooperia": {
-        "pageMapping": "/0/g/papas-scooperia/",
-        "imageSrc": "https://m.media-amazon.com/images/I/81BoBmWngJL.png",
-        "gameTitle": "Papa's Scooperia"
     },
     "doge-miner": {
         "pageMapping": "/0/g/doge-miner/",
@@ -544,6 +544,11 @@
         "pageMapping": "/flash-loader/dynamic-loader?swf=files/dad-n-me.swf",
         "imageSrc": "/game/img/dad-n-me.webp",
         "gameTitle": "Dad 'n Me"
+    },
+    "alien-hominid": {
+        "pageMapping": "/flash-loader/dynamic-loader?swf=files/alienhominid.swf",
+        "imageSrc": "/game/img/alienhominid.jpg",
+        "gameTitle": "Alien Hominid"
     },
     "paperio-2": {
         "pageMapping": "/0/g/paperio2/",

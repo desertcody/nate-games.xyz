@@ -139,6 +139,12 @@
     "tags": "flash"
   },
   {
+    "url": "/game/?alien-hominid",
+    "imageSrc": "/game/img/alienhominid.jpg",
+    "name": "Alien Hominid",
+    "tags": "flash"
+  },
+  {
     "url": "/game/?slope-game",
     "imageSrc": "/game/img/slope.jpg",
     "name": "Slope",
@@ -291,7 +297,7 @@
   },
   {
     "url": "/game/?papas-doggeria",
-    "imageSrc": "papas-doggeria/image.png",
+    "imageSrc": "/game/img/papas-doggeria.png",
     "name": "Papa's Hot Doggeria",
     "tags": "kids, action, flash, point-and-click"
   },
@@ -309,7 +315,7 @@
   },
   {
     "url": "/game/?papas-pancakeria",
-    "imageSrc": "papas-pancakeria/unnamed.png",
+    "imageSrc": "/game/img/papas-pancakeria.png",
     "name": "Papa's Pancakeria",
     "tags": "kids, action, flash, point-and-click"
   },
@@ -321,7 +327,7 @@
   },
   {
     "url": "/game/?2048",
-    "imageSrc": "./2048/2048.png",
+    "imageSrc": "/game/img/2048.png",
     "name": "2048",
     "tags": "kids, html5"
   },
@@ -333,7 +339,7 @@
   },
   {
     "url": "/game/?1",
-    "imageSrc": "./1/meta/apple-touch-icon.png",
+    "imageSrc": "/game/img/1.png",
     "name": "1",
     "tags": "kids, html5"
   },
@@ -909,11 +915,6 @@
     "url": "/0/g/baldisbasics/",
     "imageSrc": "https://play-lh.googleusercontent.com/EPV1TB4So1lB0DGrdCVExDpNU8ML67nd8OqBeoOIM-s6sDicxmDdPvCXD6n7LKevFl0",
     "name": "Baldi's Basics"
-  },
-  {
-    "url": "/0/g/alienhominid/",
-    "imageSrc": "./alienhominid/game/alienhominid.jpg",
-    "name": "Alien Hominid"
   },
   {
     "url": "/0/g/aquapark-slides/",
