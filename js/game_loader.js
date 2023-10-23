@@ -19,7 +19,7 @@ fetch("/js/json/games.json")
     setTimeout(() => {
       centerAlign.removeChild(loadingMessage);
 
-      const urlParams = new URLSearchParams(window.location.hash.substr(1)); // Remove the '#' character
+      const urlParams = new URLSearchParams(window.location.search.substr(1));
 
       data.forEach((game) => {
         if (urlParams.toString() === "" || window.location.pathname === "/") {

@@ -8,7 +8,7 @@ function changeIframeSource() {
   const currentURL = window.location.pathname;
   const referrer = document.referrer;
 
-  if (referrer.startsWith("http://localhost:8080/game/")) {
+  if (referrer.startsWith("https://nate-games.xyz/game/")) {
     if (urlMappings[currentURL]) {
       iframe.src = urlMappings[currentURL];
       iframe.style.display = "block";
