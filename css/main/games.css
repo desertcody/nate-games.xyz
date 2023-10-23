@@ -193,25 +193,6 @@ h1 {
   grid-gap: 32px;
 }
 
-.back {
-  background-color: #383838;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 100;
-  border-radius: 0;
-  font-family: "Lato", "Roboto", Arial, sans-serif;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.back:hover {
-  background-color: #000;
-  color: #fff;
-}
-
 .hg2793-container {
   width: 100%;
   padding: 50px 0 0;
